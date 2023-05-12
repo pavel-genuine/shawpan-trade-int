@@ -9,7 +9,7 @@ import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 
 const Passion = ({ career, csr, passion, passionTag }) => {
     return (
-        <div className='bg-navBg py-5 h-[75vh] overflow-hidden  px-[5vw]' >
+        <div className='bg-navBg py-5 lg:h-[75vh] overflow-hidden  px-[5vw]' >
 
             <div className='flex lg:flex-row flex-col-reverse'>
 
@@ -19,8 +19,8 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: .7, delay: 0 }}
                 >
-                    <div className='bg-navBg text-[white] w-[80%]  mt-[-40px] lg:mt-0 lg:w-[50vw]  lg:h-[70vh]'>
-                        <h1 className=' lg:text-5xl text-2xl font-bold mb-5 mt-5 lg:mt-20'>
+                    <div className='bg-navBg text-[white] text-center lg:text-left  mt-[-40px] lg:mt-0 lg:w-[50vw]  lg:h-[70vh]'>
+                        <h1 className=' lg:text-5xl text-[25px] font-semibold lg:font-bold mb-5 mt-5 lg:mt-20'>
 
                             {
                                 passion
@@ -29,7 +29,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                                 .
                             </span>
                         </h1>
-                        <div className='w-[100px] h-[3px] bg-accent mb-10 lg:mb-10 '>
+                        <div className='w-[100px] mx-auto lg:mx-0 h-[3px] bg-accent mb-10 lg:mb-10 '>
 
                         </div>
 
@@ -61,7 +61,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                 >
 
                     <Image
-                        className={`h-[50vh] lg:h-[70vh] mx-auto p-[8%] `}
+                        className={`h-[40vh] lg:h-[70vh] mx-auto p-[8%] `}
                         alt={'brand'}
                         height={500}
                         width={900}

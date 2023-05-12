@@ -42,13 +42,13 @@ export const Demo = (
 
 
   return (
-    <div className='container'>
+    <div>
 
-      <div className='pt-[10%] px-[5vw] h-[100vh] w-[98.8vw] bg-[black] bg-opacity-60'>
+      <div className='lg:pt-[10%] pt-[30%] px-[5vw] h-[100vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
 
         <div className=''>
 
-          <h1 className='text-[60px] font-semibold text-[white]'>
+          <h1 className='lg:text-[60px] text-[25px] font-semibold text-[white]'>
             <span className='text-accent'>{tag1} {' '}</span>{tag2}
             <br />
             <span>{tag3}</span>
@@ -56,7 +56,7 @@ export const Demo = (
             <br />
             {tag4}<span className='text-accent'>.</span>
           </h1>
-          <p className='text-[white] w-[40%] mt-5'>
+          <p className='text-[white] lg:w-[40%] w-[100%] mt-5'>
             {
               smallTag
             }
@@ -89,8 +89,8 @@ export const Demo = (
           
         </div>
 
-        <div className='mt-[70px] text-[white]'>
-            <div className='flex justify-between font-semibold text-md'>
+        <div className='lg:mt-[50px] mt-16 text-[white]'>
+            <div className='lg:flex justify-between lg:font-semibold lg:text-md '>
               <p>
                 <span className='text-[orange]'>
                   +5000
@@ -186,11 +186,11 @@ const HomePage = ({ setIsHome, brand, tag1, tag2, tag3, tag4, smallTag }) => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: .5, delay: 1, }}
               >
-                <p className='  text-lg font-bold text-[white] text-center mb-[-12px]'>
+                <p className='  lg:text-lg font-bold text-[white] text-center mb-[-12px]'>
                   scroll
                 </p>
                 <marquee behavior="scroll" direction='right'>
-                  <div className=' bg-[white] h-[2px] w-[75px]'>
+                  <div className=' bg-[white] h-[2px] w-[60px] lg:w-[75px]'>
 
                   </div>
                 </marquee>

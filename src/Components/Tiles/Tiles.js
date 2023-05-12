@@ -121,9 +121,9 @@ const TileGap = ({ img }) => {
 }
 const Tiles = () => {
     return (
-        <div className='w-[99.5vw] overflow-hidden bg-bg py-14 px-[5vw]'>
+        <div className=' overflow-hidden bg-bg py-14 px-[5vw]'>
             <motion.div
-                className=' lg:grid grid-cols-6 gap-14'
+                className=' grid grid-cols-3 lg:grid-cols-6 gap-14'
 
                 initial={{ y: 50, }}
                 whileInView={{ y: 0, }}

@@ -29,14 +29,14 @@ const Home = (props) => {
         <meta property="og:title" content="Rainbow Tex" />
         <meta
           name="og:description"
-          content="Bangladeshi Ready Made Garments Sourcing Company"
+          content="Bangladeshi Ready Made Garments Sourcing Company. High-quality clothing exports from Bangladesh. Best in Fashion."
         />
         {/* <meta property="og:type" content="video.movie" /> */}
         {/* <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> */}
         {/* <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> */}
 
       </Head>
-      <div className='w-[98.7vw] overflow-hidden ' style={{ zIndex: -1 }}>
+      <div className=' overflow-hidden ' style={{ zIndex: -1 }}>
 
         <HomePage setIsHome={props?.setIsHome} brand={props?.brand}
           tag1={props?.tag1}

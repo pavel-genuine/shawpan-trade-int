@@ -26,7 +26,7 @@ const Global = () => {
     // console.log(rounded,'rrrrrrr');
 
     return (
-        <div className=' bg-navBg pt-[5vh] h-[75vh] lg:h-auto'>
+        <div className=' bg-navBg lg:pt-[5vh] pt-5  lg:h-auto'>
             <motion.div
                 viewport={{ once: true }}
                 initial={{ opacity: .5, scale: .7 }}
@@ -35,14 +35,14 @@ const Global = () => {
             // transformValues={'-200px'}
             // transform= isInView ? "none" : "translateX(-200px)"
             >
-                <div className='lg:mt-10 mt-[5vh] text-[white] '>
+                <div className='lg:mt-8 mt-5 text-[white] '>
                     <div className='h-[12.5vh] lg:h-auto'>
-                        <h2 className='lg:text-3xl text-2xl text-[white]  text-center font-semibold mb-3'>Ready For Enterprise</h2>
-                        <h2 className='lg:text-lg   text-center text-[#cecece] lg:mt-8 px-2'>Rainbow Tex is built by the team that created the goods <span className='lg:hidden'>for some of the amazing buyers globally.</span></h2>
-                        <h2 className='lg:text-lg  text-center text-[#cecece] hidden lg:block'>for some of the amazing buyers globally.</h2>
+                        <h2 className='lg:text-3xl text-2xl text-[white]  text-center font-semibold mx-3'><span className='text-accent'>Enterprise-ready solutions</span> for your business need</h2>
+                        <h2 className='lg:text-lg   text-center text-[#cecece] lg:mt-8 px-2 my-5 lg:my-0'>Rainbow Tex is built by the team that created the goods <span className='lg:hidden'>for some of the amazing buyers globally.</span></h2>
+                        <h2 className='lg:text-lg  text-center text-[#cecece] hidden lg:block mb-5'>for some of the amazing buyers globally.</h2>
                     </div>
 
-                    <div className='lg:my-8 my-[5vh] h-[12.5vh] lg:h-auto'>
+                    <div className='lg:my-8 mt-10  h-[12.5vh] lg:h-auto'>
                         <div className='flex text-[white] justify-center items-center space-x-16 lg:mb-4 lg:text-5xl text-3xl  font-semibold'>
                             <div className='flex'>
                                 <motion.h2 className='lg:text-5xl text-3xl   font-semibold'>{rounded}</motion.h2>{'.'}
@@ -59,7 +59,7 @@ const Global = () => {
                         </div>
                     </div>
 
-                    <div className='relative flex justify-center h-[30vh] lg:h-[60vh] '>
+                    <div className='relative flex justify-center  lg:h-[60vh] '>
                         <Image
                             className='md:w-[85vw] w-[100vw]'
                             alt={'brand'}

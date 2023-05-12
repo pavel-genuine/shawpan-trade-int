@@ -101,15 +101,7 @@
 
 
 
-.container {
-    position: relative;
-    display: block;
-    width: 99.5vw;
-    height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
 
-  }
   .pic {
     position: absolute;
     z-index: -1;

@@ -42,7 +42,7 @@ const Footer = () => {
                         whileInView={{ y: 0 }}
                         transition={{ duration: .2, delay: .2, }}
                     >
-                        <p className='lg:text-3xl text-xl font-semibold mt-10 mb-5 '>
+                        <p className='lg:text-3xl text-xl font-semibold lg:mt-10 mt-0 mb-5 '>
                             CONTACT DETAILS
                         </p>
 

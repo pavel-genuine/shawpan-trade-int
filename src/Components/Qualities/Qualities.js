@@ -3,13 +3,13 @@ import React from 'react'
 
 const Qualities = () => {
     return (
-        <div className='flex h-[90vh] bg-bg p-[7vh] text-[white] overflow-hidden px-[5vw]'>
+        <div className='lg:flex lg:h-[90vh] bg-bg lg:p-[7vh] p-5 text-[white] overflow-hidden px-[5vw]'>
 
-            <div className='pr-10 '>
+            <div className='lg:pr-10 '>
 
                 <div className='flex mb-[5vh] '>
 
-                    <div className=' bg-navBg mr-[5vh] p-5 h-[36vh] overflow-hidden'>
+                    <div className=' bg-navBg mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
                         <Image
                             className={`h-[100px]`}
                             alt={'cate'}
@@ -28,7 +28,7 @@ const Qualities = () => {
                         </p>
                     </div>
 
-                    <div className=' bg-[black] p-5 h-[36vh] overflow-hidden'>
+                    <div className=' bg-[black] p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
                         <Image
                             className={`h-[100px]`}
                             alt={'cate'}
@@ -50,7 +50,7 @@ const Qualities = () => {
 
                 <div className='flex'>
 
-                    <div className='bg-[black] mr-[5vh] p-5 h-[36vh] overflow-hidden'>
+                    <div className='bg-[black] mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
                         <Image
                             className={`h-[100px]`}
                             alt={'cate'}
@@ -65,11 +65,11 @@ const Qualities = () => {
                             1% Better Everyday
                         </h1>
                         <p className='font-thin'>
-                            Committed to excellence and tackling challenges with a can-do Attitude at Rainbow Tex.
+                            Committed to excellence and tackling challenges with a can-do attitude here.
                         </p>
                     </div>
 
-                    <div className='bg-navBg p-5 h-[36vh] overflow-hidden'>
+                    <div className='bg-navBg p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
                         <Image
                             className={`h-[100px]`}
                             alt={'cate'}
@@ -92,7 +92,7 @@ const Qualities = () => {
             </div>
 
             <Image
-                className={`h-[77vh] w-[50%]`}
+                className={`lg:h-[77vh] lg:w-[50%] mt-5 lg:mt-0`}
                 alt={'cate'}
                 height={700}
                 width={900}
