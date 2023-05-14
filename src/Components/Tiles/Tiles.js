@@ -13,6 +13,7 @@ import img9 from '../../assets/logos/ck.png'
 import img10 from '../../assets/logos/prada.png'
 import img11 from '../../assets/logos/levis.png'
 import Image from 'next/image';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 const posts = [
     {
         id: 1,
@@ -106,15 +107,17 @@ const Tile = ({ img }) => {
     )
 }
 const TileGap = ({ img }) => {
+
+
     return (
         <div className='flex justify-center items-center ' >
-            <Image
+            <LazyLoadImage
                 className='  w-[98.7vw]  lg:w-[15vw]  '
                 alt={'brand'}
-                height={500}
+                // height={500}
+                // width={500}
                 // fill
-                src={img}
-                width={500}
+                src={img?.src}
             />
         </div>
     )

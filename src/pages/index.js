@@ -1,11 +1,26 @@
-import Categories from '@/Components/Categories/Categories'
-import Global from '@/Components/Global/Global'
-import HomePage from '@/Components/HomePage/HomePage'
-import Passion from '@/Components/Passion/Passion'
-import Qualities from '@/Components/Qualities/Qualities'
-import Tiles from '@/Components/Tiles/Tiles'
-import Head from 'next/head'
+
 import React, { useEffect } from 'react'
+import dynamic from 'next/dynamic';
+import HomePage from '@/Components/HomePage/HomePage'
+
+import Head from 'next/head'
+ 
+const Categories = dynamic(() => import('@/Components/Categories/Categories'), {
+  loading: () => <p>Loading...</p>,
+});
+const Global = dynamic(() => import('@/Components/Global/Global'), {
+  loading: () => <p>Loading...</p>,
+});
+const Passion = dynamic(() => import('@/Components/Passion/Passion'), {
+  loading: () => <p>Loading...</p>,
+});
+const Qualities = dynamic(() => import('@/Components/Qualities/Qualities'), {
+  loading: () => <p>Loading...</p>,
+});
+const Tiles = dynamic(() => import('@/Components/Tiles/Tiles'), {
+  loading: () => <p>Loading...</p>,
+});
+
 
 
 
@@ -52,9 +67,6 @@ const Home = (props) => {
 
         <Global></Global>
 
-        {/* <FeaturedBrands></FeaturedBrands> */}
-
-        {/* <Commitments></Commitments> */}
         <Qualities></Qualities>
 
 

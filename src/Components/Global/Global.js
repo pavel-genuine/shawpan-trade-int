@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { animate, motion, useMotionValue, useTransform } from "framer-motion"
 import Image from 'next/image';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Global = () => {
 
@@ -26,7 +27,7 @@ const Global = () => {
     // console.log(rounded,'rrrrrrr');
 
     return (
-        <div className=' bg-navBg lg:pt-[5vh] pt-5  lg:h-auto'>
+        <div className=' bg-navBg lg:pt-[5vh] pt-5  lg:h-auto px-[5vw]'>
             <motion.div
                 viewport={{ once: true }}
                 initial={{ opacity: .5, scale: .7 }}
@@ -37,8 +38,8 @@ const Global = () => {
             >
                 <div className='lg:mt-8 mt-5 text-[white] '>
                     <div className='h-[12.5vh] lg:h-auto'>
-                        <h2 className='lg:text-3xl text-2xl text-[white]  text-center font-semibold mx-3'><span className='text-accent'>Enterprise-ready solutions</span> for your business need</h2>
-                        <h2 className='lg:text-lg   text-center text-[#cecece] lg:mt-8 px-2 my-5 lg:my-0'>Rainbow Tex is built by the team that created the goods <span className='lg:hidden'>for some of the amazing buyers globally.</span></h2>
+                        <h2 className='lg:text-3xl text-2xl text-[white]  text-center font-semibold '><span className='text-accent'>Enterprise-ready solutions</span> for your business need</h2>
+                        <h2 className='lg:text-lg   text-center text-[#cecece] lg:mt-8 px-2 my-5 lg:my-0'>Rainbow Tex is built by the team that created the goods <span className='lg:hidden'>for some of the amazing buyers.</span></h2>
                         <h2 className='lg:text-lg  text-center text-[#cecece] hidden lg:block mb-5'>for some of the amazing buyers globally.</h2>
                     </div>
 
@@ -60,14 +61,12 @@ const Global = () => {
                     </div>
 
                     <div className='relative flex justify-center  lg:h-[60vh] '>
-                        <Image
-                            className='md:w-[85vw] w-[100vw]'
+                        <LazyLoadImage
                             alt={'brand'}
-                            height={450}
-                            width={650}
+                            // height={450}
+                            // width={650}
                             src={'https://i.ibb.co/PDZCY7h/globe-975be501addf74160239.png'}
                         />
-                        {/* <img loading='lazy' className='md:w-[85vw] w-[100vw]' src={'https://i.ibb.co/PDZCY7h/globe-975be501addf74160239.png'} alt="" /> */}
                     </div>
                 </div>
             </motion.div>

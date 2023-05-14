@@ -1,5 +1,12 @@
-import Image from 'next/image'
 import React from 'react'
+import img1 from '../../assets/imgs/denim.webp'
+import img2 from '../../assets/imgs/sweater.jpeg'
+import img3 from '../../assets/imgs/active.webp'
+import img4 from '../../assets/imgs/formal.webp'
+import img5 from '../../assets/imgs/winter.jpeg'
+import img6 from '../../assets/imgs/kids.webp'
+import Image from 'next/image'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Categories() {
     return (
@@ -10,98 +17,99 @@ function Categories() {
 
 
 
-            <div className='grid lg:grid-cols-6 grid-cols-2  gap-4 lg:space-x-[30px] text-[white] pb-10 text-xl'>
+            <div className='grid lg:grid-cols-6 grid-cols-2  gap-4 lg:space-x-[30px] text-[white] pb-10 lg:text-xl'>
                 <div>
-                    <Image
+
+                    <LazyLoadImage
+                    
                         className={`h-[40vh] mb-2`}
                         alt={'cate'}
-                        height={500}
-                        width={900}
-                        src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
-
+                        // height={400}
+                        // width={300}
+                        src={img1.src}
                     >
 
-                    </Image>
+                    </LazyLoadImage>
 
                     <h1>
                         Denims
                     </h1>
                 </div>
                 <div>
-                    <Image
+                    <LazyLoadImage
                         className={`h-[40vh] mb-2`}
                         alt={'cate'}
-                        height={500}
-                        width={900}
-                        src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                        // height={400}
+                        // width={300}
+                        src={img2.src}
 
                     >
 
-                    </Image>
+                    </LazyLoadImage>
 
                     <h1>
                         Sweaters
                     </h1>
                 </div>
                 <div>
-                    <Image
+                    <LazyLoadImage
                         className={`h-[40vh] mb-2`}
                         alt={'cate'}
-                        height={500}
-                        width={900}
-                        src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                        // height={400}
+                        // width={300}
+                        src={img3.src}
 
                     >
 
-                    </Image>
+                    </LazyLoadImage>
 
                     <h1>
-                        Activewears
+                        Active wears
                     </h1>
                 </div>
                 <div>
-                    <Image
+                    <LazyLoadImage
                         className={`h-[40vh] mb-2`}
                         alt={'cate'}
-                        height={500}
-                        width={900}
-                        src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                        // height={400}
+                        // width={300}
+                        src={img4.src}
 
                     >
 
-                    </Image>
+                    </LazyLoadImage>
 
                     <h1>
                         Formals
                     </h1>
                 </div>
                 <div>
-                    <Image
+                    <LazyLoadImage
                         className={`h-[40vh] mb-2`}
                         alt={'cate'}
-                        height={500}
-                        width={900}
-                        src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                        // height={400}
+                        // width={300}
+                        src={img5.src}
 
                     >
 
-                    </Image>
+                    </LazyLoadImage>
 
                     <h1>
                         Winter
                     </h1>
                 </div>
                 <div>
-                    <Image
+                    <LazyLoadImage
                         className={`h-[40vh] mb-2`}
                         alt={'cate'}
-                        height={500}
-                        width={900}
-                        src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                        // height={400}
+                        // width={300}
+                        src={img6.src}
 
                     >
 
-                    </Image>
+                    </LazyLoadImage>
 
                     <h1>
                         Kids

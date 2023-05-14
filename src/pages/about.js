@@ -55,7 +55,7 @@ const About = ({ setIsHome }) => {
                         </div>
 
                     </motion.div>
-                    <img className='w-[100vw] h-[100vh]' src="https://i.ibb.co/LQdTQhG/Fiduciary-Responsibility-Board-of-Directors-ESG-1.jpg" alt="" />
+                    <img className='w-[98.8vw] h-[100vh]' src="https://i.ibb.co/LQdTQhG/Fiduciary-Responsibility-Board-of-Directors-ESG-1.jpg" alt="" />
                 </motion.div>
                 <MissionVision></MissionVision>
 

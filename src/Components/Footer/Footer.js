@@ -7,8 +7,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
     return (
-        <div className='py-10 bg-[black] text-[white] px-4 '>
-            <div className='lg:w-[82%] w-[90%] mx-auto   '>
+        <div className='py-10 bg-[black] text-[white] px-[5vw]'>
+            <div className=' mx-auto   '>
                 <div className=''>
                     <motion.div
                         initial={{ y: 40 }}
@@ -91,27 +91,19 @@ const Footer = () => {
                                 <h1>
                                     SOCIALS
                                 </h1>
-                                <ul class="wrapper  md:space-x-12 space-x-8 mt-3">
+                                <ul class="flex  md:space-x-12 space-x-8 mt-3">
                                     <a href="https://www.facebook.com/">
-                                        <li>
-                                            <span className="tooltip">Facebook</span>
                                             <FacebookIcon />
-                                        </li>
+
                                     </a>
 
                                     <a href="https://www.instagram.com/" target={`_blank`}>
-                                        <li>
-                                            <span className="tooltip">Instagram</span>
-                                            <InstagramIcon />
-                                        </li>
+                                        <InstagramIcon />
                                     </a>
 
                                     <a href="https://link" target={`_blank`}>
-                                        <li >
-                                            <span className="tooltip">LinkedIn</span>
-
+    
                                             <LinkedInIcon />
-                                        </li>
                                     </a>
 
                                 </ul>

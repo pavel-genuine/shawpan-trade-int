@@ -118,14 +118,17 @@
  
   #pic1 {
     animation-delay: 0s;
-    background-image: url('../assets//Hero/abd37e2d6b56232d8f17680dd3b169de.jpeg');
+    filter: grayscale(1);
+    background-image: url('../assets/Hero/img3.webp');
   }
   #pic2 {
     background-image: url('../assets/Hero/pexels-photo-1884583.webp');
+    filter: grayscale(1);
     animation-delay: 6s;
   }
   #pic3 {
     background-image: url('../assets/Hero/pexels-photo-3839432.webp');
+    filter: grayscale(1);
     animation-delay: 12s;
   }
  

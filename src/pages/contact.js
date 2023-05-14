@@ -3,6 +3,8 @@ import React, { useEffect } from 'react'
 import { motion } from "framer-motion"
 import { Button } from '@mui/material'
 import Head from 'next/head'
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = ({ setIsHome }) => {
 
@@ -54,14 +56,21 @@ const Contact = ({ setIsHome }) => {
                                 <div className='flex justify-center items-center mt-7'>
                                     <div className='lg:flex space-y-7 lg:space-y-0 lg:space-x-7  '>
                                         <div className=''>
-                                            <Button className='lg:w-[200px] w-[50vw] h-[50px] bg-[black]  ' variant="contained">
+                                            <Button style={{ borderRadius: '68px' }} className='lg:w-[200px] w-[50vw] h-[50px] bg-[black]  '
+                                                startIcon={<EmailIcon></EmailIcon>}
+                                                variant="contained">
                                                 <a href="mailto:info@rainbowtexbd.com" className='text-xl font-bold text-[white]' type="submit" >Email Us</a>
                                             </Button>
 
                                         </div>
                                         <div>
 
-                                            <Button className='lg:w-[200px] w-[50vw] bg-[black]  h-[50px]' variant="contained">
+                                            <Button style={{ borderRadius: '68px' }} className='lg:w-[200px] w-[50vw] bg-[black]  h-[50px] '
+
+                                                startIcon={<CallIcon></CallIcon>}
+
+                                                variant="contained">
+                                                    
                                                 <a href="tel:+880 1711813933" className='text-xl font-bold text-[white]'>Call Now </a> </Button>
 
                                         </div>
@@ -71,7 +80,7 @@ const Contact = ({ setIsHome }) => {
                         </div>
 
                     </motion.div>
-                    <img className='h-[100vh] w-[100vw]' src="https://i.ibb.co/PxHYmK2/Screenshot-2023-04-14-162210.png" alt="" />
+                    <img className='h-[100vh] w-[98.8vw]' src="https://i.ibb.co/PxHYmK2/Screenshot-2023-04-14-162210.png" alt="" />
                 </motion.div>
 
 

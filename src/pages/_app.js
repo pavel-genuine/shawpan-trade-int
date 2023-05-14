@@ -1,13 +1,17 @@
 import '@/styles/globals.css'
 import '@/styles/homePage.css'
 import '@/styles/mobileNav.css'
-import '@/styles/footer.css'
 import { useEffect, useState } from 'react'
+import dynamic from 'next/dynamic';
+ 
 import { createTheme, ThemeProvider } from '@mui/material';
 import Navbar from '@/Components/Navbar/Navbar';
 import WhatsApp from '@/Components/WhatsApp/WhatsApp';
-import Footer from '@/Components/Footer/Footer';
 import {SunnyMorning } from 'moving-letters'
+
+const Footer = dynamic(() => import('@/Components/Footer/Footer'), {
+  loading: () => <p>Loading...</p>,
+});
 
 
 

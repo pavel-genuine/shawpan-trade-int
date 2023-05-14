@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exportsg = {
   // reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -29,6 +29,21 @@ const nextConfig = {
       },
     ],
   },
+
+  // experimental: {
+    modularizeImports: {
+      lodash: {
+        transform: 'lodash/{{member}}'
+      },
+      '@mui/material': {
+        transform: '@mui/material/{{member}}'
+      },
+      '@mui/lab': {
+        transform: '@mui/lab/{{member}}'
+      },
+      '@mui/icons-material/?(((\\w*)?/?)*)': {
+        transform: '@mui/icons-material/{{ matches.[1] }}/{{member}}'
+      }
+    }
+  // }
 }
- 
-module.exports = nextConfig

@@ -1,25 +1,32 @@
 import Image from 'next/image'
 import React from 'react'
+import img1 from '../../assets/imgs/img1.png'
+import img2 from '../../assets/imgs/img2.png'
+import img3 from '../../assets/imgs/img3.png'
+import img4 from '../../assets/imgs/img4.png'
+import quality from '../../assets/imgs/quality.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 
 const Qualities = () => {
     return (
-        <div className='lg:flex lg:h-[90vh] bg-bg lg:p-[7vh] p-5 text-[white] overflow-hidden px-[5vw]'>
+        <div className='lg:flex lg:h-[90vh] bg-bg lg:py-[7vh] py-5 text-[white] overflow-hidden  lg:ml-0 px-[5vw]'>
 
             <div className='lg:pr-10 '>
 
-                <div className='flex mb-[5vh] '>
+                <div className='flex lg:mb-[5vh] mb-5 '>
 
-                    <div className=' bg-navBg mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
-                        <Image
-                            className={`h-[100px]`}
+                    <div className=' bg-navBg mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <LazyLoadImage
+                            className={`w-[100px]`}
                             alt={'cate'}
-                            height={500}
-                            width={900}
-                            src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                            // height={500}
+                            // width={900}
+                            src={img1?.src}
 
                         >
 
-                        </Image>
+                        </LazyLoadImage>
                         <h1 className='text-xl my-4'>
                             Excellence
                         </h1>
@@ -28,17 +35,17 @@ const Qualities = () => {
                         </p>
                     </div>
 
-                    <div className=' bg-[black] p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
-                        <Image
-                            className={`h-[100px]`}
+                    <div className=' bg-bg2 p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <LazyLoadImage
+                            className={`w-[120px]`}
                             alt={'cate'}
                             height={500}
                             width={900}
-                            src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                            src={img2.src}
 
                         >
 
-                        </Image>
+                        </LazyLoadImage>
                         <h1 className='text-xl my-4'>
                             Quality
                         </h1>
@@ -50,17 +57,17 @@ const Qualities = () => {
 
                 <div className='flex'>
 
-                    <div className='bg-[black] mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
-                        <Image
-                            className={`h-[100px]`}
+                    <div className='bg-bg2 mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <LazyLoadImage
+                            className={`w-[100px]`}
                             alt={'cate'}
-                            height={500}
-                            width={900}
-                            src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
+                            // height={500}
+                            // width={900}
+                            src={img3.src}
 
                         >
 
-                        </Image>
+                        </LazyLoadImage>
                         <h1 className='text-xl my-4'>
                             1% Better Everyday
                         </h1>
@@ -69,17 +76,16 @@ const Qualities = () => {
                         </p>
                     </div>
 
-                    <div className='bg-navBg p-5 lg:h-[36vh] h-[40vh] overflow-hidden'>
-                        <Image
-                            className={`h-[100px]`}
+                    <div className='bg-navBg p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <LazyLoadImage
+                            className={`w-[100px]`}
                             alt={'cate'}
-                            height={500}
-                            width={900}
-                            src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
-
+                            // height={500}
+                            // width={900}
+                            src={img4.src}
                         >
 
-                        </Image>
+                        </LazyLoadImage>
                         <h1 className='text-xl my-4'>
                             Recognition
                         </h1>
@@ -91,16 +97,15 @@ const Qualities = () => {
 
             </div>
 
-            <Image
-                className={`lg:h-[77vh] lg:w-[50%] mt-5 lg:mt-0`}
+            <LazyLoadImage
+                className={`lg:h-[77vh] lg:w-[50%] mt-5 lg:mt-0 grayscale`}
                 alt={'cate'}
-                height={700}
-                width={900}
-                src="https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"                 // width={}
-
+                // height={200}
+                // width={300}
+                src={quality.src}
             >
 
-            </Image>
+            </LazyLoadImage>
 
         </div>
     )

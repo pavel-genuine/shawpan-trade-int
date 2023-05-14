@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import { motion } from "framer-motion"
-import {SunnyMorning } from 'moving-letters'
-import ParticlesAnim from './ParticlesAnim'
 import { Button } from '@mui/material'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import Link from 'next/link'
-
-export const Text = ({ text }) => {
-
-  return (
-    <div >
-      <SunnyMorning text={text} />
-    </div>
-  )
-}
-
 
 
 
@@ -28,23 +16,12 @@ export const Demo = (
     smallTag
   }
 ) => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {
-    setIsOpen(true)
-
-
-    setTimeout(() => {
-      setIsOpen(false)
-    }, 2000)
-
-  }, [])
-
+ 
 
   return (
     <div>
 
-      <div className='lg:pt-[10%] pt-[30%] px-[5vw] h-[100vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
+      <div className='lg:pt-[8%] pt-[30%] px-[5vw] h-[100vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
 
         <div className=''>
 
@@ -89,19 +66,20 @@ export const Demo = (
           
         </div>
 
-        <div className='lg:mt-[50px] mt-16 text-[white]'>
-            <div className='lg:flex justify-between lg:font-semibold lg:text-md '>
-              <p>
+        <div className=' text-[white] mt-16 lg:mt-0'>
+            <div className='lg:flex justify-between  lg:font-semibold lg:text-md '>
+              <p className='lg:absolute top-[85%]'>
                 <span className='text-[orange]'>
                   +5000
                 </span>  Wholesale Orders Worldwide
               </p>
-              <p>
+              <p className='lg:absolute top-[85%] left-[50vw]'>
               <span className='text-[orange]'>
                   +20
                 </span>  Countries
               </p>
-              <p>
+
+              <p className='lg:absolute top-[85%] right-[5vw]'>
              
                 Operating Since  <span className='text-[orange]'>
                   2006
@@ -120,7 +98,7 @@ export const Demo = (
 
 
 
-const HomePage = ({ setIsHome, brand, tag1, tag2, tag3, tag4, smallTag }) => {
+const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [background, setBackground] = useState(false)
@@ -135,37 +113,12 @@ const HomePage = ({ setIsHome, brand, tag1, tag2, tag3, tag4, smallTag }) => {
     }
   };
 
-  useEffect(() => {
 
-    const changeBackground = () => {
-
-      if (window.scrollY >= 200) {
-        setBackground(true)
-        // handleScroll()
-
-      } else {
-        setBackground(false)
-
-      }
-    }
-
-    window.addEventListener('scroll', changeBackground)
-
-    setIsHome(true)
-
-    setTimeout(() => {
-      setIsOpen(true)
-    }, 1300)
-
-  }, [])
 
   return (
     <div className=' '>
       <div className='w-[100%] mx-auto lg:h-[100vh] h-[93vh]  '>
-        {!background &&
-          <div className='absolute z-10 h-[100vh] overflow-hidden'>
-            {/* <ParticlesAnim></ParticlesAnim> */}
-          </div>}
+
         {
           <div className='relative'>
 
@@ -181,7 +134,7 @@ const HomePage = ({ setIsHome, brand, tag1, tag2, tag3, tag4, smallTag }) => {
 
             <div className='cursor-pointer' onClick={() => handleScroll()}>
               <motion.div
-                className=' text-[white] absolute  font-bold z-10 lg:top-[92%] top-[87%] lg:left-[47.3%] left-[40%]  '
+                className=' text-[white] absolute  font-bold z-10 lg:top-[92%] top-[87%] lg:left-[50%] left-[40%]  '
                 initial={{ y: 40, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: .5, delay: 1, }}
