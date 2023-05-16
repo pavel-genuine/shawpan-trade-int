@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import '@/styles/homePage.css'
 import '@/styles/mobileNav.css'
-import '@/styles/testimony.css'
+// import '@/styles/testimony.css'
 import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic';
  
