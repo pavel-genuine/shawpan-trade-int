@@ -6,7 +6,7 @@ import img2 from '../../assets/logos/adidas.png'
 import img3 from '../../assets/logos/tommy.png'
 import img4 from '../../assets/logos/hnm.png'
 import img5 from '../../assets/logos/oldnavyblue.png'
-import img6 from '../../assets/logos/gpants.png'
+import img6 from '../../assets/logos/guess.png'
 import img7 from '../../assets/logos/zarablue.png'
 import img8 from '../../assets/logos/jnj.png'
 import img9 from '../../assets/logos/ck.png'
@@ -127,7 +127,7 @@ const Tiles = () => {
     return (
         <div className=' overflow-hidden bg-bg py-14 px-[5vw]'>
             <motion.div
-                className=' grid grid-cols-4 lg:grid-cols-6 gap-8'
+                className=' grid grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-[8%]'
 
                 initial={{ y: 50, }}
                 whileInView={{ y: 0, }}
