@@ -49,7 +49,7 @@ const Products = ({ setIsHome }) => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: .5, delay: 0, }}
                     >
-                        <div className='flex justify-center items-center h-[100vh] w-[98.8vw] bg-[black] bg-opacity-40 '>
+                        <div className='flex justify-center items-center h-[100vh]  lg:w-[98.8vw] bg-[black] bg-opacity-40 '>
                             <div>
                                 <h1 className='text-5xl  text-center mb-10 '>
                                     Products of Global Trends
@@ -64,12 +64,12 @@ const Products = ({ setIsHome }) => {
                         </div>
 
                     </motion.div>
-                    <img className='w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
+                    <img className=' lg:w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
                 </motion.div>
 
 
 
-                <div className='py-10 w-[98.8vw] overflow-hidden '>
+                <div className='py-10  lg:w-[98.8vw] overflow-hidden px-5 lg:px-0 text-center lg:text-left '>
 
 
                     <div className='lg:flex'>
@@ -119,7 +119,7 @@ const Products = ({ setIsHome }) => {
 
                             <div className='lg:w-[60%] lg:pt-28 lg:px-5'>
                                 <h1 className='font-bold py-3'>Denim</h1>
-                                <p className=' lg:pb-0 '>
+                                <p className=' lg:pb-0 pb-5'>
                                     Rainbow Tex's heritage denim is produced using traditional methods, reestablishing a connection with the spirit of craftsmanship. Our carefully selected fabrics give it an authentically slubby appearance and serve as the perfect backdrop for the traditional fabric, trim, label, and wash detailing.                                </p>
                             </div>
                         </motion.div>
@@ -173,7 +173,7 @@ const Products = ({ setIsHome }) => {
                                 />
                             </div>
 
-                            <div className='lg:w-[60%] lg:pt-28 pt-5 lg:pb-0 pb-5'>
+                            <div className='lg:w-[60%] lg:pt-28  lg:pb-0 pb-5'>
                                 <h1 className='font-bold py-3'>Sweater</h1>
 
                                 <p>
@@ -230,7 +230,7 @@ const Products = ({ setIsHome }) => {
                                 />
                             </div>
 
-                            <div className='lg:w-[60%] pt-5 lg:pb-0 pb-5'>
+                            <div className='lg:w-[60%]  lg:pb-0 pb-5'>
                                 <h1 className='font-bold py-3'>Active wear</h1>
                                 <p>
                                     Elevate one's active lifestyle with our dynamic active wear section. From performance-enhancing leggings to moisture-wicking tops, our collection offers stylish and functional apparel to support your fitness journey. Designed with breathable fabrics and ergonomic fits, our active wear ensures comfort and freedom of movement.
@@ -249,7 +249,7 @@ const Products = ({ setIsHome }) => {
                             className='lg:pt-20 lg:pl-28  flex flex-col-reverse lg:flex-row '>
 
 
-                            <div className='lg:w-[50%] lg:pt-28 pr-5 pt-5 lg:pb-0 pb-5'>
+                            <div className='lg:w-[50%] lg:pt-28 pr-5 lg:pb-0 pb-5'>
                                 <h1 className='font-bold py-3'>Outerwear</h1>
 
                                 <p>

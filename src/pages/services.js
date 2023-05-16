@@ -46,7 +46,7 @@ const Services = ({ setIsHome }) => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: .5, delay: 0, }}
                     >
-                        <div className='flex justify-center items-center h-[100vh] w-[98.8vw] bg-[black] bg-opacity-40 '>
+                        <div className='flex justify-center items-center h-[100vh]  lg:w-[98.8vw] bg-[black] bg-opacity-40 '>
                             <div>
                                 <h1 className='text-5xl  text-center mb-10 '>
                                     Our Services Wordwide
@@ -61,12 +61,12 @@ const Services = ({ setIsHome }) => {
                         </div>
 
                     </motion.div>
-                    <img className='w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
+                    <img className=' lg:w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
                 </motion.div>
 
 
 
-                <div className='py-10 w-[98.8vw] overflow-hidden '>
+                <div className='py-10  lg:w-[98.8vw] overflow-hidden px-5 lg:px-0 text-center lg:text-left '>
 
 
                     <div className='lg:flex'>
@@ -92,7 +92,7 @@ const Services = ({ setIsHome }) => {
                                 <h1 className='font-bold py-3'>Product Sourcing</h1>
 
                                 <p className='lg:w-[60%] lg:pb-0 pb-5 lg:pb-0 pb-5'>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate porro voluptas omnis aliquid culpa excepturi, eum eius illo eos corporis, at dignissimos soluta expedita explicabo nesciunt quisquam ratione ullam?
+                                    Our product sourcing section works tirelessly to find the best suppliers and manufacturers, ensuring top-quality materials and competitive prices. We prioritize ethical and sustainable sourcing to create products that are both stylish and responsible.
                                 </p>
                             </div>
                         </motion.div>
@@ -117,7 +117,7 @@ const Services = ({ setIsHome }) => {
 
                             <div className='lg:w-[60%] lg:pt-28 lg:px-5'>
                                 <h1 className='font-bold py-3'>Quality Control</h1>
-                                <p className=' lg:pb-0 '>
+                                <p className=' lg:pb-0 pb-5 '>
                                     Our quality control section ensures impeccable standards. We meticulously inspect every garment, ensuring superior craftsmanship, precise measurements, and flawless finishes. Customer satisfaction is our top priority.
                                 </p>
                             </div>

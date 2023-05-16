@@ -43,7 +43,7 @@ const Testimonials = ({ setIsHome }) => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: .5, delay: 0, }}
                     >
-                        <div className='flex justify-center items-center h-[100vh] w-[98.8vw] bg-[black] bg-opacity-40 '>
+                        <div className='flex justify-center items-center h-[100vh] lg:w-[98.8vw] bg-[black] bg-opacity-40 '>
                             <div>
                                 <h1 className='text-5xl  text-center mb-10 '>
                                     Testimonials are strength
@@ -58,16 +58,16 @@ const Testimonials = ({ setIsHome }) => {
                         </div>
 
                     </motion.div>
-                    <img className='w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
+                    <img className='lg:w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
                 </motion.div>
 
 
 
-                <div className='py-10 w-[98.8vw] overflow-hidden '>
+                <div className='py-10 lg:w-[98.8vw] overflow-hidden '>
 
 
                     <div className='lg:flex'>
-                        <motion.div className='lg:pl-28'
+                        <motion.div className='lg:pl-28 mb-10 lg:mb-0'
 
                             viewport={{ once: true }}
                             initial={{ y: 300, opacity: .5 }}
@@ -88,7 +88,7 @@ const Testimonials = ({ setIsHome }) => {
                             </div>
                         </motion.div>
 
-                        <motion.div className='lg:pt-20  lg:pr-40 lg:flex'
+                        <motion.div className='lg:pt-20  lg:pr-40 lg:flex mb-10 lg:mb-0'
 
                             viewport={{ once: true }}
                             initial={{ x: 200, opacity: .5 }}
@@ -112,7 +112,7 @@ const Testimonials = ({ setIsHome }) => {
 
 
                     <div className='lg:flex lg:pt-10'>
-                        <motion.div className='lg:pl-28 lg:w-[80%]'
+                        <motion.div className='lg:pl-28 lg:w-[80%] mb-10 lg:mb-0'
 
                             viewport={{ once: true }}
                             initial={{ y: 200, opacity: .5 }}
@@ -126,7 +126,7 @@ const Testimonials = ({ setIsHome }) => {
                                     <h3>Robert Jacob</h3>
                                     <h4>Mexico</h4>
                                     <p>
-                                        I've been working with this garment buying house for several years now, and they consistently deliver outstanding results. Their attention to detail and commitment to customer satisfaction is commendable. I wouldn't hesitate to recommend them.
+                                        I've been working with this garment buying house for several years now, and they consistently deliver outstanding results. Their attention to detail and commitment to customer satisfaction is commendable. I recommend them.
                                     </p>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@ const Testimonials = ({ setIsHome }) => {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: .5, delay: 0, }}
 
-                            className='lg:pt-20 lg:pr-96 flex-row-reverse lg:flex '>
+                            className='lg:pt-20 lg:pr-96 flex-row-reverse lg:flex mb-10 lg:mb-0'>
                             <div className='review'>
                                 <img src={port.src} />
                                 <div className="myCarousel">
@@ -155,7 +155,7 @@ const Testimonials = ({ setIsHome }) => {
 
 
                     <div className='lg:flex lg:pt-10'>
-                        <motion.div className='lg:pl-28'
+                        <motion.div className='lg:pl-28 mb-10 lg:mb-0'
 
                             viewport={{ once: true }}
                             initial={{ y: 300, opacity: .5 }}
@@ -175,7 +175,7 @@ const Testimonials = ({ setIsHome }) => {
                             </div>
                         </motion.div>
 
-                        <motion.div className='lg:pt-20  lg:pr-40 lg:flex'
+                        <motion.div className='lg:pt-20  lg:pr-40 lg:flex mb-10 lg:mb-0'
 
                             viewport={{ once: true }}
                             initial={{ x: 200, opacity: .5 }}
