@@ -16,7 +16,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
 
                 <motion.div
                     viewport={{ once: true }}
-                    initial={{ opacity: .5, scale: .9 }}
+                    initial={{ opacity: .5, scale: .5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: .7, delay: 0 }}
                 >
@@ -56,7 +56,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                 <motion.div
                     className='relative'
                     viewport={{ once: true }}
-                    initial={{ opacity: .5, scale: .9 }}
+                    initial={{ opacity: .5, scale: .8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: .5, delay: 0 }}
                 >
@@ -66,11 +66,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                         className={`h-[40vh] lg:h-[70vh] mx-auto lg:p-[8%] py-8 grayscale `}
                         alt={'brand'}
                        
-                        src={career ?
-                            "https://i.ibb.co/1ZhSdV0/Screenshot-2023-04-14-191645.png"
-                            : csr ? "https://i.ibb.co/ss39dQX/Screenshot-2023-04-15-000831.png"
-                                :
-                                "https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"}                    // width={}
+                        src={"https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"}                    // width={}
                     />
 
                     {/* <img loading='lazy' className={`h-[50vh] lg:h-[70vh] mx-auto `}

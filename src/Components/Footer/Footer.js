@@ -114,7 +114,7 @@ const Footer = () => {
 
             </div>
 
-            <div className='text-[grey] lg:text-center mt-10 px-4  '>
+            <div className='text-[grey] lg:text-center mt-10 lg:px-4  '>
                 <p className='mb-2'>
                     © 2023 Rainbow Tex all rights reserved.
                 </p>

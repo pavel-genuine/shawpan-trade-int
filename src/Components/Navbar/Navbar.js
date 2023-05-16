@@ -61,7 +61,7 @@ const Navbar = ({ isHome }) => {
                                 <Link className={`md:px-3 md:m-0 ${router.pathname == "/" ? "border-b-[2px]" : ""}`} href='/'>HOME</Link>
                                 <Link className={`md:px-3 md:m-0 ${router.pathname == '/services' ? "border-b-[2px]" : ""}`} href='/services'>SERVICES</Link>
                                 <Link className={`md:px-3 md:m-0 ${router.pathname == '/products' ? "border-b-[2px]" : ""}`} href='/products'>PRODUCTS</Link>
-                                <Link className={`md:px-3 md:m-0 ${router.pathname == '/gallary' ? "border-b-[2px]" : ""}`} href='/gallary'>GALLERY</Link>
+                                {/* <Link className={`md:px-3 md:m-0 ${router.pathname == '/gallary' ? "border-b-[2px]" : ""}`} href='/gallary'>GALLERY</Link> */}
                                 <Link className={`md:px-3 md:m-0 ${router.pathname == '/testimonials' ? "border-b-[2px]" : ""}`} href='/testimonials'>TESTIMONIALS</Link>
 
                                 <Link className={`md:px-3 md:m-0 ${router.pathname == "/about" ? "border-b-[2px]" : ""}`} href='/about'> ABOUT </Link>
