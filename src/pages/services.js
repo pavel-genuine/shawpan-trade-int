@@ -92,7 +92,7 @@ const Services = ({ setIsHome }) => {
                                 <h1 className='font-bold py-3'>Product Sourcing</h1>
 
                                 <p className='lg:w-[60%] lg:pb-0 pb-5 lg:pb-0 pb-5'>
-                                    Our product sourcing section works tirelessly to find the best suppliers and manufacturers, ensuring top-quality materials and competitive prices. We prioritize ethical and sustainable sourcing to create products that are both stylish and responsible.
+                                    Rainow Tex product sourcing section works tirelessly to find the best suppliers and manufacturers, ensuring top-quality materials and competitive prices. We prioritize ethical and sustainable sourcing to create products that are both stylish and responsible.
                                 </p>
                             </div>
                         </motion.div>
