@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
 // import img1 from '../../assets/logos/'
-import img1 from '../../assets/logos/nb.png'
+import img1 from '../../assets/logos/eagle.png'
 import img2 from '../../assets/logos/adidas.png'
 import img3 from '../../assets/logos/tommy.png'
 import img4 from '../../assets/logos/hnm.png'
@@ -10,8 +10,9 @@ import img6 from '../../assets/logos/gpants.png'
 import img7 from '../../assets/logos/zarablue.png'
 import img8 from '../../assets/logos/jnj.png'
 import img9 from '../../assets/logos/ck.png'
-import img10 from '../../assets/logos/prada.png'
+import img10 from '../../assets/logos/nik.png'
 import img11 from '../../assets/logos/levis.png'
+import img12 from '../../assets/logos/jc.png'
 import Image from 'next/image';
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 const posts = [
@@ -72,7 +73,7 @@ const posts = [
     },
     {
         id: 12,
-        img: img4,
+        img: img12,
         text: ''
     },
 ]
@@ -126,7 +127,7 @@ const Tiles = () => {
     return (
         <div className=' overflow-hidden bg-bg py-14 px-[5vw]'>
             <motion.div
-                className=' grid grid-cols-3 lg:grid-cols-6 gap-14'
+                className=' grid grid-cols-4 lg:grid-cols-6 gap-8'
 
                 initial={{ y: 50, }}
                 whileInView={{ y: 0, }}

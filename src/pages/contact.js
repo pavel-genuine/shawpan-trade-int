@@ -101,7 +101,7 @@ const Contact = ({ setIsHome }) => {
                         </span>
                         <br />
 
-                        House 02 (1st Floor),
+                        House 02,
 
                         Road 04,
 

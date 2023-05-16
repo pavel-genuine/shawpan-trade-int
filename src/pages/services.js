@@ -61,7 +61,7 @@ const Services = ({ setIsHome }) => {
                         </div>
 
                     </motion.div>
-                    <img className=' lg:w-[98.8vw] h-[100vh]' src={img1.src} alt="" />
+                    <img className=' lg:w-[98.8vw] h-[100vh] object-cover' src={img1.src} alt="" />
                 </motion.div>
 
 

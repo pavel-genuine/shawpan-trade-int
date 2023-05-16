@@ -60,7 +60,7 @@ const Footer = () => {
                                     ADDRESS
                                 </h1>
                                 <p className='mt-3 font-thin'>
-                                    House 02 (1st Floor),
+                                    House 02 ,
 
                                     Road 04,
 

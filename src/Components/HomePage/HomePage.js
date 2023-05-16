@@ -21,7 +21,7 @@ export const Demo = (
   return (
     <div>
 
-      <div className='lg:pt-[8%] pt-[30%] px-[5vw] h-[100vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
+      <div className='lg:pt-[8%] pt-[30%] px-[5vw] lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
 
         <div className=''>
 
