@@ -1,8 +1,10 @@
 import React from 'react'
+import img from '../../assets/imgs/passion.jpeg'
 
 import { motion } from "framer-motion"
 import Link from 'next/link';
 import { Button } from '@mui/material';
+
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import Image from 'next/image';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -63,19 +65,12 @@ const Passion = ({ career, csr, passion, passionTag }) => {
 
                     <LazyLoadImage
 
-                        className={`h-[40vh] lg:h-[70vh] mx-auto lg:p-[8%] py-8 grayscale `}
+                        className={`h-[40vh] lg:h-[70vh] mx-auto lg:p-[8%] py-8 grayscal `}
                         alt={'brand'}
-                       
-                        src={"https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"}                    // width={}
-                    />
 
-                    {/* <img loading='lazy' className={`h-[50vh] lg:h-[70vh] mx-auto `}
-                        src={career ?
-                            "https://i.ibb.co/1ZhSdV0/Screenshot-2023-04-14-191645.png"
-                            : csr ? "https://i.ibb.co/ss39dQX/Screenshot-2023-04-15-000831.png"
-                                :
-                                "https://i.ibb.co/8cdj540/Screenshot-2023-04-14-115857.png"} alt="" /> */}
+                        src={img.src} />
 
+                   
                 </motion.div>
 
             </div>
