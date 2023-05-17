@@ -27,7 +27,7 @@ export const Demo = (
 
           <h1 className='lg:text-[60px] text-[25px] font-semibold text-[white]'>
             <span className='text-accent'>{tag1} {' '}</span>{tag2}
-            <br />
+            <br className='hidden lg:block' />
             <span>{tag3}</span>
             <span className='text-accent'>.</span>
             <br />
