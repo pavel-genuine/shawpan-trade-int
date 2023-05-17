@@ -45,7 +45,7 @@ const Navbar = ({ isHome }) => {
                             <p
                                 className='text-[white] lg:mx-[-4vw] mx-2 inline lg:block lg:mx-0  grayscale bg-[white] inline px-5 py-2 rounded-full bg-opacity-70'
                             >
-                                Shawpan Trade International
+                                Shwapan Trade International
                             </p>
 
                         </Link>
