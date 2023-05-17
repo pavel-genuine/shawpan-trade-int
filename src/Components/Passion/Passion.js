@@ -58,7 +58,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                 <motion.div
                     className='relative'
                     viewport={{ once: true }}
-                    initial={{ opacity: .5, scale: .8 }}
+                    initial={{ opacity: .5, scale: .7 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: .5, delay: 0 }}
                 >
