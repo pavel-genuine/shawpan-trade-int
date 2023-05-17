@@ -40,9 +40,9 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                             }
                         </p>
 
-                        <Link href='/about'>
+                        <Link href='/about.'>
                             <Button style={{ borderRadius: '68px' }} className='border-accent text-accent' variant='outlined'
-                                startIcon={<CrisisAlertIcon style={{ color: '#4ADE80' }} />}
+                                startIcon={<CrisisAlertIcon style={{ color: '#ff5926' }} />}
                             >
                                 <p className='text-accent'>
                                     Learn More

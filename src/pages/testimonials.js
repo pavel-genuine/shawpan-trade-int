@@ -17,11 +17,11 @@ const Testimonials = ({ setIsHome }) => {
     return (
         <div>
             <Head>
-                <title>Testimnials | Rainbow Tex</title>
+                <title>Testimnials | Shawpan Trade International</title>
                 <meta property="og:title" content="Testimonials" />
                 <meta
                     name="og:description"
-                    content="Rapidly growing conglomerate, working in  RMG in Bangladesh."
+                    content="Shawpan Trade International"
                 />
                 {/* <meta property="og:type" content="video.movie" /> */}
                 {/* <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> */}

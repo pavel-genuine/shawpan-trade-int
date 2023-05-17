@@ -17,8 +17,8 @@ const Contact = ({ setIsHome }) => {
 
         <div>
             <Head>
-                <title>Contact | Rainbow Tex</title>
-                <meta property="og:title" content="Contact" />
+                <title>Contact | Shawpan Trade International</title>
+                <meta property="og:title" content="Shawpan Trade International" />
                 <meta
                     name="og:description"
                     content="Phone:+880 1711813933, Email:info@rainbowtexbd.com"

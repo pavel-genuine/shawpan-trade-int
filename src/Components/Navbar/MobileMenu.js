@@ -53,18 +53,18 @@ export function Menu ({ toggle,isOpen }) {
 
     return (
         <nav style={{zIndex:10}}  className="  menuItem text-[white]">
-            <ul className={`${bgWhite?' bg-opacity-90  text-center bg-navBg w-[100vw] pt-10 h-[100vh]':''}`}>
+            <ul className={`${bgWhite?' bg-opacity-90  text-center bg-[black] w-[100vw] pt-[20%] h-[100vh] mt-[-15%]':''}`}>
                 <li className="li_menu" onClick={toggle}>
                 <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/" ? " border-b-[2px]" : ""}`} href='/'>Home</Link>
 
                 </li>
 
                 <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/services'? "border-b-[2px]" : ""}`} href='/services'>Services</Link>
+                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/services'? "border-b-[2px]" : ""}`} href='/services.'>Services</Link>
 
                 </li>
                 <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/products'? "border-b-[2px]" : ""}`} href='/products'>Products</Link>
+                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/products'? "border-b-[2px]" : ""}`} href='/products.'>Products</Link>
 
                 </li>
 
@@ -74,17 +74,17 @@ export function Menu ({ toggle,isOpen }) {
                 </li> */}
 
                 <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/testimonials" ? "border-b-[2px]" : ""}`} href='/testimonials'>Testimonials</Link>
+                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/testimonials" ? "border-b-[2px]" : ""}`} href='/testimonials.'>Testimonials</Link>
 
                 </li>
 
                 <li  className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/about" ? "border-b-[2px]" : ""}`} href='/about'>About</Link>
+                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/about" ? "border-b-[2px]" : ""}`} href='/about.'>About</Link>
 
                 </li>
                 
                 <li className="li_menu"  onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/contact" ? "border-b-[2px]" : ""}`} href='/contact'>Contact</Link>
+                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/contact" ? "border-b-[2px]" : ""}`} href='/contac0t.'>Contact</Link>
 
                 </li>
             </ul>

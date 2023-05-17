@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
 import { motion } from "framer-motion"
 import { Button } from '@mui/material'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -16,12 +16,12 @@ export const Demo = (
     smallTag
   }
 ) => {
- 
+
 
   return (
     <div>
 
-      <div className='lg:pt-[8%] pt-[30%] px-[5vw] lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
+      <div className='lg:pt-[8%] pt-[30%] px-[5vw] lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-30'>
 
         <div className=''>
 
@@ -45,53 +45,57 @@ export const Demo = (
 
               <Button style={{ borderRadius: '68px' }} className='bg-[black]' variant='contained'
 
-                startIcon={<WhatsAppIcon style={{ color: '#4ADE80' }} />}
+                startIcon={<WhatsAppIcon style={{ color: '#fff' }} />}
               >
                 Get Started
               </Button>
             </a>
 
-            <Link href='/about'>
-              <Button style={{ borderRadius: '68px' }}  variant='outlined'
+            <Link href='/about.'>
+              <Button style={{ borderRadius: '68px' }} variant='outlined'
                 startIcon={<CrisisAlertIcon style={{ color: '#fff' }} />}
               >
-               <p className='text-[white]'>
-               Learn More
-               </p>
+                <p className='text-[white]'>
+                  Learn More
+                </p>
               </Button>
             </Link>
 
-           
+
           </div>
-          
+
         </div>
 
         <div className=' text-[white] mt-16 lg:mt-0'>
-            <div className='lg:flex justify-between  lg:font-semibold lg:text-md '>
-              <p className='lg:absolute top-[85%]'>
-                <span className='text-[orange]'>
-                  +5000
-                </span>  Wholesale Orders Worldwide
-              </p>
-              <p className='lg:absolute top-[85%] left-[50vw]'>
+          <div className='lg:flex justify-between  lg:font-semibold lg:text-md '>
+            <p className='lg:absolute top-[85%]'>
               <span className='text-[orange]'>
-                  +20
-                </span>  Countries
-              </p>
+                +5000
+              </span>  Wholesale Orders Worldwide
+            </p>
+            <p className='lg:absolute top-[85%] left-[50vw]'>
+              <span className='text-[orange]'>
+                +20
+              </span>  Countries
+            </p>
 
-              <p className='lg:absolute top-[85%] right-[5vw]'>
-             
-                Operating Since  <span className='text-[orange]'>
-                  2006
-                </span> 
-              </p>
-            </div>
-            </div>
+            <p className='lg:absolute top-[85%] right-[5vw]'>
+
+              Operating Since  <span className='text-[orange]'>
+                1996
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
 
+      <div className='pic' id='pic5' />
+      <div className='pic' id='pic4' />
+      
       <div className='pic' id='pic3' />
       <div className='pic' id='pic2' />
       <div className='pic' id='pic1' />
+
     </div>
   );
 };

@@ -107,11 +107,13 @@ const Tile = ({ img }) => {
         </div>
     )
 }
-const TileGap = ({ img }) => {
+const TileGap = ({ img, id }) => {
 
 
     return (
-        <div className='flex justify-center items-center ' >
+
+        <div className={`${(id == 14 || id == 15) ? 'hidden lg:block ' : ''} flex justify-center items-center `}>
+         
             <LazyLoadImage
                 className='  w-[98.7vw]  lg:w-[15vw]  '
                 alt={'brand'}
@@ -121,21 +123,24 @@ const TileGap = ({ img }) => {
                 src={img?.src}
             />
         </div>
+
     )
 }
 const Tiles = () => {
     return (
-        <div className=' overflow-hidden bg-bg py-14 px-[5vw]'>
+        <div className=' overflow-hidden bg-bg lg:pt-24 lg:pb-36 lg:py-0 py-14 px-[5vw]'>
             <motion.div
                 className=' grid grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-[8%]'
-
+ 
                 initial={{ y: 50, }}
                 whileInView={{ y: 0, }}
                 transition={{ duration: .2, delay: 0, }}
             >
 
                 {
-                    posts.map(post => <TileGap key={post.id} img={post.img} text={post.text}></TileGap>)
+                    posts.map(post =>
+                        <TileGap id={post.id} key={post.id} img={post.img} text={post.text}></TileGap>
+                    )
                 }
             </motion.div>
 

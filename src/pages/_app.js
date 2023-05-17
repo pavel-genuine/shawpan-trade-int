@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
 
     setTimeout(() => {
       setIsOpen(true)
-    }, 1300)
+    }, 2000)
 
   }, [])
 
@@ -57,8 +57,9 @@ export default function App({ Component, pageProps }) {
             <div className=' h-[100vh] w-[99] flex justify-center items-center'>
               <div className='scale-[.8] lg:scale-[1.5]  flex justify-center items-center space-x-5'>
 
-              <SunnyMorning text={'Rainbow'} />
-              <SunnyMorning text={'Tex'} />
+              <SunnyMorning text={'Shawpan'} />
+              <SunnyMorning text={'Trade'} />
+              <SunnyMorning text={'International'} />
               </div>
             </div>
 

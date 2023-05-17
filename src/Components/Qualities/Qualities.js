@@ -23,7 +23,7 @@ const Qualities = () => {
 
                     <div className='flex lg:mb-[5vh] mb-5 '>
 
-                        <div className=' bg-navBg mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <div className=' bg-[#1F2937]  mr-5 lg:mr-[5vh] p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
                             <LazyLoadImage
                                 className={`w-[100px]`}
                                 alt={'cate'}
@@ -38,7 +38,7 @@ const Qualities = () => {
                                 Excellence
                             </h1>
                             <p className='font-thin text-sm lg:text-md'>
-                                Committed to excellence and tackling challenges with a can-do Attitude at Rainbow Tex.
+                                Committed to excellence and tackling challenges with a can-do Attitude at Shawpan Trade International.
                             </p>
                         </div>
 
@@ -83,7 +83,7 @@ const Qualities = () => {
                             </p>
                         </div>
 
-                        <div className='bg-navBg p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <div className='bg-[#1F2937] p-5 lg:h-[36vh] h-[40vh] overflow-hidden lg:w-[25vw] w-[42vw]'>
                             <LazyLoadImage
                                 className={`w-[100px]`}
                                 alt={'cate'}
@@ -97,7 +97,7 @@ const Qualities = () => {
                                 Recognition
                             </h1>
                             <p className='font-thin text-sm lg:text-md'>
-                                At Rainbow tex, we move quickly, operate with urgency, and embrace daily progress.                    </p>
+                                At  Shawpan Trade International, we move quickly, operate with urgency, and embrace daily progress.                    </p>
                         </div>
 
                     </div>
