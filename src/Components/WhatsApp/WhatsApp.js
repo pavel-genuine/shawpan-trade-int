@@ -6,7 +6,7 @@ function WhatsApp() {
     <div className="App">
       <ReactWhatsappButton
         countryCode="880"
-        phoneNumber="1711813933"
+        phoneNumber="1713534019"
         animated
       />
     </div>
