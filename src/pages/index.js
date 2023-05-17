@@ -82,7 +82,7 @@ export default Home
 export async function getStaticProps() {
   return {
     props: {
-      brand: 'Shawpan Trade International',
+      brand: 'Shwapan Trade International',
       tag1: 'High-quality',
       tag2: 'Marble, Granite, Fresh Ginger,',
       tag3: 'Betel nut, Mung bean exports worldwide',

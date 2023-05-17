@@ -55,9 +55,9 @@ export default function App({ Component, pageProps }) {
         {
           !isOpen ?
             <div className=' h-[100vh] w-[99] flex justify-center items-center'>
-              <div className='scale-[.8] lg:scale-[1.5]  flex justify-center items-center space-x-5'>
+              <div className='scale-[.8] lg:scale-[1.5]  lg:flex justify-center items-center lg:space-x-5'>
 
-              <SunnyMorning text={'Shawpan'} />
+              <SunnyMorning text={'Shwapan'} />
               <SunnyMorning text={'Trade'} />
               <SunnyMorning text={'International'} />
               </div>

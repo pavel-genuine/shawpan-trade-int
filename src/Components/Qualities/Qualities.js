@@ -38,7 +38,7 @@ const Qualities = () => {
                                 Excellence
                             </h1>
                             <p className='font-thin text-sm lg:text-md'>
-                                Committed to excellence and tackling challenges with a can-do Attitude at Shawpan Trade International.
+                                Committed to excellence and tackling challenges with a can-do Attitude at Shwapan Trade International.
                             </p>
                         </div>
 
@@ -97,7 +97,7 @@ const Qualities = () => {
                                 Recognition
                             </h1>
                             <p className='font-thin text-sm lg:text-md'>
-                                At  Shawpan Trade International, we move quickly, operate with urgency, and embrace daily progress.                    </p>
+                                At  Shwapan Trade International, we move quickly, operate with urgency, and embrace daily progress.                    </p>
                         </div>
 
                     </div>

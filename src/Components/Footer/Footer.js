@@ -110,7 +110,7 @@ const Footer = () => {
 
             <div className='text-[grey] lg:text-center mt-10 lg:px-4  '>
                 <p className='mb-2'>
-                    © 2023 Shawpan Trade International all rights reserved.
+                    © 2023 Shwapan Trade International all rights reserved.
                 </p>
 
                 <a href="https://joynulabedin.vercel.app/" target="_blank" rel="noopener noreferrer">
