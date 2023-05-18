@@ -57,7 +57,7 @@ const Qualities = () => {
                                 Quality
                             </h1>
                             <p className='font-thin text-sm lg:text-lg'>
-                                Our fabrics are carefully selected for their durability, comfort, and excellent drape.                    </p>
+                                Our materials are carefully selected for their durability, comfort, and excellent drape.                    </p>
                         </div>
 
                     </div>
