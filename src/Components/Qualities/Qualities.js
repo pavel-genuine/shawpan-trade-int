@@ -57,14 +57,15 @@ const Qualities = () => {
                                 Quality
                             </h1>
                             <p className='font-thin text-sm lg:text-lg'>
-                                Our materials are carefully selected for their durability, comfort, and excellent drape.                    </p>
+                                Our materials are carefully selected for their durability, compatibility, and excellent essence.
+                            </p>
                         </div>
 
                     </div>
 
                     <div className='flex'>
 
-                    <div className=' bg-bg2 mr-5 lg:mr-[5vh] lg:px-5 lg:py-3 px-3 py-1 lg:h-[36vh] h-[250px] overflow-hidden lg:w-[25vw] w-[42vw]'>
+                        <div className=' bg-bg2 mr-5 lg:mr-[5vh] lg:px-5 lg:py-3 px-3 py-1 lg:h-[36vh] h-[250px] overflow-hidden lg:w-[25vw] w-[42vw]'>
                             <LazyLoadImage
                                 className={`lg:w-[100px] w-[70px]`}
                                 alt={'cate'}
