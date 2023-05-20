@@ -65,7 +65,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
 
                     <LazyLoadImage
 
-                        className={`h-[40vh] lg:h-[70vh] mx-auto lg:p-[8%] py-8 grayscal `}
+                        className={`h-[40vh] lg:h-[70vh] mx-auto lg:py-[8%] lg:pl-[8%] py-8 grayscal `}
                         alt={'brand'}
 
                         src={img.src} />

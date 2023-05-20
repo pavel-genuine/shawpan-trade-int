@@ -36,7 +36,7 @@ const Home = (props) => {
 
 
   return (
-    <div>
+    <main>
       <Head>
         <title>Home | Shawpan Trade International</title>
         <meta property="og:title" content="Shawpan Trade International" />
@@ -72,7 +72,7 @@ const Home = (props) => {
 
 
       </div>
-    </div>
+    </main>
   )
 }
 
