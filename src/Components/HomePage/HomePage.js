@@ -21,15 +21,15 @@ export const Demo = (
   return (
     <div>
 
-      <div className='lg:pt-[0%] pt-[30%] px-[5vw] lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw] bg-[black] bg-opacity-60'>
+      <div className='lg:pt-[0%] pt-[30%] px-[5vw] lg:h-[100vh] h-[95vh] w-[100%] bg-[black] bg-opacity-60'>
 
-        <div className='lg:absolut top-[170px] lg:flex justify-between flex-col lg:h-[94vh]'>
+        <div className=' lg:flex justify-between flex-col lg:h-[94vh]'>
 
-          <div className='lg:h-[80px]'>
+          <div className='lg:h-[50px]'>
             
           </div>
 
-          <div className='lg:h-[410px] overflow-hidden' >
+          <div className='' >
             <div className=''>
 
               <h1 className='lg:text-[60px] text-[25px] font-semibold text-[white]'>
@@ -46,13 +46,13 @@ export const Demo = (
                 }
               </p>
 
-              <div className='flex mt-8 space-x-5'>
+              <div className='flex lg:mt-8 mt-10 space-x-[6px] lg:space-x-5'>
 
                 <a href="https://api.whatsapp.com/send/?phone=8801711813933&text=" target="_blank" rel="noopener noreferrer">
 
                   <Button style={{ borderRadius: '68px', backgroundColor: '#1F2937' }} className='bg-bgNav' variant='contained'
 
-                    startIcon={<WhatsAppIcon style={{ color: '#fff' }} />}
+                    startIcon={<WhatsAppIcon style={{ color: '#4ADE80' }} />}
                   >
                     Get Started
                   </Button>
@@ -74,25 +74,25 @@ export const Demo = (
             </div>
           </div>
 
-          <div className=' text-[white] pt-16 '>
+          <div className=' text-[white] pt-10 lg:pt-0 '>
             <div className='lg:flex justify-between lg:w-[87vw] lg:font-semibold lg:text-md '>
 
-              <p className='lg:absolut top-[510px]'>
+              <p className=''>
                 <span className='text-[orange]'>
                   +5000
                 </span>  Wholesale Orders Worldwide
               </p>
 
-              <p className='lg:absolut top-[510px] left-[45vw]'>
+              <p className=''>
                 <span className='text-[orange]'>
                   +20
                 </span>  Countries
               </p>
 
-              <p className='lg:absolut top-[510px] right-[0vw]'>
+              <p className=''>
 
                 Operating Since  <span className='text-[orange]'>
-                  1996
+                  2006
                 </span>
               </p>
 
@@ -101,9 +101,9 @@ export const Demo = (
         </div>
       </div>
 
-      <div className='pic lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw]' id='pic3' />
-      <div className='pic lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw]' id='pic2' />
-      <div className='pic lg:h-[100vh] h-[95vh] w-[100vw] lg:w-[98.8vw]' id='pic1' />
+      <div className='pic lg:h-[100vh] h-[95vh] w-[100vw]' id='pic3' />
+      <div className='pic lg:h-[100vh] h-[95vh] w-[100vw] ' id='pic2' />
+      <div className='pic lg:h-[100vh] h-[95vh] w-[100vw]  ' id='pic1' />
     </div>
   );
 };
@@ -144,7 +144,7 @@ const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
               ></Demo>
             </div>
 
-            <div className='cursor-pointer lg:rotate-90 absolute text-[white] lg:text-lg font-bold text-[white] text-center  font-bold z-10 lg:top-[50%] top-[89%] right-[40%] lg:right-[5.5%]' onClick={() => handleScroll()}>
+            <div className='cursor-pointer xs:hidden sm:block lg:rotate-90 absolute text-[white] lg:text-lg font-bold text-[white] text-center  font-bold z-10 lg:top-[50%] top-[89%] right-[40%] lg:right-[3vw]' onClick={() => handleScroll()}>
               <motion.div
                 className='   '
                 initial={{ y: 40, opacity: 0 }}
