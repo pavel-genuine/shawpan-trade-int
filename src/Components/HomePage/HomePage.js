@@ -52,7 +52,7 @@ export const Demo = (
 
                   <Button style={{ borderRadius: '68px', backgroundColor: '#1F2937' }} className='bg-bgNav' variant='contained'
 
-                    startIcon={<WhatsAppIcon style={{ color: '#4ADE80' }} />}
+                    startIcon={<WhatsAppIcon style={{ color: '#fff' }} />}
                   >
                     Get Started
                   </Button>
