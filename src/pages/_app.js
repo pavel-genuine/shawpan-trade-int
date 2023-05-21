@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
 
-      <div className='flex justify-center items-center'>
+      <div className=''>
         {
           !isOpen ?
             <div className=' h-[100vh] w-[99] flex justify-center items-center'>
