@@ -92,7 +92,7 @@ export const Demo = (
               <p className='lg:absolut top-[510px] right-[0vw]'>
 
                 Operating Since  <span className='text-[orange]'>
-                  2006
+                  1996
                 </span>
               </p>
 
