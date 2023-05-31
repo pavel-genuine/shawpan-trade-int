@@ -92,7 +92,7 @@ export const Demo = (
               <p className=''>
 
                 Operating Since  <span className='text-[orange]'>
-                  2006
+                  1996
                 </span>
               </p>
 
