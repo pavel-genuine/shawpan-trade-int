@@ -219,10 +219,17 @@ const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
         {
           <div className='relative'>
 
-            {/* <div className='z-0 '> */}
-            <Landing animals={list} item={item}></Landing>
-            <Slider onItem={(index) => setItem(index)} size={list.length}></Slider>
-            {/* </div> */}
+            <div >
+              <div className='z-2'>
+                <Landing animals={list} item={item}></Landing>
+
+              </div>
+
+              <div className='z-10'>
+                <Slider onItem={(index) => setItem(index)} size={list.length}></Slider>
+
+              </div>
+            </div>
 
             <div className='cursor-pointer hidden lg:block lg:rotate-90 absolute text-[white] lg:text-lg font-bold text-[white] text-center  font-bold z-10 lg:top-[50%] top-[89%] right-[40%] lg:right-[3vw]' onClick={() => handleScroll()}>
               <motion.div
