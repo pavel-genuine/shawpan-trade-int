@@ -2,6 +2,8 @@ import '@/styles/globals.css'
 import '@/styles/homePage.css'
 import '@/styles/mobileNav.css'
 import '@/styles/testimony.css'
+import '@/styles/slider.scss'
+import '@/styles/landing.scss'
 import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic';
 import { motion } from "framer-motion"

@@ -1,10 +1,82 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 import { Button } from '@mui/material'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import Link from 'next/link'
+import Slider from '../Slider/Slider';
+import { Landing } from './Landing';
+// import Slider from 'react-slick';
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
 
+const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  autoplay: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  speed: 3000,
+  autoplaySpeed: 3000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
+
+
+const list = [
+  {
+    species: 'Amur Leopard',
+    age: 2,
+    bio: 'Love snacks',
+    url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/leopard2.jpg'
+  },
+  {
+    species: 'Asiatic Lion',
+    age: 8,
+    bio: 'Love shrimps',
+    url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/lion2.jpg'
+  },
+  {
+    species: 'Siberian Tiger',
+    age: 9,
+    bio: 'Hate Elefants',
+    url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/tiger2.jpg'
+  },
+  {
+    species: 'Brown Bear',
+    age: 12,
+    bio: 'Love salmon',
+    url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/bear2.jpg'
+  },
+]
 
 
 export const Demo = (
@@ -18,15 +90,20 @@ export const Demo = (
 ) => {
 
 
-  return (
-    <div>
 
-      <div className='flex lg:items-start items-center px-[5vw] h-[100vh]  w-[100%] bg-bg bg-opacity-60'>
+
+  return (
+
+    // <Slider {...settings}>
+    <div className='h-[100vh] w-[100vw] overflow-hidden bg-bg bg-opacity-20'>
+
+
+      <div id='pic5' style={{ zIndex: 1 }} className='pic flex lg:items-start items-center px-[5vw] h-[100vh]  w-[100%] '>
 
         <div className=' flex lg:justify-between  flex-col lg:h-[94vh]'>
 
           <div className='lg:h-[50px] hidden lg:block '>
-            
+
           </div>
 
           <div className='' >
@@ -101,16 +178,24 @@ export const Demo = (
         </div>
       </div>
 
+      <div className='pic h-[100vh]  w-[100vw]' id={`pic5`} />
+      <div className='pic h-[100vh]  w-[100vw]' id='pic4' />
       <div className='pic h-[100vh]  w-[100vw]' id='pic3' />
       <div className='pic h-[100vh]  w-[100vw] ' id='pic2' />
       <div className='pic h-[100vh]  w-[100vw]  ' id='pic1' />
     </div>
+
+
+    // </Slider>
+
+
   );
 };
 
 
 
 const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
+  const [item, setItem] = useState(0);
 
   const [isOpen, setIsOpen] = useState(false)
   const [background, setBackground] = useState(false)
@@ -129,20 +214,15 @@ const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
 
   return (
     <div className=' '>
-      <div className='w-[100%] mx-auto lg:h-[100vh] h-[93vh]  '>
+      <div className=''>
 
         {
           <div className='relative'>
 
-            <div className='z-0 '>
-              <Demo
-                tag1={tag1}
-                tag2={tag2}
-                tag3={tag3}
-                tag4={tag4}
-                smallTag={smallTag}
-              ></Demo>
-            </div>
+            {/* <div className='z-0 '> */}
+            <Landing animals={list} item={item}></Landing>
+            <Slider onItem={(index) => setItem(index)} size={list.length}></Slider>
+            {/* </div> */}
 
             <div className='cursor-pointer hidden lg:block lg:rotate-90 absolute text-[white] lg:text-lg font-bold text-[white] text-center  font-bold z-10 lg:top-[50%] top-[89%] right-[40%] lg:right-[3vw]' onClick={() => handleScroll()}>
               <motion.div

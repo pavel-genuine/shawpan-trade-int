@@ -103,17 +103,18 @@
 
 
   .pic {
+    overflow: hidden;
     position: absolute;
     z-index: -1;
     object-fit: cover;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: fade 22s infinite;
+    animation: fade 25s infinite;
   }
  
   #pic1 {
@@ -124,22 +125,22 @@
   #pic2 {
     background-image: url('../assets/Hero/pexels-photo-3770884.jpeg');
     /* filter: grayscale(1); */
-    animation-delay: 4s;
+    animation-delay: 5s;
   }
   #pic3 {
     background-image: url('../assets/Hero/ginger-plant-asia-rhizome-161556.jpeg');
     /* filter: grayscale(1); */
-    animation-delay: 8s;
+    animation-delay: 10s;
   }
   #pic4 {
     background-image: url('../assets/Hero/pic.webp');
     /* filter: grayscale(1); */
-    animation-delay: 12s;
+    animation-delay: 15s;
   }
   #pic5 {
     background-image: url('../assets/Hero/pexels-photo-5843562.jpeg');
     /* filter: grayscale(1); */
-    animation-delay: 16s;
+    animation-delay: 25s;
   }
  
   @keyframes fade  {

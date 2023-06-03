@@ -67,7 +67,7 @@ const Navbar = ({ isHome }) => {
 
                                 <Link className={`md:px-2 md:mx-5  ${router.pathname == "/about" ? "border-b-[2px]" : ""}`} href='/about.'> ABOUT </Link>
                                 <Link className={`md:px-2 md:mx-5  ${router.pathname == "/contact" ? "border-b-[2px]" : ""}`} href='/contact.'>CONTACT </Link>
-                                <Link className={`md:px-2 md:ml-5 rounded  ${router.pathname == "/contact" ? " bg-accent" : " bg-[white]"}`} href='/contact.'> <p className='w-[150px] text-[black]  pl-3 '> INTERIOR DESIGN </p>  </Link>
+                                {/* <Link className={`md:px-2 md:ml-5 rounded  ${router.pathname == "/contact" ? " bg-accent" : " bg-[white]"}`} href='/contact.'> <p className='w-[150px] text-[black]  pl-3 '> INTERIOR DESIGN </p>  </Link> */}
                             </>
                         </ul>
                     </div>

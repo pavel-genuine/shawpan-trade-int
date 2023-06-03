@@ -58,7 +58,7 @@ const Home = (props) => {
           tag4={props?.tag4}
           smallTag={props?.smallTag}
         ></HomePage>
-        <div id='section'>
+        {/* <div id='section'>
           <VideoPromo></VideoPromo>
         </div>
         <Passion passion={props?.passion} passionTag={props?.passionTag} setIsHome={props?.setIsHome}></Passion>
@@ -68,7 +68,7 @@ const Home = (props) => {
 
         <Global></Global>
 
-        <Qualities></Qualities>
+        <Qualities></Qualities> */}
 
 
       </div>
