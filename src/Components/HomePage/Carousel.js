@@ -71,11 +71,11 @@ function Carousel() {
                 className='h-[100vh] w-[100vw] bg-center bg-cover duration-500'
             ></div>
             {/* Left Arrow */}
-            <div className='hidden group-hover:block absolute top-[50vh] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+            <div className='hidden group-hover:block absolute bottom-28 -translate-x-0 translate-y-[-50%]  left-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactLeft onClick={prevSlide} size={30} />
             </div>
             {/* Right Arrow */}
-            <div className='hidden group-hover:block absolute top-[50vh] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+            <div className='hidden group-hover:block absolute bottom-28 -translate-x-0 translate-y-[-50%]  right-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={nextSlide} size={30} />
             </div>
             <div className='absolute right-[11vw] top-[38vh] py-2'>

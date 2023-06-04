@@ -12,7 +12,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Passion = ({ career, csr, passion, passionTag }) => {
     return (
-        <div className='bg-navBg py-5 lg:h-[75vh] overflow-hidden  px-[5vw]' >
+        <div className='bg-bg  lg:h-[75vh] overflow-hidden  px-[5vw]' >
 
             <div className='flex lg:flex-row flex-col-reverse'>
 
@@ -22,7 +22,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: .7, delay: 0 }}
                 >
-                    <div className='bg-navBg text-[white] text-center lg:text-left  mt-[-40px] lg:mt-0 lg:w-[50vw]  lg:h-[70vh]'>
+                    <div className=' text-[white] text-center lg:text-left  mt-[-40px] lg:mt-0 lg:w-[50vw]  lg:h-[70vh] lg:py-20'>
                         <h1 className=' lg:text-5xl text-[25px] font-semibold lg:font-bold mb-5 mt-5 lg:mt-20'>
 
                             {

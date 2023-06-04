@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const VideoPromo = () => {
     return (
-        <div className="bg-[grey] lg:h-[80vh] h-[40vh] ">
+        <div className="bg-bg lg:h-[80vh] h-[40vh] ">
             <div class="relative ">
                 <svg className="lg:mb-28 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f172a" fill-opacity="1" d="M0,32L1440,192L1440,0L0,0Z"></path></svg>
 
