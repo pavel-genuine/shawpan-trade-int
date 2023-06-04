@@ -9,7 +9,7 @@ const VideoPromo = () => {
             <div class="relative ">
                 <svg className="lg:mb-28 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f172a" fill-opacity="1" d="M0,32L1440,192L1440,0L0,0Z"></path></svg>
 
-                <div class="absolute lg:top-10 left-[15vw] top-8">
+                <div class="absolute lg:top-10 lg:left-[15vw] top-8">
                     <motion.div
                         viewport={{ once: true }}
                         initial={{ opacity: .5, scale: .7 }}
