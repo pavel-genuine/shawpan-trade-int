@@ -32,7 +32,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                                 .
                             </span>
                         </h1>
-                        <div className='w-[100px] mx-auto lg:mx-0 h-[3px] bg-accent mb-10 lg:mb-10 '>
+                        <div className='w-[200px] mx-auto lg:mx-0 h-[3px] bg-accent mb-10 lg:mb-10 '>
 
                         </div>
 

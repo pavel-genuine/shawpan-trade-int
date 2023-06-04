@@ -39,7 +39,7 @@ export const Slider = ({ size, onItem }) => {
             }, 4000);
         }
         
-        cycle(-1);
+        // cycle(-1);
 
 
     }, [])

@@ -20,7 +20,7 @@ theme: {
     'accent':'#ff5926',
     'nav': 'grey', 
     // 'navBg': '#1F2937', 
-    'navBg': '#04152c', 
+    'navBg': '#0f172a', 
     'bg': 'black', 
     'bg2': '#1E1E1E',
     transparent: 'transparent',

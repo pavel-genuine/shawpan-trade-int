@@ -5,6 +5,9 @@ import HomePage from '@/Components/HomePage/HomePage'
 
 import Head from 'next/head'
 import VideoPromo from '@/Components/VideoPromo/VideoPromo';
+import StripeSlider from '@/Components/StoneShowCase/StripeSliderStone';
+import StoneShowCase from '@/Components/StoneShowCase/StoneShowCase';
+import FoodGradeShowCase from '@/Components/FoodGradeShowCase/FoodGradeShowCase';
 
 const Categories = dynamic(() => import('@/Components/Categories/Categories'), {
   loading: () => <p>Loading...</p>,
@@ -58,12 +61,15 @@ const Home = (props) => {
           tag4={props?.tag4}
           smallTag={props?.smallTag}
         ></HomePage>
+        <Categories></Categories>
+        <StoneShowCase></StoneShowCase>
+        <FoodGradeShowCase></FoodGradeShowCase>
         <div id='section'>
           <VideoPromo></VideoPromo>
         </div>
+
         <Passion passion={props?.passion} passionTag={props?.passionTag} setIsHome={props?.setIsHome}></Passion>
 
-        <Categories></Categories>
 
 
         <Global></Global>

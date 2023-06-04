@@ -33,10 +33,10 @@ export default function App({ Component, pageProps }) {
     },
     palette: {
       primary: {
-        main: "#000",//lgt2
+        main: "#ff5926",//lgt2
         // main: "#80a10a",//lgt2
-        light: "#000",
-        dark: "#000",
+        light: "#ff5926",
+        dark: "#ff5926",
         mainGradient: "linear-gradient(to right , #480626, #7e2651)",
       },
     },

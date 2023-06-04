@@ -6,6 +6,7 @@ import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import Link from 'next/link'
 import Slider from '../Slider/Slider';
 import { Landing } from './Landing';
+import Carousel from './Carousel';
 // import Slider from 'react-slick';
 // import "~slick-carousel/slick/slick.css"; 
 // import "~slick-carousel/slick/slick-theme.css";
@@ -68,13 +69,13 @@ const list = [
     species: 'Siberian Tiger',
     age: 9,
     bio: 'Hate Elefants',
-    url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/tiger2.jpg'
+    url: 'https://i.ibb.co/k1gCrtx/Screenshot-2023-04-15-133548.png'
   },
   {
     species: 'Brown Bear',
     age: 12,
     bio: 'Love salmon',
-    url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/bear2.jpg'
+    url: 'https://i.ibb.co/DwkKXH4/Marble-quarry-Carrara-Italy.webp'
   },
 ]
 
@@ -219,7 +220,7 @@ const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
         {
           <div className='relative'>
 
-            <div >
+            {/* <div >
               <div className='z-2'>
                 <Landing animals={list} item={item}></Landing>
 
@@ -229,9 +230,13 @@ const HomePage = ({ brand, tag1, tag2, tag3, tag4, smallTag }) => {
                 <Slider onItem={(index) => setItem(index)} size={list.length}></Slider>
 
               </div>
+            </div> */}
+
+            <div>
+              <Carousel></Carousel>
             </div>
 
-            <div className='cursor-pointer hidden lg:block lg:rotate-90 absolute text-[white] lg:text-lg font-bold text-[white] text-center  font-bold z-10 lg:top-[50%] top-[89%] right-[40%] lg:right-[3vw]' onClick={() => handleScroll()}>
+            <div className='cursor-pointer hidden lg:block lg:rotate-90 absolute text-[white] lg:text-lg font-bold text-[white] text-center  font-bold z-10 lg:top-[48vh]  right-[40%] lg:right-[5vw]' onClick={() => handleScroll()}>
               <motion.div
                 className='   '
                 initial={{ y: 40, opacity: 0 }}
