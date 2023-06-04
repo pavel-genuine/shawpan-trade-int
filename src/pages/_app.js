@@ -74,7 +74,7 @@ export default function App({ Component, pageProps }) {
                 <motion.div
                   className='absolute top-50 z-10'
                   initial={{ opacity: 0, scale: .5 }}
-                  whileInView={{ opacity: 1, scale: 3 }}
+                  whileInView={{ opacity: 1, scale: 2 }}
                   transition={{ duration: 1.5, delay: 0 }}
 
                 >
