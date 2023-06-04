@@ -82,7 +82,7 @@ export default function FoodGradeShowCase() {
                     </motion.div>
                 </div>
                 <motion.div
-                    className='absolute bottom-[-20px] py-5 md:bottom-5 left-[11vw] lg:left-[30vw] w-[80vw] lg:w-[700px] text-center'
+                    className='absolute bottom-[-20px] py-5 md:bottom-0 left-[11vw] lg:left-[30vw] w-[80vw] lg:w-[700px] text-center'
                     viewport={{ once: true }}
                     initial={{ y: 40, opacity: .1 }}
                     whileInView={{ y: 0, opacity: 1 }}
