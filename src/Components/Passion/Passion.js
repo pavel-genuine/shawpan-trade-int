@@ -12,9 +12,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Passion = ({ career, csr, passion, passionTag }) => {
     return (
-        <div className='bg-bg  lg:h-[75vh] overflow-hidden  px-[5vw]' >
+        <div className='bg-bg  lg:h-[75vh] overflow-hidden  px-[5vw] py-10' >
 
-            <div className='flex lg:flex-row flex-col-reverse'>
+            <div className='flex lg:flex-row flex-col-reverse '>
 
                 <motion.div
                     viewport={{ once: true }}
@@ -22,7 +22,8 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: .7, delay: 0 }}
                 >
-                    <div className=' text-[white] text-center lg:text-left  mt-[-40px] lg:mt-0 lg:w-[50vw]  lg:h-[70vh] lg:py-20'>
+                    <div className='lg:flex items-center lg:h-[63vh]'>
+                    <div className=' text-[white] text-center lg:text-left lg:w-[50vw]  '>
                         <h1 className=' lg:text-5xl text-[25px] font-semibold lg:font-bold mb-5 mt-5 lg:mt-20'>
 
                             {
@@ -52,6 +53,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
                             </Button>
                         </Link>
                     </div>
+                    </div>
 
                 </motion.div>
 
@@ -65,7 +67,7 @@ const Passion = ({ career, csr, passion, passionTag }) => {
 
                     <LazyLoadImage
 
-                        className={`h-[40vh] lg:h-[70vh] mx-auto lg:py-[8%] lg:pl-[8%] py-8 grayscal `}
+                        className={`h-[40vh] lg:h-[70vh] mx-auto lg:py-[8%] lg:pl-[8%] lg:py-8 grayscal `}
                         alt={'brand'}
 
                         src={img.src} />

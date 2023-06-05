@@ -1,10 +1,10 @@
 import React from 'react'
-import img2 from '../../assets/imgs/granite.jpeg'
-import img1 from '../../assets/imgs/marble.jpeg'
+import img2 from '../../assets/imgs/granite.jpg'
+import img1 from '../../assets/imgs/marble.jpg'
 import img3 from '../../assets/imgs/nut.jpg'
-import img4 from '../../assets/imgs/ginger.jpeg'
+import img4 from '../../assets/imgs/ginger.jpg'
 import img5 from '../../assets/imgs/mung.jpeg'
-import img6 from '../../assets/imgs/interior.webp'
+import img6 from '../../assets/imgs/tamarind.jpg'
 import Image from 'next/image'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -53,22 +53,7 @@ function Categories() {
                 </div>
 
 
-                <div>
-                    <LazyLoadImage
-                        className={`lg:h-[40vh] h-[30vh] mb-2`}
-                        alt={'cate'}
-                        // height={400}
-                        // width={300}
-                        src={img6.src}
-
-                    >
-
-                    </LazyLoadImage>
-
-                    <h1>
-                        Interior Design
-                    </h1>
-                </div>
+               
 
 
                 <div>
@@ -87,6 +72,25 @@ function Categories() {
                         Fresh Ginger
                     </h1>
                 </div>
+
+
+                <div>
+                    <LazyLoadImage
+                        className={`lg:h-[40vh] h-[30vh] mb-2`}
+                        alt={'cate'}
+                        // height={400}
+                        // width={300}
+                        src={img3.src}
+
+                    >
+
+                    </LazyLoadImage>
+
+                    <h1>
+                        Betel Nut
+                    </h1>
+                </div>
+                
                 <div>
                     <LazyLoadImage
                         className={`lg:h-[40vh] h-[30vh] mb-2`}
@@ -104,20 +108,23 @@ function Categories() {
                     </h1>
                 </div>
 
+               
+
+
                 <div>
                     <LazyLoadImage
                         className={`lg:h-[40vh] h-[30vh] mb-2`}
                         alt={'cate'}
                         // height={400}
                         // width={300}
-                        src={img3.src}
+                        src={img6.src}
 
                     >
 
                     </LazyLoadImage>
 
                     <h1>
-                        Betel Nut
+                        Tamarind Seed
                     </h1>
                 </div>
 

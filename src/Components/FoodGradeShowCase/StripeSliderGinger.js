@@ -1,55 +1,51 @@
 import classNames from "classnames";
 import { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion'
+import img1 from '../../assets/imgs/ginger.jpg'
+import img2 from '../../assets/imgs/ginger2.jpg'
+import img3 from '../../assets/imgs/ginger3.jpg'
+
 
 
 export const persons = [
+   
     {
-        img: "https://unsplash.com/photos/mzN7eMmv9IM/download?force=true&w=590&h=640",
-        title:
-            "chief financial officer and executive vice president for global finance, aon plc",
-        name: "Christa Davies",
+        img: img1.src,
+        title: "Most Flavourful ginger worldwide",
+        name: "Fresh Ginger From Thailand",
     },
     {
-        img: "https://unsplash.com/photos/oifclaPX5oM/download?force=true&w=590&h=640",
-        title: "revenue and financial management, stripe",
-        name: "Vivek Sharma",
+        img: img2.src,
+        title: "Most Flavourful ginger worldwide",
+        name: "Fresh Ginger From Thailand",
     },
     {
-        img: "https://unsplash.com/photos/fghYlu1ec2U/download?force=true&w=590&h=640",
-        title: "head of product marketing, stripe",
-        name: "Tanya Khakbaz",
+        img: img3.src,
+        title: "Most Flavourful ginger worldwide",
+        name: "Fresh Ginger From Thailand",
     },
     {
-        img: "https://unsplash.com/photos/a5XdeIb9Zso/download?force=true&w=590&h=640",
-        title: "head of global sales, stripe",
-        name: "Eileen O'Mara",
+        img: img1.src,
+        title: "Most Flavourful ginger worldwide",
+        name: "Fresh Ginger From Thailand",
+    },
+   
+    {
+        img:'https://a-z-animals.com/media/2023/03/shutterstock_1577589430-1024x683.jpg',
+        title: "Most Flavourful ginger worldwide",
+        name: "Fresh Ginger From Thailand",
     },
     {
-        img: "https://unsplash.com/photos/RDUyi9YXPxk/download?force=true&w=590&h=640",
-        title: "founder, pulley",
-        name: "Yin Wu",
-    },
-    {
-        img: "https://unsplash.com/photos/TMZuhaL2kHo/download?force=true&w=590&h=640",
-        title: "ceo and cofounder, crowdai",
-        name: "Devaki Raj",
-    },
-    {
-        img: "https://unsplash.com/photos/XO25cX2_0iE/download?force=true&w=590&h=640",
-        title: "co-head of payments, wix",
-        name: "Amit Sagiv",
-    },
-    {
-        img: "https://unsplash.com/photos/DLKR_x3T_7s/download?force=true&w=590&h=640",
-        title: "general partner, andreessen horowitz",
-        name: "Angela Strange",
+        img:'https://a-z-animals.com/media/2023/03/shutterstock_1577589430-1024x683.jpg',
+
+        title: "Most Flavourful ginger worldwide",
+        name: "Fresh Ginger From Thailand",
     },
 ];
 
 
-function StripeSliderFoodGrade() {
-    const [activeItem, setActiveItem] = useState(5);
+function StripeSliderGinger() {
+    const [activeItem, setActiveItem] = useState(3);
     const wrapperRef = useRef(null);
     const timeoutRef = useRef(null);
 
@@ -83,7 +79,7 @@ function StripeSliderFoodGrade() {
         transition={{ duration: .7, delay: 0 }}
         >
             <div className="flex h-full w-full items-center justify-center">
-                <div className="w-[100vw] h-[85vh] py-[2vh] bg-navBg ">
+                <div className="md:w-[80vw] w-[100vw] h-[85vh] py-[2vh] bg-navBg md:ml-[5vw] ">
                     <ul
                         ref={wrapperRef}
                         className="group flex h-[70vh] flex-row gap-[1.5%]"
@@ -94,7 +90,7 @@ function StripeSliderFoodGrade() {
                                 aria-current={activeItem === index}
                                 className={classNames(
 
-                                    "relative cursor-pointer w-[8%]  first:w-[1%] last:w-[1%] [&[aria-current='true']]:w-[50%]",
+                                    "relative cursor-pointer md:w-[8%] w-[15%]   first:w-[1%] last:w-[1%] [&[aria-current='true']]:w-[60%]",
                                     "[transition:width_var(--transition,200ms_ease-in)]",
                                     "before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-navBg",
                                     "[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] hover:w-[12%]",
@@ -118,7 +114,7 @@ function StripeSliderFoodGrade() {
                                     />
                                     <div
                                         className={classNames(
-                                            "left-8 top-8 w-[590px] transition-[transform,opacity] absolute p-0",
+                                            "left-2 top-8 md:left-8  w-[90%] text-center transition-[transform,opacity] absolute p-0",
                                             activeItem === index
                                                 ? "translate-x-0 opacity-100"
                                                 : "translate-x-4 opacity-0"
@@ -140,4 +136,4 @@ function StripeSliderFoodGrade() {
     );
 }
 
-export default StripeSliderFoodGrade
+export default StripeSliderGinger

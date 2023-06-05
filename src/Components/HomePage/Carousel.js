@@ -6,11 +6,12 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import marble from '../../assets/Hero/pexels-photo-2083961.jpeg'
-import granite from '../../assets/Hero/pexels-photo-3770884.jpeg'
-import nut from '../../assets/Hero/pic.webp'
-import ginger from '../../assets/Hero/ginger-plant-asia-rhizome-161556.jpeg'
-import mung from '../../assets/Hero/pexels-photo-5843562.jpeg'
+import marble from '../../assets/imgs/marble.jpg'
+import granite from '../../assets/imgs/granite.jpg'
+import nut from '../../assets/imgs/nut.jpg'
+import ginger from '../../assets/imgs/ginger.jpg'
+import mung from '../../assets/imgs/mung.jpeg'
+import tamarind from '../../assets/imgs/tamarind.jpg'
 import Image from 'next/image'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -19,28 +20,33 @@ function Carousel() {
     const slides = [
         {
             description: 'Marble',
-            url:marble.src
+            url: marble.src
         },
         {
             description: 'Granite',
 
-            url:granite.src
+            url: granite.src
         },
         {
             description: 'Fresh Ginger',
 
-            url:ginger.src
+            url: 'https://a-z-animals.com/media/2023/03/shutterstock_1577589430-1024x683.jpg'
         },
 
         {
             description: 'Betel Nut',
 
-            url:nut.src
+            url: 'https://rehmonnya.org/wp-content/uploads/2022/12/betel-nut.jpg'
         },
         {
             description: 'Mung Bean',
 
-            url:mung.src
+            url: 'http://www.seedarea.com/4676-thickbox_default/mung-beans-seeds.jpg'
+        },
+        {
+            description: 'Tamarind Seed',
+
+            url: 'https://vaya.in/recipes/wp-content/uploads/2018/11/Tamarind-seeds.jpg'
         },
     ];
 
@@ -93,40 +99,42 @@ function Carousel() {
                 className=' h-[100vh] w-[100vw]  bg-center bg-cover duration-500'
             >
 
-                <div className='h-[100vh] w-[100vw] px-[5vw] py-[33vh] bg-bg bg-opacity-40'>
+                <div className='h-[100vh] w-[100vw] px-[5vw] flex items-center bg-bg bg-opacity-40'>
 
-                    <h1 className='lg:text-[60px] text-[20px] font-semibold text-[white]'>
-                        <span className='text-accent'>{'High-quality'} {' '}</span>{slides[currentIndex].description}
-
-
-                    </h1>
-                    <p className='text-[white] lg:w-[40%] w-[100%] mt-5 text-sm lg:text-md'>
-                        Elevate your experience  with our high-quality products. Choose from a wide range of premium collection.
-                    </p>
-
-                    <div className='flex lg:mt-8 mt-10 space-x-[6px] lg:space-x-5'>
-
-                        <a href="https://api.whatsapp.com/send/?phone=8801711813933&text=" target="_blank" rel="noopener noreferrer">
-
-                            <Button style={{ borderRadius: '68px', backgroundColor: '#1F2937' }} className='bg-bgNav' variant='contained'
-
-                                startIcon={<WhatsAppIcon style={{ color: '#4ADE80' }} />}
-                            >
-                                Get Started
-                            </Button>
-                        </a>
-
-                        <Link href='/about'>
-                            <Button style={{ borderRadius: '68px', borderColor: 'white' }} variant='outlined'
-                                startIcon={<CrisisAlertIcon style={{ color: '#fff' }} />}
-                            >
-                                <p className='text-[white]'>
-                                    Learn More
-                                </p>
-                            </Button>
-                        </Link>
+                    <div>
+                        <h1 className='lg:text-[60px] text-[20px] font-semibold text-[white]'>
+                            <span className='text-accent'>{'High-quality'} {' '}</span>{slides[currentIndex].description}
 
 
+                        </h1>
+                        <p className='text-[white] lg:w-[40%] w-[80%] mt-5 text-sm lg:text-md'>
+                            Elevate your experience  with our high-quality products. Choose from a wide range of premium collection.
+                        </p>
+
+                        <div className='md:flex lg:mt-8 mt-6 md:space-x-[6px] lg:space-x-5 space-y-5 md:space-y-0'>
+
+                            <a href="https://api.whatsapp.com/send/?phone=8801711813933&text=" target="_blank" rel="noopener noreferrer">
+
+                                <Button style={{ borderRadius: '68px', backgroundColor: '#1F2937' }} className='bg-bgNav' variant='contained'
+
+                                    startIcon={<WhatsAppIcon style={{ color: '#4ADE80' }} />}
+                                >
+                                    Get Started
+                                </Button>
+                            </a>
+
+                            <Link href='/about'>
+                                <Button className="mt-5 md:mt-0" style={{ borderRadius: '68px', borderColor: 'white' }} variant='outlined'
+                                    startIcon={<CrisisAlertIcon style={{ color: '#fff' }} />}
+                                >
+                                    <p className='text-[white]'>
+                                        Learn More
+                                    </p>
+                                </Button>
+                            </Link>
+
+
+                        </div>
                     </div>
 
                 </div>
@@ -138,7 +146,7 @@ function Carousel() {
             <div className='hidden group-hover:block absolute bottom-28 -translate-x-0 translate-y-[-50%]  right-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={nextSlide} size={30} />
             </div>
-            <div className='absolute right-[11vw] top-[38vh] py-2'>
+            <div className='absolute right-[10vw] top-[35vh] py-2'>
                 {slides.map((slide, slideIndex) => (
                     <div
                         key={slideIndex}

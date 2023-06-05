@@ -15,11 +15,11 @@ const About = ({ setIsHome }) => {
     return (
         <div>
             <Head>
-                <title>About | Shawpan Trade International</title>
-                <meta property="og:title" content="Shawpan Trade International" />
+                <title>About | Swapan Trade International</title>
+                <meta property="og:title" content="Swapan Trade International" />
                 <meta
                     name="og:description"
-                    content="Shawpan Trade International"
+                    content="Swapan Trade International"
                 />
                 {/* <meta property="og:type" content="video.movie" /> */}
                 {/* <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> */}
@@ -41,7 +41,7 @@ const About = ({ setIsHome }) => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 0, }}
                     >
-                        <div className='flex justify-center items-center h-[100vh] w-[98.8vw] bg-[black] bg-opacity-40'>
+                        <div className='flex justify-center items-center h-[100vh] w-[100vw] bg-[black] bg-opacity-40'>
                             <div>
                                 <h1 className='text-5xl  text-center mb-4'>
                                     About Us
@@ -49,13 +49,13 @@ const About = ({ setIsHome }) => {
                                 </h1>
 
                                 <p className='text-xl lg:text-2xl text-center px-7'>
-                                    We are a rapidly growing conglomerate, working in  RMG in Bangladesh.
+                                    Swapan Trade International established in 1996 a rapidly growing conglomerate, engage with export, import & trading business beside comission agent. We are associate partner ThaiLand based agro products like fresh ginger, betel nut, mung bean, refined sugar and associate partner Portugal, Italy, Iran & Turkey based products of natural marble block and granite block. We never compromise quality , quantity & deadline.
                                 </p>
                             </div>
                         </div>
 
                     </motion.div>
-                    <img className='w-[98.8vw] h-[100vh]' src="https://i.ibb.co/LQdTQhG/Fiduciary-Responsibility-Board-of-Directors-ESG-1.jpg" alt="" />
+                    <img className='w-[100vw] h-[100vh]' src="https://i.ibb.co/LQdTQhG/Fiduciary-Responsibility-Board-of-Directors-ESG-1.jpg" alt="" />
                 </motion.div>
                 <MissionVision></MissionVision>
 

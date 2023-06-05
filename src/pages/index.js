@@ -5,7 +5,7 @@ import HomePage from '@/Components/HomePage/HomePage'
 
 import Head from 'next/head'
 import VideoPromo from '@/Components/VideoPromo/VideoPromo';
-import StripeSlider from '@/Components/StoneShowCase/StripeSliderStone';
+import StripeSlider from '@/Components/StoneShowCase/StripeSliderGranite';
 import StoneShowCase from '@/Components/StoneShowCase/StoneShowCase';
 import FoodGradeShowCase from '@/Components/FoodGradeShowCase/FoodGradeShowCase';
 
@@ -61,12 +61,13 @@ const Home = (props) => {
           tag4={props?.tag4}
           smallTag={props?.smallTag}
         ></HomePage>
-        <Categories></Categories>
+        <div id='section'>
+          <Categories></Categories>
+        </div>
+
         <StoneShowCase></StoneShowCase>
         <FoodGradeShowCase></FoodGradeShowCase>
-        <div id='section'>
-          <VideoPromo></VideoPromo>
-        </div>
+        <VideoPromo></VideoPromo>
 
         <Passion passion={props?.passion} passionTag={props?.passionTag} setIsHome={props?.setIsHome}></Passion>
 
@@ -74,7 +75,7 @@ const Home = (props) => {
 
         <Global></Global>
 
-        <Qualities></Qualities>
+        {/* <Qualities></Qualities> */}
 
 
       </div>

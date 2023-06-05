@@ -60,7 +60,12 @@ const Footer = () => {
                                     ADDRESS
                                 </h1>
                                 <p className='mt-3 font-thin'>
-                                    Dhaka, Bangladesh.
+                                    Dhaka Office: House 114, Road 2, Block A, Niketon, Gulshan-1, Dhaka 1212, Bangladesh
+                                </p>
+                                <p className='mt-3 font-thin'>
+                                    Bangkok Office: SSP Tower,
+                                    21th foor,
+                                    Soi Sukhumvit 63, Ekkamai Road, Bangkok 10110, Thailand.
                                 </p>
                             </div>
                             <div>
@@ -110,7 +115,7 @@ const Footer = () => {
 
             <div className='text-[grey] lg:text-center mt-10 lg:px-4  '>
                 <p className='mb-2'>
-                    © 2023 Shwapan Trade International all rights reserved.
+                    © 2023 Swapan Trade International all rights reserved.
                 </p>
 
                 <a href="https://joynulabedin.vercel.app/" target="_blank" rel="noopener noreferrer">

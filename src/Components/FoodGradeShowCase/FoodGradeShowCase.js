@@ -5,7 +5,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { motion } from 'framer-motion'
-import StripeSliderFoodGrade from './StripeSliderFoodGrade';
+import StripeSliderMungBean from './StripeSliderMungBean';
+import StripeSliderGinger from './StripeSliderGinger';
+import StripeSliderTamarind from './StripeSliderTamarind';
+import StripeSliderBetelNut from './StripeSliderBetelNut';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -50,11 +53,11 @@ export default function FoodGradeShowCase() {
     return (
         <Box className='bg-navBg ' sx={{ position: 'relative' }}>
             <Box
-                className='mx-auto md:w-[20vw] w-[90vw] '
+                className='mx-auto md:w-[20vw] w-[100vw] '
                 sx={{ flexGrow: 1, display: 'flex', }}
             >
                 <div
-                    className='m-5'
+                    className='md:m-5 m-3'
                 >
                     <motion.div
                         viewport={{ once: true }}
@@ -74,9 +77,10 @@ export default function FoodGradeShowCase() {
                                 sx={{ borderRight: 1, borderColor: 'divider' }}
                             >
 
-                                <Tab sx={{ fontSize: 20, width: 100, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Fresh Ginger" {...a11yProps(0)} />
-                                <Tab sx={{ fontSize: 20, width: 100, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Betel Nut" {...a11yProps(1)} />
-                                <Tab sx={{ fontSize: 20, width: 100, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Mung Bean" {...a11yProps(2)} />
+                                <Tab sx={{ fontSize: 20, width: 80, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Fresh Ginger" {...a11yProps(0)} />
+                                <Tab sx={{ fontSize: 20, width: 80, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Betel Nut" {...a11yProps(1)} />
+                                <Tab sx={{ fontSize: 20, width: 80, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Mung Bean" {...a11yProps(2)} />
+                                <Tab sx={{ fontSize: 20, width: 80, marginBottom: 2, textAlign: 'center', color: 'white' }} label="Tamarind Seed" {...a11yProps(3)} />
                          </Tabs>
                         </Box>
                     </motion.div>
@@ -104,6 +108,11 @@ export default function FoodGradeShowCase() {
                                 The finishing is clean, with no rough edges, and properly aligned buttons, zippers, or hooks.
                             </p>
                         </TabPanel>
+                        <TabPanel value={value} index={3}>
+                            <p className='text-[white] text-[15px]  lg:text-2xl'>
+                                The finishing is clean, with no rough edges, and properly aligned buttons, zippers, or hooks.
+                            </p>
+                        </TabPanel>
                   
                        
                     </div>
@@ -114,18 +123,24 @@ export default function FoodGradeShowCase() {
 
             {
                 value == 0 &&
-                <StripeSliderFoodGrade></StripeSliderFoodGrade>
+                <StripeSliderGinger></StripeSliderGinger>
             }
             {
                 value == 1 &&
 
-                <StripeSliderFoodGrade></StripeSliderFoodGrade>
+                <StripeSliderBetelNut></StripeSliderBetelNut>
 
             }
             {
                 value == 2 &&
 
-                <StripeSliderFoodGrade></StripeSliderFoodGrade>
+                <StripeSliderMungBean></StripeSliderMungBean>
+
+            }
+            {
+                value == 3 &&
+
+                <StripeSliderTamarind></StripeSliderTamarind>
 
             }
            

@@ -5,8 +5,9 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { motion } from 'framer-motion'
-import StripeSlider from './StripeSliderStone';
-import StripeSliderStone from './StripeSliderStone';
+import StripeSliderMarble from './StripeSliderMarble';
+import StripeSliderGranite from './StripeSliderGranite';
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -112,12 +113,12 @@ export default function StoneShowCase() {
 
             {
                 value == 0 &&
-                <StripeSliderStone></StripeSliderStone>
+                <StripeSliderMarble></StripeSliderMarble>
             }
             {
                 value == 1 &&
 
-                <StripeSliderStone></StripeSliderStone>
+                <StripeSliderGranite></StripeSliderGranite>
 
             }
            

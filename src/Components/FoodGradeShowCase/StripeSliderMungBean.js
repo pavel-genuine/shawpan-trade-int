@@ -1,55 +1,50 @@
 import classNames from "classnames";
 import { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion'
+import img1 from '../../assets/imgs/mung.jpeg'
+import img2 from '../../assets/Hero/pexels-photo-7420815.jpeg'
+import img3 from '../../assets/Hero/pexels-photo-5843562.jpeg'
+
 
 
 export const persons = [
-    {
-        img: "https://unsplash.com/photos/mzN7eMmv9IM/download?force=true&w=590&h=640",
-        title:
-            "chief financial officer and executive vice president for global finance, aon plc",
-        name: "Christa Davies",
-    },
+   
     {
         img: "https://unsplash.com/photos/oifclaPX5oM/download?force=true&w=590&h=640",
-        title: "revenue and financial management, stripe",
-        name: "Vivek Sharma",
+        title: "Fresh Mung Bean",
+        name: "Amazing Quality",
     },
     {
-        img: "https://unsplash.com/photos/fghYlu1ec2U/download?force=true&w=590&h=640",
-        title: "head of product marketing, stripe",
-        name: "Tanya Khakbaz",
+        img:img1.src,
+        title: "Fresh Mung Bean",
+        name: "Amazing Quality",
     },
     {
-        img: "https://unsplash.com/photos/a5XdeIb9Zso/download?force=true&w=590&h=640",
-        title: "head of global sales, stripe",
-        name: "Eileen O'Mara",
+        img:img2.src,
+        title: "Fresh Mung Bean",
+        name: "Amazing Quality",
     },
     {
-        img: "https://unsplash.com/photos/RDUyi9YXPxk/download?force=true&w=590&h=640",
-        title: "founder, pulley",
-        name: "Yin Wu",
+        img:img1.src,
+        title: "Fresh Mung Bean",
+        name: "Amazing Quality",
+    },
+   
+    {
+        img:img3.src,
+        title: "Fresh Mung Bean",
+        name: "Amazing Quality",
     },
     {
-        img: "https://unsplash.com/photos/TMZuhaL2kHo/download?force=true&w=590&h=640",
-        title: "ceo and cofounder, crowdai",
-        name: "Devaki Raj",
-    },
-    {
-        img: "https://unsplash.com/photos/XO25cX2_0iE/download?force=true&w=590&h=640",
-        title: "co-head of payments, wix",
-        name: "Amit Sagiv",
-    },
-    {
-        img: "https://unsplash.com/photos/DLKR_x3T_7s/download?force=true&w=590&h=640",
-        title: "general partner, andreessen horowitz",
-        name: "Angela Strange",
+        img: img3.src,
+        title: "Fresh Mung Bean",
+        name: "Amazing Quality",
     },
 ];
 
 
-function StripeSliderStone() {
-    const [activeItem, setActiveItem] = useState(5);
+function StripeSliderMungBean() {
+    const [activeItem, setActiveItem] = useState(3);
     const wrapperRef = useRef(null);
     const timeoutRef = useRef(null);
 
@@ -83,7 +78,7 @@ function StripeSliderStone() {
         transition={{ duration: .7, delay: 0 }}
         >
             <div className="flex h-full w-full items-center justify-center">
-                <div className="w-[100vw] h-[85vh] py-[2vh] bg-bg ">
+                <div className="md:w-[80vw] w-[100vw] h-[85vh] py-[2vh] bg-navBg md:ml-[5vw] ">
                     <ul
                         ref={wrapperRef}
                         className="group flex h-[70vh] flex-row gap-[1.5%]"
@@ -94,9 +89,9 @@ function StripeSliderStone() {
                                 aria-current={activeItem === index}
                                 className={classNames(
 
-                                    "relative cursor-pointer w-[8%]  first:w-[1%] last:w-[1%] [&[aria-current='true']]:w-[50%]",
+                                    "relative cursor-pointer md:w-[8%] w-[15%]   first:w-[1%] last:w-[1%] [&[aria-current='true']]:w-[60%]",
                                     "[transition:width_var(--transition,200ms_ease-in)]",
-                                    "before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-bg",
+                                    "before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-navBg",
                                     "[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] hover:w-[12%]",
                                     "first:pointer-events-none last:pointer-events-none [&_img]:first:opacity-0 [&_img]:last:opacity-0"
                                 )}
@@ -112,13 +107,13 @@ function StripeSliderStone() {
                                     />
                                     <div
                                         className={classNames(
-                                            "inset-0 opacity-25 duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-bg  after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-bg absolute transition-opacity",
+                                            "inset-0 opacity-25 duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-navBg  after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-navBg absolute transition-opacity",
                                             activeItem === index ? "opacity-0 " : "opacity-60"
                                         )}
                                     />
                                     <div
                                         className={classNames(
-                                            "left-8 top-8 w-[590px] transition-[transform,opacity] absolute p-0",
+                                            "left-2 top-8 md:left-8  w-[90%] text-center transition-[transform,opacity] absolute p-0",
                                             activeItem === index
                                                 ? "translate-x-0 opacity-100"
                                                 : "translate-x-4 opacity-0"
@@ -140,4 +135,4 @@ function StripeSliderStone() {
     );
 }
 
-export default StripeSliderStone
+export default StripeSliderMungBean
