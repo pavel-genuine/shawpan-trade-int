@@ -53,7 +53,7 @@ export const persons = [
 
 
 function StripeSliderMarble() {
-    const [activeItem, setActiveItem] = useState(5);
+    const [activeItem, setActiveItem] = useState(4);
     const wrapperRef = useRef(null);
     const timeoutRef = useRef(null);
 
@@ -87,7 +87,7 @@ function StripeSliderMarble() {
         transition={{ duration: .7, delay: 0 }}
         >
             <div className="flex h-full w-full items-center justify-center">
-                <div className="w-[100vw] h-[85vh] py-[2vh] bg-bg ">
+                <div className="w-[100vw] py-[2vh] bg-bg ">
                     <ul
                         ref={wrapperRef}
                         className="group flex h-[70vh] flex-row gap-[1.5%]"

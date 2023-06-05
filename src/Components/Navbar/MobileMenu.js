@@ -4,18 +4,20 @@ import { useAnimate, stagger, animate } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Button } from "@mui/material";
+import { slides } from "../HomePage/Carousel";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 
 
-export const MenuToggle = ({setToggleOpen, toggle,isOpen }) => {
+export const MenuToggle = ({ setToggleOpen, toggle, isOpen }) => {
 
     return (
         <div >
             {
                 !isOpen ?
-                    <button  onClick={toggle} className="menu_button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke={`${isOpen?'#fff':"#fff"}`} className="w-6 h-6">
+                    <button onClick={toggle} className="menu_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke={`${isOpen ? '#fff' : "#fff"}`} className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
 
@@ -35,36 +37,42 @@ export const MenuToggle = ({setToggleOpen, toggle,isOpen }) => {
 }
     ;
 
-export function Menu ({ toggle,isOpen }) {
+export function Menu({ toggle, isOpen }) {
 
     const router = useRouter();
-    const [bgWhite,setBgWhite]=useState(false)
+    const [bgWhite, setBgWhite] = useState(false)
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [showProducts, setShowProducts] = useState(0);
 
-    useEffect(()=>{
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex);
+    };
+
+    useEffect(() => {
 
         // setTimeout(()=>{
-            if(isOpen) setBgWhite(true)
+        if (isOpen) setBgWhite(true)
         // },1000)
-        setTimeout(()=>{
-            if(!isOpen) setBgWhite(false)
-        },1000)
-},[isOpen])
+        setTimeout(() => {
+            if (!isOpen) setBgWhite(false)
+        }, 1000)
+    }, [isOpen])
 
 
     return (
-        <nav   className="  menuItem text-[white]">
-            <ul className={`${bgWhite?' bg-opacity-90  text-center bg-[black] w-[100vw] pt-[20%] h-[100vh] mt-[-15%]':''}`}>
+        <nav className="  menuItem text-[white]">
+            <ul className={`${bgWhite ? ' bg-opacity-90  text-center bg-[black] w-[100vw] pt-[20%] h-[100vh] mt-[-15%]' : ''}`}>
                 <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/" ? " border-b-[2px] text-accent " : " text-[white]"}`} href='/'>Home</Link>
+                    <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/" ? " border-b-[2px] text-accent " : " text-[white]"}`} href='/'>Home</Link>
 
                 </li>
 
                 <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/services'? "border-b-[2px] text-accent" : "text-[white]"}`} href='/services.'>Services</Link>
+                    <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/services' ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/services.'>Services</Link>
 
                 </li>
-                <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == '/products'? "border-b-[2px] text-accent" : "text-[white]"}`} href='/products.'>Products</Link>
+                <li className="li_menu" >
+                    <p onMouseLeave={() => setShowProducts(false)} onMouseOver={() => setShowProducts(true)} className={`md:p-3 md:m-5 hover:text-nav text-[white] `}>Products</p>
 
                 </li>
 
@@ -74,27 +82,52 @@ export function Menu ({ toggle,isOpen }) {
                 </li> */}
 
                 <li className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/testimonials" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/testimonials.'>Testimonials</Link>
+                    <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/testimonials" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/testimonials.'>Testimonials</Link>
 
                 </li>
 
-                <li  className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/about" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/about'>About</Link>
-
-                </li>
-                
-                <li className="li_menu"  onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/contact" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/contact'>Contact</Link>
+                <li className="li_menu" onClick={toggle}>
+                    <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/about" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/about'>About</Link>
 
                 </li>
 
-                <li className="li_menu"  onClick={toggle}>
-                {/* <Link  href='/contact.'> <p className={`md:p-3 md:m-5 rounded mx-auto ${router.pathname == "/contact" ? " bg-accent" : " bg-[white]"} text-[black] w-[130px]`}> Interior Design </p>  </Link> */}
+                <li className="li_menu" onClick={toggle}>
+                    <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/contact" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/contact'>Contact</Link>
 
-                {/* <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/contact" ? "border-b-[2px]" : ""}`} href='/contac0t.'>Contact</Link> */}
+                </li>
+
+                <li className="li_menu" onClick={toggle}>
+                    {/* <Link  href='/contact.'> <p className={`md:p-3 md:m-5 rounded mx-auto ${router.pathname == "/contact" ? " bg-accent" : " bg-[white]"} text-[black] w-[130px]`}> Interior Design </p>  </Link> */}
+
+                    {/* <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/contact" ? "border-b-[2px]" : ""}`} href='/contac0t.'>Contact</Link> */}
 
                 </li>
             </ul>
+
+
+            {
+                showProducts &&
+                <div onMouseLeave={() => setShowProducts(false)} onMouseOver={() => setShowProducts(true)}
+                 className=' p-2  items-center  bg-[grey] bg-opacity-40 backdrop-blur-md rounded absolute top-[75px] right-5'>
+
+                    {slides.map((slide, slideIndex) => (
+                        <div
+                            key={slideIndex}
+                            onClick={() => goToSlide(slideIndex)}
+                            className=' cursor-pointer'
+                        >
+                            <div className={`w-[50px] h-[30px] rounded m-2   border p-1  ${currentIndex == slideIndex ? 'bg-[white]' : 'bg-[#80808072]'}`}>
+                                <LazyLoadImage src={slide.url} className='w-[40px] h-[20px] rounded border bg-[white] ' />
+
+                            </div>
+
+                            <p className={`${currentIndex == slideIndex ? 'underline' : ''} text-[white] text-sm my-1 `}>{slide.description}</p>
+
+                        </div>
+                    ))}
+
+                </div>
+            }
         </nav>
     );
 }
@@ -151,24 +184,24 @@ function useMenuAnimation(isOpen) {
             ],
             ...menuAnimations
         ]);
-    }, [isOpen,animate]);
+    }, [isOpen, animate]);
 
     return scope;
 }
 
-export default function MobileMenu({setToggleOpen}) {
+export default function MobileMenu({ setToggleOpen }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const scope = useMenuAnimation(isOpen);
 
-    useEffect(()=>{
+    useEffect(() => {
         setToggleOpen(isOpen)
-    },[isOpen,setToggleOpen])
+    }, [isOpen, setToggleOpen])
 
 
     return (
         <div ref={scope} >
-            <Menu  toggle={() => setIsOpen(!isOpen)} isOpen={isOpen}/>
+            <Menu toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
             <MenuToggle setToggleOpen={setToggleOpen} toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
         </div>
     );

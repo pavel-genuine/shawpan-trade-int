@@ -10,15 +10,14 @@ import marble from '../../assets/imgs/marble.jpg'
 import granite from '../../assets/imgs/granite.jpg'
 import nut from '../../assets/imgs/nut.jpg'
 import ginger from '../../assets/imgs/ginger.jpg'
+
 import mung from '../../assets/Hero/mung.webp'
 import tamarind from '../../assets/imgs/tamarind.jpg'
 import Image from 'next/image'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-
-function Carousel() {
-    const slides = [
+ export const slides = [
         {
             description: 'Marble',
             url: marble.src
@@ -30,8 +29,8 @@ function Carousel() {
         },
         {
             description: 'Fresh Ginger',
+            url:ginger.src
 
-            url: 'https://a-z-animals.com/media/2023/03/shutterstock_1577589430-1024x683.jpg'
         },
 
         {
@@ -50,6 +49,9 @@ function Carousel() {
             url: 'https://vaya.in/recipes/wp-content/uploads/2018/11/Tamarind-seeds.jpg'
         },
     ];
+
+function Carousel() {
+   
 
     const [currentIndex, setCurrentIndex] = useState(0);
 

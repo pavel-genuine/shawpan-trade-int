@@ -80,7 +80,7 @@ function StripeSliderMungBean() {
         transition={{ duration: .7, delay: 0 }}
         >
             <div className="flex h-full w-full items-center justify-center">
-                <div className="md:w-[80vw] w-[100vw] h-[85vh] py-[2vh] bg-navBg md:ml-[5vw] ">
+                <div className="md:w-[80vw] w-[100vw]  py-[2vh] bg-navBg md:ml-[5vw] ">
                     <ul
                         ref={wrapperRef}
                         className="group flex h-[70vh] flex-row gap-[1.5%]"

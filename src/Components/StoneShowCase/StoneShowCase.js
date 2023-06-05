@@ -50,9 +50,9 @@ export default function StoneShowCase() {
     };
 
     return (
-        <Box className='bg-bg ' sx={{ position: 'relative' }}>
+        <Box className='bg-bg h-[100vh]' sx={{ position: 'relative' }}>
             <Box
-                className='mx-auto md:w-[20vw] w-[90vw] '
+                className='mx-auto md:w-[20vw] w-[100vw] '
                 sx={{ flexGrow: 1, display: 'flex', }}
             >
                 <div
@@ -85,29 +85,7 @@ export default function StoneShowCase() {
                         </Box>
                     </motion.div>
                 </div>
-                <motion.div
-                    className='absolute bottom-[-20px] py-5 md:bottom-[0px] left-[11vw] lg:left-[30vw] w-[80vw] lg:w-[700px] text-center'
-                    viewport={{ once: true }}
-                    initial={{ y: 40, opacity: .1 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: .2, delay: 0, }}
-                >
-                    <div className=' bg-textPrimary opacity-80 '>
-                        <TabPanel value={value} index={0}>
-                            <p className='text-[white] text-[15px]  lg:text-2xl'>
-                                The fabric is durable, comfortable, and have a good drape.
-                            </p>
-                        </TabPanel>
-                        <TabPanel value={value} index={1}>
-                            <p className='text-[white] text-[15px]  lg:text-2xl'>
-                                The finishing is clean, with no rough edges, and properly aligned buttons, zippers, or hooks.
-                            </p>
-                        </TabPanel>
-                  
-                       
-                    </div>
-                </motion.div>
-
+                
 
             </Box>
 
@@ -123,7 +101,29 @@ export default function StoneShowCase() {
             }
            
             
-           
+           <motion.div
+                    className=''
+                    viewport={{ once: true }}
+                    initial={{ y: 40, opacity: .1 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .2, delay: 0, }}
+                >
+                    <div className=' bg-textPrimary opacity-80 text-center '>
+                        <TabPanel value={value} index={0}>
+                            <p className='text-[white] text-[15px]  lg:text-2xl'>
+                                The fabric is durable, comfortable, and have a good drape.
+                            </p>
+                        </TabPanel>
+                        <TabPanel value={value} index={1}>
+                            <p className='text-[white] text-[15px]  lg:text-2xl'>
+                                The finishing is clean, with no rough edges, and properly aligned buttons, zippers, or hooks.
+                            </p>
+                        </TabPanel>
+                  
+                       
+                    </div>
+                </motion.div>
+
 
         </Box>
 

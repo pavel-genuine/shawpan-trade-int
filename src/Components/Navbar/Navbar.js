@@ -9,40 +9,10 @@ import mung from '../../assets/Hero/pexels-photo-5843562.jpeg'
 
 import MobileMenu from './MobileMenu';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { slides } from '../HomePage/Carousel';
 
 
-const slides = [
-    {
-        description: 'Marble',
-        url: marble.src
-    },
-    {
-        description: 'Granite',
 
-        url: granite.src
-    },
-    {
-        description: 'Fresh Ginger',
-
-        url: 'https://a-z-animals.com/media/2023/03/shutterstock_1577589430-1024x683.jpg'
-    },
-
-    {
-        description: 'Betel Nut',
-
-        url: 'https://rehmonnya.org/wp-content/uploads/2022/12/betel-nut.jpg'
-    },
-    {
-        description: 'Mung Bean',
-
-        url: mung.src
-    },
-    {
-        description: 'Tamarind Seed',
-
-        url: 'https://vaya.in/recipes/wp-content/uploads/2018/11/Tamarind-seeds.jpg'
-    },
-];
 
 
 const Navbar = () => {
@@ -107,7 +77,7 @@ const Navbar = () => {
                             <>
                                 <Link className={`md:px-2 hover:text-accent md:mx-5 ${router.pathname == "/" ? "border-b-[2px]" : ""}`} href='/'>HOME</Link>
                                 <Link className={`md:px-2 hover:text-accent md:mx-5  ${router.pathname == '/services' ? "border-b-[2px]" : ""}`} href='/services.'>SERVICES</Link>
-                                <Link onMouseLeave={() => setShowProducts(false)} onMouseOver={() => setShowProducts(true)} className={`md:px-2 hover:text-accent md:mx-5  ${router.pathname == '/products' ? "border-b-[2px]" : ""}`} href='/products.'>PRODUCTS</Link>
+                                <p onMouseLeave={() => setShowProducts(false)} onMouseOver={() => setShowProducts(true)} className={`md:px-2 hover:text-accent md:mx-5 cursor-pointer`} href='/products.'>PRODUCTS</p>
                                 <Link className={`md:px-2 hover:text-accent md:mx-5  ${router.pathname == '/testimonials' ? "border-b-[2px]" : ""}`} href='/testimonials.'>TESTIMONIALS</Link>
 
                                 <Link className={`md:px-2 hover:text-accent md:mx-5  ${router.pathname == "/about" ? "border-b-[2px]" : ""}`} href='/about'> ABOUT </Link>
