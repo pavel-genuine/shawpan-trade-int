@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion'
 import img1 from '../../assets/imgs/mung.jpeg'
 import img2 from '../../assets/Hero/pexels-photo-7420815.jpeg'
-import img3 from '../../assets/Hero/pexels-photo-5843562.jpeg'
+import img3 from '../../assets/Hero/mung.webp'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 

@@ -10,7 +10,7 @@ import marble from '../../assets/imgs/marble.jpg'
 import granite from '../../assets/imgs/granite.jpg'
 import nut from '../../assets/imgs/nut.jpg'
 import ginger from '../../assets/imgs/ginger.jpg'
-import mung from '../../assets/Hero/pexels-photo-5843562.jpeg'
+import mung from '../../assets/Hero/mung.webp'
 import tamarind from '../../assets/imgs/tamarind.jpg'
 import Image from 'next/image'
 
