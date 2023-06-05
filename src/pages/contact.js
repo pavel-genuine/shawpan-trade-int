@@ -40,7 +40,7 @@ const Contact = () => {
 
             </Head>
 
-            <div>
+            <div className='w-[100vw]'>
 
                 <motion.div
                     viewport={{ once: true }}
