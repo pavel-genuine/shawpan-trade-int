@@ -10,9 +10,10 @@ import marble from '../../assets/imgs/marble.jpg'
 import granite from '../../assets/imgs/granite.jpg'
 import nut from '../../assets/imgs/nut.jpg'
 import ginger from '../../assets/imgs/ginger.jpg'
-import mung from '../../assets/imgs/mung.jpeg'
+import mung from '../../assets/Hero/pexels-photo-5843562.jpeg'
 import tamarind from '../../assets/imgs/tamarind.jpg'
 import Image from 'next/image'
+
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
@@ -41,7 +42,7 @@ function Carousel() {
         {
             description: 'Mung Bean',
 
-            url: 'http://www.seedarea.com/4676-thickbox_default/mung-beans-seeds.jpg'
+            url: mung.src
         },
         {
             description: 'Tamarind Seed',
