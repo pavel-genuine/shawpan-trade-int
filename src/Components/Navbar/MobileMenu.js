@@ -79,7 +79,7 @@ export function Menu ({ toggle,isOpen }) {
                 </li>
 
                 <li  className="li_menu" onClick={toggle}>
-                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/about" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/about.'>About</Link>
+                <Link className={`md:p-3 md:m-5 hover:text-nav ${router.pathname == "/about" ? "border-b-[2px] text-accent" : "text-[white]"}`} href='/about'>About</Link>
 
                 </li>
                 
