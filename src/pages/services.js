@@ -60,7 +60,7 @@ const Services = () => {
                         </div>
 
                     </motion.div>
-                    <img className=' lg:w-[98.8vw] h-[100vh] object-cover' src={img1.src} alt="" />
+                    <LazyLoadImage className=' lg:w-[98.8vw] h-[100vh] object-cover' src={img1.src} alt="" />
                 </motion.div>
 
 

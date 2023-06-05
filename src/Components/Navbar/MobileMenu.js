@@ -48,7 +48,7 @@ export function Menu ({ toggle,isOpen }) {
         setTimeout(()=>{
             if(!isOpen) setBgWhite(false)
         },1000)
-},[isOpen,animate])
+},[isOpen])
 
 
     return (
@@ -151,7 +151,7 @@ function useMenuAnimation(isOpen) {
             ],
             ...menuAnimations
         ]);
-    }, [isOpen]);
+    }, [isOpen,animate]);
 
     return scope;
 }
@@ -163,7 +163,7 @@ export default function MobileMenu({setToggleOpen}) {
 
     useEffect(()=>{
         setToggleOpen(isOpen)
-    },[isOpen])
+    },[isOpen,setToggleOpen])
 
 
     return (
