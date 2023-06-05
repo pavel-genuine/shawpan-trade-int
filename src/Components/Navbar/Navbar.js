@@ -81,7 +81,7 @@ const Navbar = () => {
         <div className='w-[100vw] absolute' style={{ zIndex: 100 }}>
 
             <div id='' style={{ transition: "all .5s", }} className=
-                {`${toggleOpen ? '' : 'overflow-hidde'} nav w-[100vw]  h-[60px] md:h-[80px]  fixed  ${!background ? 'bg-opacity-0 bg-white' : 'bg-opacity-40 bg-[black] backdrop-blur-md'} `}
+                {`${(toggleOpen||showProducts) ? '' : 'overflow-hidden'} nav w-[100vw]  h-[60px] md:h-[80px]  fixed  ${!background ? 'bg-opacity-0 bg-white' : 'bg-opacity-40 bg-[black] backdrop-blur-md'} `}
             >
                 <div class="lg:navbar lg:w-[82%] mx-auto lg:flex my-4  ">
                     <div class="lg:navbar-start">
