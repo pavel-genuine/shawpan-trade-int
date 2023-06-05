@@ -101,9 +101,9 @@ export default function App({ Component, pageProps }) {
 
             :
             <div>
-              <Navbar isHome={isHome}></Navbar>
+              <Navbar></Navbar>
               <WhatsApp></WhatsApp>
-              <Component setIsHome={setIsHome} {...pageProps} />
+              <Component  {...pageProps} />
               <Footer></Footer>
             </div>
 

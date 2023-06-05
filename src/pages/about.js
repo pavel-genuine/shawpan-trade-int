@@ -5,10 +5,9 @@ import { Button } from '@mui/material'
 import MissionVision from '@/Components/MissionVission/MissionVission'
 import Head from 'next/head'
 
-const About = ({ setIsHome }) => {
+const About = () => {
 
     useEffect(() => {
-        setIsHome(false)
         window.scrollTo(0, 0)
     }, [])
 

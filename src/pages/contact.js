@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-const Contact = ({ setIsHome }) => {
+const Contact = () => {
 
     const [address, setAddress] = React.useState('Dhaka');
 
@@ -20,7 +20,6 @@ const Contact = ({ setIsHome }) => {
     };
 
     useEffect(() => {
-        setIsHome(false)
         window.scrollTo(0, 0)
     }, [])
 

@@ -98,7 +98,7 @@ function StripeSliderMungBean() {
                                 key={person.name}
                             >
                                 <div className={`relative  ${activeItem === index ? 'h-[70vh]' : 'h-[64vh] my-[3vh]'} w-full overflow-hidden rounded bg-[#c9c6c7] `}>
-                                    <img
+                                <LazyLoadImage
                                         className="absolute right-0 top-1/2 object-cover  -translate-y-1/2  grayscal left-1/2 h-[70vh] w-[100%] -translate-x-1/2"
                                         src={person.img}
                                         alt={person.name}

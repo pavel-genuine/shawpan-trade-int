@@ -90,7 +90,7 @@ function Carousel() {
         cycle(-1);
 
 
-    }, [])
+    }, [slides.length])
 
     return (
         <div className='c group'>
@@ -154,9 +154,9 @@ function Carousel() {
                         className='text-2xl cursor-pointer'
                     >
                         <div className={`w-[35px] h-[35px] rounded-full my-2   border p-1  ${currentIndex == slideIndex ? 'bg-[white]' : 'bg-[#80808072]'}`}>
-                            <img src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] '>
+                        <LazyLoadImage src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] '/>
 
-                            </img>
+                        
                         </div>
                     </div>
                 ))}

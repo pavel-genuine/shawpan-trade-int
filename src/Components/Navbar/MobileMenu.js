@@ -1,6 +1,6 @@
 // import "./MobileNav.css";
 import { useState, useEffect } from "react";
-import { useAnimate, stagger } from "framer-motion";
+import { useAnimate, stagger, animate } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Button } from "@mui/material";
@@ -48,7 +48,7 @@ export function Menu ({ toggle,isOpen }) {
         setTimeout(()=>{
             if(!isOpen) setBgWhite(false)
         },1000)
-})
+},[isOpen,animate])
 
 
     return (

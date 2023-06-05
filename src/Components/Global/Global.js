@@ -22,7 +22,7 @@ const Global = () => {
 
         return controls.stop
 
-    }, [])
+    }, [count,count2,count3,count4])
 
     // console.log(rounded,'rrrrrrr');
 

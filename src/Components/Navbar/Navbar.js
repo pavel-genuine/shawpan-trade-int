@@ -5,7 +5,7 @@ import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 
 
-const Navbar = ({ isHome }) => {
+const Navbar = () => {
 
     const [background, setBackground] = useState(false)
     const [toggleOpen, setToggleOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = ({ isHome }) => {
 
         window.addEventListener('scroll', changeBackground)
 
-    }, [])
+    }, [toggleOpen])
 
 
     return (
