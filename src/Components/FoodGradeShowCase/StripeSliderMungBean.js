@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import img1 from '../../assets/imgs/mung.jpeg'
 import img2 from '../../assets/Hero/pexels-photo-7420815.jpeg'
 import img3 from '../../assets/Hero/mung.webp'
+import img4 from '../../assets/Hero/pexels-photo-5843562.jpeg'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
@@ -16,7 +17,7 @@ export const persons = [
         name: "Amazing Quality",
     },
     {
-        img:img1.src,
+        img:img4.src,
         title: "Fresh Mung Bean",
         name: "Amazing Quality",
     },
@@ -26,13 +27,13 @@ export const persons = [
         name: "Amazing Quality",
     },
     {
-        img:img1.src,
+        img:img3.src,
         title: "Fresh Mung Bean",
         name: "Amazing Quality",
     },
    
     {
-        img:img3.src,
+        img:img1.src,
         title: "Fresh Mung Bean",
         name: "Amazing Quality",
     },
