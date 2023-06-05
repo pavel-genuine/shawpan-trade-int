@@ -107,7 +107,7 @@ function Carousel() {
 
 
                         </h1>
-                        <p className='text-[white] lg:w-[40%] w-[80%] mt-5 text-sm lg:text-md'>
+                        <p className='text-[white]  w-[80%] mt-5 text-sm lg:text-md'>
                             Elevate your experience  with our high-quality products. Choose from a wide range of premium collection.
                         </p>
 
