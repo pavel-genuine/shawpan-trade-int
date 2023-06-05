@@ -27,7 +27,7 @@ const About = () => {
 
             </Head>
 
-            <div>
+            <div className='w-[100%]'>
                 <motion.div
                     viewport={{ once: true }}
                     initial={{ y: 300, opacity: .5 }}
@@ -41,7 +41,7 @@ const About = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 0, }}
                     >
-                        <div className='flex justify-center items-center h-[100vh] w-[100vw] bg-[black] bg-opacity-40'>
+                        <div className='flex justify-center items-center h-[100vh] w-[100%] bg-[black] bg-opacity-40'>
                             <div>
                                 <h1 className='text-5xl  text-center mb-4'>
                                     About Us

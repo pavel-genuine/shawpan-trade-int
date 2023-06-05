@@ -40,7 +40,7 @@ const Contact = () => {
 
             </Head>
 
-            <div className='w-[100vw]'>
+            <div className='w-[100%]'>
 
                 <motion.div
                     viewport={{ once: true }}
@@ -91,11 +91,11 @@ const Contact = () => {
                         </div>
 
                     </motion.div>
-                    <LazyLoadImage className='h-[100vh] w-[100vw]' src="https://i.ibb.co/PxHYmK2/Screenshot-2023-04-14-162210.png" alt="" />
+                    <LazyLoadImage className='h-[100vh] w-[100%]' src="https://i.ibb.co/PxHYmK2/Screenshot-2023-04-14-162210.png" alt="" />
                 </motion.div>
 
 
-                <div className='w-[100vw] relative bg-bg h-[60px]'>
+                <div className='w-[100% relative bg-bg h-[60px]'>
                <div className='w-[200px] absolute right-0 bg-accent'>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
@@ -149,7 +149,7 @@ const Contact = () => {
 
 
                     <iframe
-                        className='h-[90vh] w-[100vw]'
+                        className='h-[90vh] w-[100%]'
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.648760121112!2d100.588773!3d13.7388905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e4e8979781d%3A0x6358ed7372c73793!2sS.%20S.%20P.%20Tower%201%20Building!5e0!3m2!1sen!2sbd!4v1685940799609!5m2!1sen!2sbd"
                         width="600"
                         height="450"
@@ -183,7 +183,7 @@ const Contact = () => {
                         </p>
                     </motion.div>
                     <iframe
-                        className='h-[90vh] w-[100vw]'
+                        className='h-[90vh] w-[100%]'
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.538945471007!2d90.41119738051628!3d23.774951804870295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c777f5bdf6bb%3A0xbaa43dcae03ebcaf!2sNiketan%20Society!5e0!3m2!1sen!2sbd!4v1685943189671!5m2!1sen!2sbd" width="600"
                         height="450"
                         allowfullscreen=""
