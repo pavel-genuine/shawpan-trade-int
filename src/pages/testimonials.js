@@ -7,10 +7,9 @@ import { Button } from '@mui/material'
 import Head from 'next/head'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-const Testimonials = ({ setIsHome }) => {
+const Testimonials = () => {
 
     useEffect(() => {
-        setIsHome(false)
         window.scrollTo(0, 0)
     }, [])
 

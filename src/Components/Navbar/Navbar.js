@@ -60,7 +60,7 @@ const Navbar = () => {
                         <ul class="menu lg:flex menu-horizontal ml-[25%] justify-between text-[white]">
                             <>
                                 <Link className={`md:px-2 md:mx-5 ${router.pathname == "/" ? "border-b-[2px]" : ""}`} href='/'>HOME</Link>
-                                <Link className={`md:px-2 md:mx-5  ${router.pathname == '/services' ? "border-b-[2px]" : ""}`} href='/services'>SERVICES</Link>
+                                <Link className={`md:px-2 md:mx-5  ${router.pathname == '/services' ? "border-b-[2px]" : ""}`} href='/services.'>SERVICES</Link>
                                 <Link className={`md:px-2 md:mx-5  ${router.pathname == '/products' ? "border-b-[2px]" : ""}`} href='/products.'>PRODUCTS</Link>
                                 {/* <Link className={`md:px-3 md:m-0 ${router.pathname == '/gallary' ? "border-b-[2px]" : ""}`} href='/gallary'>GALLERY</Link> */}
                                 <Link className={`md:px-2 md:mx-5  ${router.pathname == '/testimonials' ? "border-b-[2px]" : ""}`} href='/testimonials.'>TESTIMONIALS</Link>

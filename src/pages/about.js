@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from '@mui/material'
 import MissionVision from '@/Components/MissionVission/MissionVission'
 import Head from 'next/head'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const About = () => {
 
@@ -54,7 +55,7 @@ const About = () => {
                         </div>
 
                     </motion.div>
-                    <img className='w-[100vw] h-[100vh]' src="https://i.ibb.co/LQdTQhG/Fiduciary-Responsibility-Board-of-Directors-ESG-1.jpg" alt="" />
+                    <LazyLoadImage className='w-[100vw] h-[100vh]' src="https://i.ibb.co/LQdTQhG/Fiduciary-Responsibility-Board-of-Directors-ESG-1.jpg" alt="" />
                 </motion.div>
                 <MissionVision></MissionVision>
 

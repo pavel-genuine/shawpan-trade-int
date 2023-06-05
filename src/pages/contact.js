@@ -10,6 +10,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Contact = () => {
 
@@ -90,7 +91,7 @@ const Contact = () => {
                         </div>
 
                     </motion.div>
-                    <img className='h-[100vh] w-[100vw]' src="https://i.ibb.co/PxHYmK2/Screenshot-2023-04-14-162210.png" alt="" />
+                    <LazyLoadImage className='h-[100vh] w-[100vw]' src="https://i.ibb.co/PxHYmK2/Screenshot-2023-04-14-162210.png" alt="" />
                 </motion.div>
 
 
