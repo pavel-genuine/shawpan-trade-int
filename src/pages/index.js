@@ -21,9 +21,7 @@ const Passion = dynamic(() => import('@/Components/Passion/Passion'), {
 const Qualities = dynamic(() => import('@/Components/Qualities/Qualities'), {
   loading: () => <p>Loading...</p>,
 });
-const Tiles = dynamic(() => import('@/Components/Tiles/Tiles'), {
-  loading: () => <p>Loading...</p>,
-});
+
 
 
 
@@ -61,7 +59,7 @@ const Home = (props) => {
           tag4={props?.tag4}
           smallTag={props?.smallTag}
         ></HomePage>
-        <div id='section'>
+        {/* <div id='section'>
           <Categories></Categories>
         </div>
 
@@ -73,7 +71,7 @@ const Home = (props) => {
 
 
 
-        <Global></Global>
+        <Global></Global> */}
 
         {/* <Qualities></Qualities> */}
 

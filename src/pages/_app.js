@@ -12,6 +12,8 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import Navbar from '@/Components/Navbar/Navbar';
 import WhatsApp from '@/Components/WhatsApp/WhatsApp';
 import { SunnyMorning } from 'moving-letters'
+import logo from '../assets/logos/logo.jpg'
+
 
 const Footer = dynamic(() => import('@/Components/Footer/Footer'), {
   loading: () => <p>Loading...</p>,
@@ -46,7 +48,7 @@ export default function App({ Component, pageProps }) {
 
     setTimeout(() => {
       setIsOpen(true)
-    }, 800)
+    }, 1500)
 
   }, [])
 
@@ -78,11 +80,9 @@ export default function App({ Component, pageProps }) {
                   transition={{ duration: 1.5, delay: 0 }}
 
                 >
-                  <p
-                    className='text-[white] lg:mx-[-4vw] mx-2 inline lg:block lg:mx-0 bg-[black] inline px-5 py-2 rounded-full bg-opacity-70'
-                  >
-                    Shwapan Trade International
-                  </p>
+                  <img src={logo.src}
+                    className='w-[100px] h-[100px] rounded-full   inline lg:block lg:mx-0  bg-[white] inline rounded-full bg-opacity-70'
+                  />
                 </motion.div>
 
 
@@ -102,9 +102,9 @@ export default function App({ Component, pageProps }) {
             :
             <div>
               <Navbar></Navbar>
-              <WhatsApp></WhatsApp>
+              {/* <WhatsApp></WhatsApp> */}
               <Component  {...pageProps} />
-              <Footer></Footer>
+              {/* <Footer></Footer> */}
             </div>
 
         }
