@@ -37,7 +37,7 @@ export const OpenMap = ({ setOpenMap }) => {
 
     return (
         <div className="">
-            <div className='w-[100%] relative bg-bg h-[60px]'>
+            <div className='w-[100%] relative bg-bg h-[56px]'>
                 <div className='absolute left-5 '>
                     <IconButton
                         onClick={() => setOpenMap(false)}
@@ -69,15 +69,15 @@ export const OpenMap = ({ setOpenMap }) => {
             {
                 address == 'Bangkok'
                     ?
-                    <div>
+                    <div className='relative'>
                         <motion.div
-                            className='relative'
+                            
                             viewport={{ once: true }}
                             initial={{ y: 400 }}
                             whileInView={{ y: 0 }}
                             transition={{ duration: .3, delay: 0, }}
                         >
-                            <p className=' p-4 text-[grey]  lg:w-[300px] w-[100%] bg-primary  text-sm md:text-md text-[white] absolute top-0  right-0'>
+                            <p className=' p-4 text-[grey]  lg:w-[300px] w-[100%] bg-primary  text-sm md:text-md text-[white] absolute bottom-0  right-0'>
                                 <span className='font-bold underline'>
                                     Thai Agre Products Company Ltd.
                                 </span>
@@ -109,15 +109,15 @@ export const OpenMap = ({ setOpenMap }) => {
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     :
-                    <div>
+                    <div    className='relative' >
                         <motion.div
-                            className='relative'
+                         
                             viewport={{ once: true }}
                             initial={{ y: 400 }}
                             whileInView={{ y: 0 }}
                             transition={{ duration: .3, delay: 0, }}
                         >
-                            <p className=' p-4 text-[grey]  lg:w-[300px] w-[100%] bg-primary  text-sm md:text-md text-[white] absolute top-0  right-0'>
+                            <p className=' p-4 text-[grey]  lg:w-[300px] w-[100%] bg-primary  text-sm md:text-md text-[white] absolute bottom-0  right-0'>
 
                                 <span className='font-bold underline'>
                                     Swapan Trade International.
