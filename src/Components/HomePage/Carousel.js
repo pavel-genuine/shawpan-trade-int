@@ -232,7 +232,7 @@ export const ContactUS = ({ setOpenMap }) => {
 export const AboutUS = () => {
 
     return (
-        <div className="flex justify-center items-center text-white p-[5vw] h-[100%] w-[100%] bg-bg bg-opacity-50">
+        <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50">
             <div className="">
                 <h1 className='text-5xl  text-center mb-6'>
                     About Us
