@@ -75,9 +75,9 @@ export const OpenMap = ({ setOpenMap }) => {
                             viewport={{ once: true }}
                             initial={{ y: 400 }}
                             whileInView={{ y: 0 }}
-                            transition={{ duration: .7, delay: 0, }}
+                            transition={{ duration: .3, delay: 0, }}
                         >
-                            <p className=' p-4 text-[grey]  lg:w-[300px] bg-primary  text-sm md:text-md text-[white] absolute top-0  right-0'>
+                            <p className=' p-4 text-[grey]  lg:w-[300px] w-[100%] bg-primary  text-sm md:text-md text-[white] absolute top-0  right-0'>
                                 <span className='font-bold underline'>
                                     Thai Agre Products Company Ltd.
                                 </span>
@@ -115,9 +115,9 @@ export const OpenMap = ({ setOpenMap }) => {
                             viewport={{ once: true }}
                             initial={{ y: 400 }}
                             whileInView={{ y: 0 }}
-                            transition={{ duration: .7, delay: 0, }}
+                            transition={{ duration: .3, delay: 0, }}
                         >
-                            <p className='text-[grey]  lg:w-[300px] w-[60vw] bg-primary p-4 text-sm md:text-md text-[white] absolute top-0  right-0'>
+                            <p className=' p-4 text-[grey]  lg:w-[300px] w-[100%] bg-primary  text-sm md:text-md text-[white] absolute top-0  right-0'>
 
                                 <span className='font-bold underline'>
                                     Swapan Trade International.
