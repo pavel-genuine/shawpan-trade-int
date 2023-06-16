@@ -87,23 +87,23 @@ const HomePage = () => {
               <Carousel></Carousel>
             </div>
 
-            <div onClick={() => { setOpenAbout(false) ; setOpenContact(true); handleClickOpen() }}
-             className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 bottom-7 md:bottom-20 left-[40%] md:left-[47%] '>
+            <div onClick={() => { setOpenAbout(false); setOpenContact(true); handleClickOpen() }}
+              className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 bottom-7 md:bottom-20 left-[40%] md:left-[47%] '>
 
-                <p className='   mb-[-12px]'>
-                  Contact Us
-                </p>
-                <marquee behavior="scroll" direction='right'>
-                  <div className=' bg-accent h-[2px] w-[60px] lg:w-[75px]'>
+              <p className='   mb-[-12px]'>
+                Contact Us
+              </p>
+              <marquee behavior="scroll" direction='right'>
+                <div className=' bg-accent h-[2px] w-[60px] lg:w-[75px]'>
 
-                  </div>
-                </marquee>
+                </div>
+              </marquee>
 
 
             </div>
 
-            <div style={{ zIndex: 110 }} onClick={() => {setOpenContact(false); setOpenAbout(true); handleClickOpen() }} 
-            className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 top-10 md:top-12 left-[40%] md:left-[47%] '>
+            <div style={{ zIndex: 110 }} onClick={() => { setOpenContact(false); setOpenAbout(true); handleClickOpen() }}
+              className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 top-10 md:top-12 left-[40%] md:left-[47%] '>
               <motion.div
                 className='   '
                 initial={{ y: 40, opacity: 0 }}
@@ -132,26 +132,29 @@ const HomePage = () => {
           open={open}
           fullWidth={true}
           maxWidth={'lg'}
-        > 
-        <div className='absolute  right-0 top-0 z-10'>
-        <IconButton
-            onClick={handleClose}
-            color='secondary'
-            className="absolute right-3 top-3 bg-gray-400"
-            aria-label="delete"
         >
-            <CloseIcon  />
-        </IconButton>
-    </div>
+          {
+            !openMap && 
+            <div className='absolute  right-0 top-0 z-10'>
+            <IconButton
+              onClick={handleClose}
+              color='secondary'
+              className="absolute right-3 top-3 bg-gray-400"
+              aria-label="delete"
+            >
+              <CloseIcon />
+            </IconButton>
+          </div>
+          }
           {
             openContact ?
               <div className='bg-accent'>
-                
+
                 {
                   openMap ?
-                  <OpenMap setOpenMap={setOpenMap} ></OpenMap>
-                  :
-                  <ContactUS setOpenMap={setOpenMap}></ContactUS>
+                    <OpenMap setOpenMap={setOpenMap} ></OpenMap>
+                    :
+                    <ContactUS setOpenMap={setOpenMap}></ContactUS>
                 }
               </div>
               :
