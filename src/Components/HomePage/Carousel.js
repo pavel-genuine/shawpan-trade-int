@@ -71,7 +71,7 @@ export const OpenMap = ({ setOpenMap }) => {
                     ?
                     <div className='relative'>
                         <motion.div
-                            
+
                             viewport={{ once: true }}
                             initial={{ y: 400 }}
                             whileInView={{ y: 0 }}
@@ -109,9 +109,9 @@ export const OpenMap = ({ setOpenMap }) => {
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     :
-                    <div    className='relative' >
+                    <div className='relative' >
                         <motion.div
-                         
+
                             viewport={{ once: true }}
                             initial={{ y: 400 }}
                             whileInView={{ y: 0 }}
@@ -403,38 +403,35 @@ function Carousel() {
                         <div className="w-[100vw] ">
                             {
                                 currentIndex == 6 ?
-                                <div className=" flex  relative  ">
+                                    <div className=" flex  relative  ">
 
-                                <motion.div
-                                    className="w-[50vw] bg-accent h-[100vh]"
-                                    initial={{ x: -200, opacity: .5 }}
-                                    whileInView={{ x: 0, opacity: 1 }}
-                                    transition={{ duration: .5, delay: 0, }}
-                                >
+                                        <motion.div
+                                            className="w-[50vw] bg-accent h-[100vh]"
+                                            initial={{ x: -200, opacity: .5 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0, }}
+                                        >
 
-                                </motion.div>
+                                        </motion.div>
 
-                                <motion.div
-                                    className="w-[50vw] bg-[black] h-[100vh]"
-                                    initial={{ x: 200, opacity: .5 }}
-                                    whileInView={{ x: 0, opacity: 1 }}
-                                    transition={{ duration: .5, delay: 0, }}
-                                ></motion.div>
+                                        <motion.div
+                                            className="w-[50vw] bg-[black] h-[100vh]"
+                                            initial={{ x: 200, opacity: .5 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0, }}
+                                        ></motion.div>
 
-                                <motion.div
-                                 className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
-                                    initial={{ y: 200, opacity: .5 }}
-                                    whileInView={{ y: 0, opacity: 1 }}
-                                    transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
-                                >
-
-                                        <ContactUS></ContactUS>
-
-
-                                </motion.div>
+                                        <motion.div
+                                            className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
+                                            initial={{ y: 200, opacity: .5 }}
+                                            whileInView={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                                        >
+                                            <AboutUS></AboutUS>
+                                        </motion.div>
 
 
-                            </div>
+                                    </div>
                                     :
                                     <div className=" flex flex-row-reverse relative  ">
 
@@ -455,15 +452,12 @@ function Carousel() {
                                         ></motion.div>
 
                                         <motion.div
-                                         className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
+                                            className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
                                             initial={{ y: 200, opacity: .5 }}
                                             whileInView={{ y: 0, opacity: 1 }}
                                             transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
                                         >
-
-                                                <AboutUS></AboutUS>
-
-
+                                            <ContactUS></ContactUS>
                                         </motion.div>
 
 
