@@ -132,10 +132,21 @@ const HomePage = () => {
           open={open}
           fullWidth={true}
           maxWidth={'lg'}
+        > 
+        <div className='absolute  right-0 top-0 z-10'>
+        <IconButton
+            onClick={handleClose}
+            color='secondary'
+            className="absolute right-3 top-3 bg-gray-400"
+            aria-label="delete"
         >
+            <CloseIcon  />
+        </IconButton>
+    </div>
           {
             openContact ?
               <div className='bg-accent'>
+                
                 {
                   openMap ?
                   <OpenMap setOpenMap={setOpenMap} ></OpenMap>

@@ -41,6 +41,9 @@ export default function App({ Component, pageProps }) {
         dark: "#ff5926",
         mainGradient: "linear-gradient(to right , #480626, #7e2651)",
       },
+      secondary:{
+        main:'#fff'
+      }
     },
   });
 
