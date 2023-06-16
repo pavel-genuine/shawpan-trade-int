@@ -89,12 +89,7 @@ const HomePage = () => {
 
             <div onClick={() => { setOpenAbout(false) ; setOpenContact(true); handleClickOpen() }}
              className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 bottom-7 md:bottom-20 left-[40%] md:left-[47%] '>
-              <motion.div
-                className='   '
-                initial={{ y: 40, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: .5, delay: 1, }}
-              >
+
                 <p className='   mb-[-12px]'>
                   Contact Us
                 </p>
@@ -104,8 +99,6 @@ const HomePage = () => {
                   </div>
                 </marquee>
 
-
-              </motion.div>
 
             </div>
 

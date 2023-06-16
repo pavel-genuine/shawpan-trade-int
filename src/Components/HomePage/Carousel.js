@@ -27,7 +27,7 @@ import Select from '@mui/material/Select';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-export const OpenMap = ({setOpenMap}) => {
+export const OpenMap = ({ setOpenMap }) => {
 
     const [address, setAddress] = React.useState('Dhaka');
 
@@ -38,16 +38,16 @@ export const OpenMap = ({setOpenMap}) => {
     return (
         <div className="">
             <div className='w-[100%] relative bg-bg h-[60px]'>
-            <div className='absolute left-5 '>
-           <IconButton
-                onClick={() =>setOpenMap(false)}
-                color="default"
-                className="absolute right-3 top-3 bg-gray-400"
-                aria-label="delete"
-              >
-                <ArrowBackIcon color="primary" />
-              </IconButton>
-           </div>
+                <div className='absolute left-5 '>
+                    <IconButton
+                        onClick={() => setOpenMap(false)}
+                        color="default"
+                        className="absolute right-3 top-3 bg-gray-400"
+                        aria-label="delete"
+                    >
+                        <ArrowBackIcon color="primary" />
+                    </IconButton>
+                </div>
                 <div className='w-[200px] absolute right-0 bg-accent'>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
@@ -151,7 +151,7 @@ export const OpenMap = ({setOpenMap}) => {
 export const ContactUS = ({ setOpenMap }) => {
 
     return (
-        <div className="flex justify-center items-center text-white p-[5vw] h-[100%] w-[100%] bg-bg bg-opacity-50 relative">
+        <div className="flex justify-center items-center text-white p-[5vw] h-[100%] w-[100%] relative bg-bg bg-opacity-50 ">
             <div className="relative">
                 <h1 className='text-4xl text-center mb-5'>
                     Contact Us
@@ -191,21 +191,21 @@ export const ContactUS = ({ setOpenMap }) => {
                         Thai Agri Products Company Ltd.
                     </span>
                     <br />
-                    <br className="hidden md:block"/>
+                    <br className="hidden md:block" />
                     <span className='font-bold underline'>
                         Swapan Trade International.
                     </span>
                     <br />
-                    <br  className="hidden md:block"/>
+                    <br className="hidden md:block" />
                     Dhaka Office: House 114, Road 2, Block A, Niketon, Gulshan-1, Dhaka 1212, Bangladesh
                     <br />
-                    <br  className="hidden md:block"/>
+                    <br className="hidden md:block" />
 
                     Bangkok Office : SSP Tower,
                     21th foor,
                     Soi Sukhumvit 63, Ekkamai Road, Bangkok 10110, Thailand
                     <br />
-                    <br className="hidden md:block"/>
+                    <br className="hidden md:block" />
 
                     <a className='underline' href="tel:+880 1711813933">   +880xxxxxxx </a>,
                     <br />
@@ -213,17 +213,17 @@ export const ContactUS = ({ setOpenMap }) => {
 
                 </p>
 
-               {
-                setOpenMap &&
-                <div className="flex justify-center items-center">
-               <Button onClick={()=>setOpenMap(true)} style={{ borderRadius: '68px', backgroundColor: 'grey' }} className='lg:w-[200px] w-[50vw] h-[50px]  absolute right-0 '
-                    startIcon={<LocationOnIcon></LocationOnIcon>}
-                    variant="contained">
-                    View On Map
-                </Button>
-               </div>
-               }
-                
+                {
+                    setOpenMap &&
+                    <div className="flex justify-center items-center">
+                        <Button onClick={() => setOpenMap(true)} style={{ borderRadius: '68px', backgroundColor: 'grey' }} className='lg:w-[200px] w-[50vw] h-[50px]  absolute right-0 '
+                            startIcon={<LocationOnIcon></LocationOnIcon>}
+                            variant="contained">
+                            View On Map
+                        </Button>
+                    </div>
+                }
+
             </div>
         </div>
     )
@@ -232,7 +232,7 @@ export const ContactUS = ({ setOpenMap }) => {
 export const AboutUS = () => {
 
     return (
-        <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50">
+        <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50  ">
             <div className="">
                 <h1 className='text-5xl  text-center mb-6'>
                     About Us
@@ -403,11 +403,44 @@ function Carousel() {
                         <div className="w-[100vw] ">
                             {
                                 currentIndex == 6 ?
-                                    <div className=" flex relative ">
+                                <div className=" flex  relative  ">
+
+                                <motion.div
+                                    className="w-[50vw] bg-accent h-[100vh]"
+                                    initial={{ x: -200, opacity: .5 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: .5, delay: 0, }}
+                                >
+
+                                </motion.div>
+
+                                <motion.div
+                                    className="w-[50vw] bg-[black] h-[100vh]"
+                                    initial={{ x: 200, opacity: .5 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: .5, delay: 0, }}
+                                ></motion.div>
+
+                                <motion.div
+                                 className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
+                                    initial={{ y: 200, opacity: .5 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                                >
+
+                                        <ContactUS></ContactUS>
+
+
+                                </motion.div>
+
+
+                            </div>
+                                    :
+                                    <div className=" flex flex-row-reverse relative  ">
 
                                         <motion.div
                                             className="w-[50vw] bg-accent h-[100vh]"
-                                            initial={{ x: -200, opacity: .5 }}
+                                            initial={{ x: 200, opacity: .5 }}
                                             whileInView={{ x: 0, opacity: 1 }}
                                             transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
                                         >
@@ -416,54 +449,22 @@ function Carousel() {
 
                                         <motion.div
                                             className="w-[50vw] bg-[black] h-[100vh]"
-                                            initial={{ x: 200, opacity: .5 }}
+                                            initial={{ x: -200, opacity: .5 }}
                                             whileInView={{ x: 0, opacity: 1 }}
                                             transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
                                         ></motion.div>
 
                                         <motion.div
+                                         className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
                                             initial={{ y: 200, opacity: .5 }}
                                             whileInView={{ y: 0, opacity: 1 }}
                                             transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
                                         >
-                                            <div className=' flex items-center items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'>
-
-                                                <ContactUS></ContactUS>
-
-                                            </div>
-
-                                        </motion.div>
-
-                                    </div>
-                                    :
-                                    <div className=" flex flex-row-reverse relative  ">
-                                        <motion.div
-                                            initial={{ y: 200, opacity: .5 }}
-                                            whileInView={{ y: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
-                                        >
-                                            <div className=' flex items-center items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'>
 
                                                 <AboutUS></AboutUS>
 
-                                            </div>
 
                                         </motion.div>
-                                        <motion.div
-                                            className="w-[50vw] bg-accent h-[100vh]"
-                                            initial={{ x: 200, opacity: .5 }}
-                                            whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
-                                        >
-
-                                        </motion.div>
-
-                                        <motion.div
-                                            className="w-[50vw] bg-[black] h-[100vh]"
-                                            initial={{ x: -200, opacity: .5 }}
-                                            whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
-                                        ></motion.div>
 
 
                                     </div>
