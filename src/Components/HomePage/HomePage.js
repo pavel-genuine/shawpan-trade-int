@@ -88,7 +88,7 @@ const HomePage = () => {
             </div>
 
             <div onClick={() => { setOpenAbout(false) ; setOpenContact(true); handleClickOpen() }}
-             className='cursor-pointer  absolute text-accent :text-lg text-[white] text-center  font-bold z-10 bottom-7 md:bottom-20 left-[40%] md:left-[47%] '>
+             className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 bottom-7 md:bottom-20 left-[40%] md:left-[47%] '>
               <motion.div
                 className='   '
                 initial={{ y: 40, opacity: 0 }}
