@@ -48,7 +48,7 @@ export const OpenMap = ({ setOpenMap }) => {
                         <ArrowBackIcon color="primary" />
                     </IconButton>
                 </div>
-                <div className='w-[200px] absolute right-0 bg-accent'>
+                <div className='w-[200px] absolute right-0 bg-accent '>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
                             <Select
@@ -151,17 +151,17 @@ export const OpenMap = ({ setOpenMap }) => {
 export const ContactUS = ({ setOpenMap }) => {
 
     return (
-        <div className="flex justify-center items-center text-white p-[5vw] h-[100%] w-[100%] relative bg-bg bg-opacity-50 ">
+        <div className="flex justify-center items-center text-white md:p-[2vw] p-[5vw] h-[100%] w-[100%] relative bg-bg bg-opacity-50 ">
             <div className="relative">
-                <h1 className='text-4xl text-center mb-5'>
+                <h1 className='text-2xl font-semibold md:text-4xl text-center mb-3 md:mb-5'>
                     Contact Us
                 </h1>
 
                 <p className='px-7 text-xl lg:text-2xl text-center'>
                     We would like to hear from you.
                 </p>
-                <div className='flex justify-center items-center mt-5'>
-                    <div className='lg:flex space-y-5 lg:space-y-0 lg:space-x-7  '>
+                <div className='flex justify-center items-center mt-3 md:mt-5'>
+                    <div className='lg:flex space-y-3 lg:space-y-0 lg:space-x-7  '>
                         <div className=''>
                             <Button style={{ borderRadius: '68px', backgroundColor: 'black' }} className='lg:w-[200px] w-[50vw] h-[50px] bg-[black]  '
                                 startIcon={<EmailIcon></EmailIcon>}
@@ -186,13 +186,13 @@ export const ContactUS = ({ setOpenMap }) => {
 
                 </div>
 
-                <p className='text-[grey] text-center px-10  py-10 text-md md:text-lg text-[white]'>
-                    <span className='font-bold underline'>
+                <p className='text-[grey] text-center px-10  my-5 text-md md:text-lg text-[white]'>
+                    <span className='font-bold md:text-2xl'>
                         Thai Agri Products Company Ltd.
                     </span>
                     <br />
-                    <br className="hidden md:block" />
-                    <span className='font-bold underline'>
+                    <br className="hidden md:block " />
+                    <span className='font-bold md:text-2xl '>
                         Swapan Trade International.
                     </span>
                     <br />
@@ -423,9 +423,9 @@ function Carousel() {
 
                                         <motion.div
                                             className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
-                                            initial={{ y: 200, opacity: .5 }}
+                                            initial={{ y:- 200, opacity: .5 }}
                                             whileInView={{ y: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                                            transition={{ duration: .5, delay: 0}}
                                         >
                                             <AboutUS></AboutUS>
                                         </motion.div>
@@ -437,25 +437,25 @@ function Carousel() {
 
                                         <motion.div
                                             className="w-[50vw] bg-accent h-[100vh]"
-                                            initial={{ x: 200, opacity: .5 }}
+                                            initial={{ x:-200, opacity: .5 }}
                                             whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                                            transition={{ duration: .5, delay: .1 }}
                                         >
 
                                         </motion.div>
 
                                         <motion.div
                                             className="w-[50vw] bg-[black] h-[100vh]"
-                                            initial={{ x: -200, opacity: .5 }}
+                                            initial={{ x: 200, opacity: .5 }}
                                             whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                                            transition={{ duration: .5, delay: .1 }}
                                         ></motion.div>
 
                                         <motion.div
                                             className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
                                             initial={{ y: 200, opacity: .5 }}
                                             whileInView={{ y: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                                            transition={{ duration: .5, delay: 0, }}
                                         >
                                             <ContactUS></ContactUS>
                                         </motion.div>
