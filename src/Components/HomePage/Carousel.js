@@ -230,7 +230,7 @@ export const ContactUS = ({ setOpenMap }) => {
     )
 }
 
-export const AboutUS = () => {
+export const AboutUS = ({setOpenAbout}) => {
 
     return (
         <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50  ">
@@ -240,7 +240,7 @@ export const AboutUS = () => {
 
                 </h1>
 
-                <p className='text-xl lg:text-2xl text-center px-[8vw]'>
+                <p className={`text-xl lg:text-2xl text-center ${setOpenAbout?'':'px-[10vw]'}`}>
                     Swapan Trade International established in 1996 a rapidly growing conglomerate, engage with export, import & trading business beside comission agent. We are associate partner Thailand based agro products like fresh ginger, betel nut, mung bean, refined sugar and associate partner Portugal, Italy, Iran & Turkey based products of natural marble block and granite block. We never compromise quality , quantity & deadline.
                 </p>
             </div>

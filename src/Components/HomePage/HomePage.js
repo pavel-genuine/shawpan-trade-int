@@ -159,7 +159,7 @@ const HomePage = () => {
               </div>
               :
               <div className='bg-accent'>
-                <AboutUS></AboutUS>
+                <AboutUS setOpenAbout={setOpenAbout}></AboutUS>
               </div>
           }
         </BootstrapDialog>
