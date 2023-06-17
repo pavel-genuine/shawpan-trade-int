@@ -43,15 +43,15 @@ const Navbar = () => {
         <div className='w-[100vw] absolute' style={{ zIndex: 100 }}>
 
             <div id='' style={{ transition: "all .5s", }} className=
-                {`${(toggleOpen||showProducts) ? '' : 'overflow-hidden'} nav w-[100vw]  h-[150px]  fixed  ${!background ? 'bg-opacity-0 bg-white' : 'bg-opacity-40 bg-[black] backdrop-blur-md'} `}
+                {`${(toggleOpen||showProducts) ? '' : 'overflow-hidden'} nav w-[100vw]  h-[150px]  fixed  ${!background ? '' : ''} `}
             >
-                <div class="lg:navbar lg:w-[88%] mx-auto lg:flex my-4  ">
+                <div class="lg:navbar lg:w-[88%] mx-auto lg:flex md:my-4 my-2  ">
                     <div class="lg:navbar-start">
 
 
                         <Link href='/' class="  ">
                             <img src={logo.src}
-                                className='md:w-[100px] w-[70px] h-[70px] md:h-[100px] rounded-full   inline lg:block lg:mx-0 mx-[5vw] bg-[white] inline rounded-full bg-opacity-70'
+                                className='md:w-[130px] md:h-[130px] w-[80px] h-[80px]  rounded-full   inline lg:block lg:mx-0 mx-[5vw] bg-[white] inline rounded-full bg-opacity-70'
                             />
                                
                         </Link>

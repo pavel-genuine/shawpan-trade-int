@@ -84,7 +84,7 @@ export default function App({ Component, pageProps }) {
 
                 >
                   <img src={logo.src}
-                    className='w-[100px] h-[100px] rounded-full   inline lg:block lg:mx-0  bg-[white] inline rounded-full bg-opacity-70'
+                    className='w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-full   inline lg:block lg:mx-0  bg-[white] inline rounded-full bg-opacity-70'
                   />
                 </motion.div>
 

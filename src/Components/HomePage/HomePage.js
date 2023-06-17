@@ -88,13 +88,13 @@ const HomePage = () => {
             </div>
 
             <div onClick={() => { setOpenAbout(false); setOpenContact(true); handleClickOpen() }}
-              className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 bottom-7 md:bottom-20 left-[40%] md:left-[47%] '>
+              className=' rounded-t-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg   absolute  text-center  font-bold z-10 bottom-0 md:bottom-0 left-[40%] md:left-[46.5%] '>
 
-              <p className='   mb-[-12px]'>
+              <p className='   mb-[-12px] mt-[20px] text-[white]'>
                 Contact Us
               </p>
               <marquee behavior="scroll" direction='right'>
-                <div className=' bg-accent h-[2px] w-[60px] lg:w-[75px]'>
+                <div className=' bg-[white] h-[2px] w-[60px] lg:w-[75px]'>
 
                 </div>
               </marquee>
@@ -103,18 +103,18 @@ const HomePage = () => {
             </div>
 
             <div style={{ zIndex: 110 }} onClick={() => { setOpenContact(false); setOpenAbout(true); handleClickOpen() }}
-              className='cursor-pointer  absolute text-accent text-lg text-[white] text-center  font-bold z-10 top-10 md:top-12 left-[40%] md:left-[47%] '>
+              className='rounded-b-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg  absolute  text-center  font-bold z-10 top-0 md:top-0 left-[40%] md:left-[46.5%] '>
               <motion.div
                 className='   '
                 initial={{ y: 40, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: .5, delay: 1, }}
               >
-                <p className='   mb-[-12px]'>
+                <p className='   mb-[-12px] mt-[20px] md:mt-[25px] text-[white]'>
                   About Us
                 </p>
                 <marquee behavior="scroll" direction='right'>
-                  <div className=' bg-accent h-[2px] w-[60px] lg:w-[75px]'>
+                  <div className=' bg-[white] h-[2px] w-[60px] lg:w-[75px]'>
 
                   </div>
                 </marquee>

@@ -163,22 +163,22 @@ export const ContactUS = ({ setOpenMap }) => {
                 <div className='flex justify-center items-center mt-3 md:mt-5'>
                     <div className='lg:flex space-y-3 lg:space-y-0 lg:space-x-7  '>
                         <div className=''>
-                            <Button style={{ borderRadius: '68px', backgroundColor: 'black' }} className='lg:w-[200px] w-[50vw] h-[50px] bg-[black]  '
+                            <Button size="small" style={{ borderRadius: '68px', backgroundColor: 'black', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
                                 startIcon={<EmailIcon></EmailIcon>}
-                                variant="contained">
-                                <a href="mailto:info@Swapantradeint.com" className='text-xl font-bold text-[white]' type="submit" >Email Us</a>
+                                variant="outlined">
+                                <a href="mailto:info@Swapantradeint.com" className='md:text-xl  font-semibold text-[white]' type="submit" >Email Us</a>
                             </Button>
 
                         </div>
                         <div>
 
-                            <Button style={{ borderRadius: '68px', backgroundColor: 'black' }} className='lg:w-[200px] w-[50vw] bg-[black]  h-[50px] '
+                            <Button style={{ borderRadius: '68px', backgroundColor: 'black' }} className='lg:w-[200px] w-[150px] h-[40px]  md:h-[50px]'
 
                                 startIcon={<CallIcon></CallIcon>}
 
                                 variant="contained">
 
-                                <a href="tel:+880 1711813933" className='text-xl font-bold text-[white]'>Call Now </a> </Button>
+                                <a href="tel:+880 1711813933" className='md:text-xl  font-semibold text-[white]'>Call Now </a> </Button>
 
                         </div>
 
@@ -186,7 +186,7 @@ export const ContactUS = ({ setOpenMap }) => {
 
                 </div>
 
-                <p className='text-[grey] text-center px-10  my-5 text-md md:text-lg text-[white]'>
+                <p className={`${setOpenMap?'':'px-10'} text-[grey] text-center   my-5 text-md md:text-lg text-[white]`}>
                     <span className='font-bold md:text-2xl'>
                         Thai Agri Products Company Ltd.
                     </span>
@@ -216,7 +216,8 @@ export const ContactUS = ({ setOpenMap }) => {
                 {
                     setOpenMap &&
                     <div className="flex justify-center items-center">
-                        <Button onClick={() => setOpenMap(true)} style={{ borderRadius: '68px', backgroundColor: 'grey' }} className='lg:w-[200px] w-[50vw] h-[50px]  absolute right-0 '
+                        
+                        <Button onClick={() => setOpenMap(true)} size="small" style={{ borderRadius: '68px', backgroundColor: 'grey', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
                             startIcon={<LocationOnIcon></LocationOnIcon>}
                             variant="contained">
                             View On Map
