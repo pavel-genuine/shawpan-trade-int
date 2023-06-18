@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion"
 
 import Link from 'next/link'
@@ -14,6 +14,9 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
+
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -63,6 +66,24 @@ const HomePage = () => {
   const [openAbout, setOpenAbout] = React.useState(false);
   const [openMap, setOpenMap] = React.useState(false);
 
+  const [audioStatus, setAudioStatus] = useState(false);
+
+  const myRef = useRef();
+
+  const startAudio = () => {
+    myRef.current.play();
+    setAudioStatus(true);
+
+
+  };
+
+  const pauseAudio = () => {
+    console.log("here");
+    myRef.current.pause();
+    setAudioStatus(false);
+  };
+
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -74,6 +95,11 @@ const HomePage = () => {
     setOpenMap(false)
   };
 
+  useEffect(()=>{
+
+
+  },[])
+
 
 
 
@@ -81,11 +107,33 @@ const HomePage = () => {
     <div className=' '>
       <div className='w-[100%] mx-auto h-[100vh] '>
 
+        <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-5 md:right-[10vw] top-10  z-10 cursor-pointer">
+         
+        <audio
+        ref={myRef}
+        autoPlay
+        src='https://res.cloudinary.com/pavel-genuine/video/upload/v1687075627/bg_iq4qxp.wav'
+      />
+         
+          <IconButton
+            size={'large'}
+
+            color="default"
+            aria-label="delete"
+          >
+            { audioStatus==true  ? <VolumeUpIcon onClick={pauseAudio}    color="primary" />: <VolumeMuteIcon onClick={startAudio} color="primary" /> }
+          </IconButton>
+        </div>
+
         {
           <div className='relative'>
+
+
+
             <div>
               <Carousel></Carousel>
             </div>
+
 
             <div onClick={() => { setOpenAbout(false); setOpenContact(true); handleClickOpen() }}
               className=' rounded-t-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg   absolute  text-center  font-bold z-10 bottom-0 md:bottom-0 left-[40%] md:left-[46.5%] '>
@@ -134,17 +182,17 @@ const HomePage = () => {
           maxWidth={'lg'}
         >
           {
-            !openMap && 
+            !openMap &&
             <div className='absolute  right-0 top-0 z-10'>
-            <IconButton
-              onClick={handleClose}
-              color='secondary'
-              className="absolute right-3 top-3 bg-gray-400"
-              aria-label="delete"
-            >
-              <CloseIcon />
-            </IconButton>
-          </div>
+              <IconButton
+                onClick={handleClose}
+                color='secondary'
+                className="absolute right-3 top-3 bg-gray-400"
+                aria-label="delete"
+              >
+                <CloseIcon />
+              </IconButton>
+            </div>
           }
           {
             openContact ?

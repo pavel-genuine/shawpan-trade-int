@@ -27,6 +27,7 @@ import Select from '@mui/material/Select';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
+
 export const OpenMap = ({ setOpenMap }) => {
 
     const [address, setAddress] = React.useState('Dhaka');
@@ -186,7 +187,7 @@ export const ContactUS = ({ setOpenMap }) => {
 
                 </div>
 
-                <p className={`${setOpenMap?'':'px-10'} text-[grey] text-center   my-5 text-md md:text-lg text-[white]`}>
+                <p className={`${setOpenMap ? '' : 'px-10'} text-[grey] text-center   my-5 text-md md:text-lg text-[white]`}>
                     <span className='font-bold md:text-2xl'>
                         Thai Agri Products Company Ltd.
                     </span>
@@ -216,7 +217,7 @@ export const ContactUS = ({ setOpenMap }) => {
                 {
                     setOpenMap &&
                     <div className="flex justify-center items-center">
-                        
+
                         <Button onClick={() => setOpenMap(true)} size="small" style={{ borderRadius: '68px', backgroundColor: 'grey', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
                             startIcon={<LocationOnIcon></LocationOnIcon>}
                             variant="contained">
@@ -230,7 +231,7 @@ export const ContactUS = ({ setOpenMap }) => {
     )
 }
 
-export const AboutUS = ({setOpenAbout}) => {
+export const AboutUS = ({ setOpenAbout }) => {
 
     return (
         <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50  ">
@@ -240,7 +241,7 @@ export const AboutUS = ({setOpenAbout}) => {
 
                 </h1>
 
-                <p className={`text-xl lg:text-2xl text-center ${setOpenAbout?'':'px-[10vw]'}`}>
+                <p className={`text-xl lg:text-2xl text-center ${setOpenAbout ? '' : 'px-[10vw]'}`}>
                     Swapan Trade International established in 1996 a rapidly growing conglomerate, engage with export, import & trading business beside comission agent. We are associate partner Thailand based agro products like fresh ginger, betel nut, mung bean, refined sugar and associate partner Portugal, Italy, Iran & Turkey based products of natural marble block and granite block. We never compromise quality , quantity & deadline.
                 </p>
             </div>
@@ -295,12 +296,7 @@ function Carousel() {
 
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    const playAudio = () => {
-        new Audio('https://drive.google.com/file/d/1Nmn5VaLIfrE4HNiViTkGetO4Lc2zNB5f/view?usp=sharing').play()
-
-        console.log('clicked');
-    }
+   
 
     const prevSlide = () => {
 
@@ -344,11 +340,14 @@ function Carousel() {
     }, [slides.length])
 
     return (
-        <div className='c group'>
+        <div>
+
+
             <div
                 style={{ backgroundImage: `url(${currentIndex < 6 && slides[currentIndex].url})` }}
-                className=' h-[100vh] w-[100vw]  bg-center bg-cover duration-500 flex   items-center '
+                className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
             >
+
 
                 {
                     (currentIndex < 6) ?
@@ -424,9 +423,9 @@ function Carousel() {
 
                                         <motion.div
                                             className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
-                                            initial={{ y:- 200, opacity: .5 }}
+                                            initial={{ y: - 200, opacity: .5 }}
                                             whileInView={{ y: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0}}
+                                            transition={{ duration: .5, delay: 0 }}
                                         >
                                             <AboutUS></AboutUS>
                                         </motion.div>
@@ -438,7 +437,7 @@ function Carousel() {
 
                                         <motion.div
                                             className="w-[50vw] bg-accent h-[100vh]"
-                                            initial={{ x:-200, opacity: .5 }}
+                                            initial={{ x: -200, opacity: .5 }}
                                             whileInView={{ x: 0, opacity: 1 }}
                                             transition={{ duration: .5, delay: .1 }}
                                         >
@@ -471,12 +470,16 @@ function Carousel() {
 
 
             </div>
-            <div className='hidden group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+
+            <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactLeft onClick={prevSlide} size={30} />
             </div>
-            <div className='hidden group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+            <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={nextSlide} size={30} />
             </div>
+
+
+
             <div className='absolute right-5 md:right-[10vw] top-[28vh] py-2'>
                 {slides.map((slide, slideIndex) => (
                     <div
