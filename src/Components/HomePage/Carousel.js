@@ -113,7 +113,7 @@ export const OpenMap = ({ setOpenMap }) => {
     };
 
     return (
-        <div className="">
+        <div className="bg-bg bg-opacity-50">
             <div className='w-[100%] relative bg-bg h-[56px]'>
                 <div className='absolute left-5 '>
                     <IconButton
@@ -125,10 +125,11 @@ export const OpenMap = ({ setOpenMap }) => {
                         <ArrowBackIcon color="primary" />
                     </IconButton>
                 </div>
-                <div className='w-[200px] absolute right-0 bg-accent '>
+                <div className='w-[200px] absolute right-0 bg-accent  bg-opacity-50'>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
                             <Select
+                                style={{ color: 'white' }}
                                 defaultValue='Dhaka'
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
@@ -392,7 +393,7 @@ function Carousel() {
     }, [slides.length])
 
     return (
-        <div onClick={audioStatus? pauseAudio: startAudio}>
+        <div onClick={audioStatus ? pauseAudio : startAudio}>
 
 
             <motion.div
@@ -421,7 +422,7 @@ function Carousel() {
                     color="default"
                     aria-label="delete"
                 >
-                    {audioStatus == true ? <VolumeUpIcon onClick={()=>pauseAudio()} color="primary" /> : <VolumeMuteIcon onClick={()=>startAudio()} color="primary" />}
+                    {audioStatus == true ? <VolumeUpIcon onClick={() => pauseAudio()} color="primary" /> : <VolumeMuteIcon onClick={() => startAudio()} color="primary" />}
                 </IconButton>
             </div>
 
