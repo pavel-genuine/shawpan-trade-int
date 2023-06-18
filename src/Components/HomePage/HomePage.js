@@ -14,8 +14,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
+
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -66,27 +65,6 @@ const HomePage = () => {
   const [openAbout, setOpenAbout] = React.useState(false);
   const [openMap, setOpenMap] = React.useState(false);
 
-  const [audioStatus, setAudioStatus] = useState(false);
-
-  const myRef = useRef();
-
-  const startAudio = () => {
-    myRef.current.play();
-    setAudioStatus(true);
-
-
-  };
-
-  const pauseAudio = () => {
-    console.log("here");
-    myRef.current.pause();
-    setAudioStatus(false);
-  };
-
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
   const handleClose = () => {
     setOpen(false);
@@ -95,11 +73,9 @@ const HomePage = () => {
     setOpenMap(false)
   };
 
-  useEffect(()=>{
-
-
-  },[])
-
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
 
 
@@ -107,23 +83,7 @@ const HomePage = () => {
     <div className=' '>
       <div className='w-[100%] mx-auto h-[100vh] '>
 
-        <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-5 md:right-[10vw] top-10  z-10 cursor-pointer">
-         
-        <audio
-        ref={myRef}
-        autoPlay
-        src='https://res.cloudinary.com/pavel-genuine/video/upload/v1687075627/bg_iq4qxp.wav'
-      />
-         
-          <IconButton
-            size={'large'}
-
-            color="default"
-            aria-label="delete"
-          >
-            { audioStatus==true  ? <VolumeUpIcon onClick={pauseAudio}    color="primary" />: <VolumeMuteIcon onClick={startAudio} color="primary" /> }
-          </IconButton>
-        </div>
+        
 
         {
           <div className='relative'>

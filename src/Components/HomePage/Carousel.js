@@ -3,12 +3,17 @@ import { Box, Button, IconButton } from '@mui/material'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CrisisAlertIcon from '@mui/icons-material/CrisisAlert';
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import marble from '../../assets/imgs/marble.jpg'
+import marbleIran from '../../assets/imgs/marbleIran.jpg'
+// import marbleItaly from '../../assets/imgs/marbleItaly.jpg'
 import granite from '../../assets/imgs/granite.jpg'
+import graniteIran from '../../assets/imgs/graniteIran.jpg'
+import graniteItaly from '../../assets/imgs/graniteItaly.jpg'
 import nut from '../../assets/Hero/betelnut.jpg'
+import nut2 from '../../assets/imgs/nut.jpeg'
 import ginger from '../../assets/imgs/ginger.jpg'
 
 import mung from '../../assets/Hero/mung.webp'
@@ -26,7 +31,78 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 
+export const slides = [
+
+
+    {
+        description: 'Fresh Ginger From Thailand.',
+        url: ginger.src
+
+    },
+
+    {
+        description: 'Betel Nut (whole) From Thailand.',
+
+        url: nut2.src
+    },
+    {
+        description: 'Betel Nut (split) From Thailand.',
+
+        url: nut.src
+    },
+    {
+        description: 'Mung Bean From Thailand.',
+
+        url: mung.src
+    },
+    {
+        description: 'Tamarind Seed From Thailand',
+
+        url: 'https://vaya.in/recipes/wp-content/uploads/2018/11/Tamarind-seeds.jpg'
+    },
+
+    {
+        description: 'Marble Block From Portugal.',
+        url: marble.src
+    },
+    {
+        description: 'Granite Block From Portugal.',
+
+        url: granite.src
+    },
+    {
+        description: 'Marble Block From Iran.',
+        url: marbleIran.src
+    },
+    {
+        description: 'Granite Block From Iran.',
+
+        url: graniteIran.src
+    },
+    // {
+    //     description: 'Marble Block From Italy.',
+    //     url: marble.src
+    // },
+    {
+        description: 'Granite Block From Italy.',
+
+        url: graniteItaly.src
+    },
+
+    {
+        description: 'About',
+
+        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+    {
+        description: 'Contact',
+
+        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+    },
+];
 
 export const OpenMap = ({ setOpenMap }) => {
 
@@ -249,54 +325,30 @@ export const AboutUS = ({ setOpenAbout }) => {
     )
 }
 
-export const slides = [
-    {
-        description: 'Marble Block From Iran, Italy & Portugal.',
-        url: marble.src
-    },
-    {
-        description: 'Granite Block From Iran, Italy & Portugal.',
 
-        url: granite.src
-    },
-    {
-        description: 'Fresh Ginger From Thailand.',
-        url: ginger.src
-
-    },
-
-    {
-        description: 'Betel Nut From Thailand.',
-
-        url: nut.src
-    },
-    {
-        description: 'Mung Bean From Thailand.',
-
-        url: mung.src
-    },
-    {
-        description: 'Tamarind Seed From Thailand',
-
-        url: 'https://vaya.in/recipes/wp-content/uploads/2018/11/Tamarind-seeds.jpg'
-    },
-    {
-        description: 'About',
-
-        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
-    },
-    {
-        description: 'Contact',
-
-        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
-    },
-];
 
 function Carousel() {
 
 
     const [currentIndex, setCurrentIndex] = useState(0);
-   
+
+    const [audioStatus, setAudioStatus] = useState(false);
+
+    const myRef = useRef();
+
+    const startAudio = () => {
+        myRef.current.play();
+        setAudioStatus(true);
+
+
+    };
+
+    const pauseAudio = () => {
+        myRef.current.pause();
+        setAudioStatus(false);
+    };
+
+
 
     const prevSlide = () => {
 
@@ -340,17 +392,42 @@ function Carousel() {
     }, [slides.length])
 
     return (
-        <div>
+        <div onClick={audioStatus? pauseAudio: startAudio}>
 
 
-            <div
-                style={{ backgroundImage: `url(${currentIndex < 6 && slides[currentIndex].url})` }}
+            <motion.div
+                initial={{ opacity: 1, scale: 1.3 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 4, delay: 0, repeat: Infinity, repeatDelay: 0 }}
+
+                style={{ backgroundImage: `url(${currentIndex < 10 && slides[currentIndex].url})` }}
                 className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
             >
 
 
+            </motion.div>
+
+            <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-5 md:right-[10vw] top-10  z-10 cursor-pointer">
+
+                <audio
+                    ref={myRef}
+                    autoPlay
+                    src='https://res.cloudinary.com/pavel-genuine/video/upload/v1687098619/y2mate.com_-_Cool_Upbeat_Background_Music_For_Videos_No_Copyright_Music_l4xifv.mp3'
+                />
+
+                <IconButton
+                    size={'large'}
+
+                    color="default"
+                    aria-label="delete"
+                >
+                    {audioStatus == true ? <VolumeUpIcon onClick={()=>pauseAudio()} color="primary" /> : <VolumeMuteIcon onClick={()=>startAudio()} color="primary" />}
+                </IconButton>
+            </div>
+
+            <div className={`absolute ${currentIndex < 10 ? ' top-[33vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
-                    (currentIndex < 6) ?
+                    (currentIndex < 10) ?
                         <motion.div
                             initial={{ y: 200, opacity: .5 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -402,7 +479,7 @@ function Carousel() {
                         :
                         <div className="w-[100vw] ">
                             {
-                                currentIndex == 6 ?
+                                currentIndex == 10 ?
                                     <div className=" flex  relative  ">
 
                                         <motion.div
@@ -467,9 +544,8 @@ function Carousel() {
                         </div>
 
                 }
-
-
             </div>
+
 
             <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactLeft onClick={prevSlide} size={30} />
@@ -480,14 +556,14 @@ function Carousel() {
 
 
 
-            <div className='absolute right-5 md:right-[10vw] top-[28vh] py-2'>
+            <div className='absolute right-5 md:right-[10vw] top-[15vh] md:top-[23vh] py-2'>
                 {slides.map((slide, slideIndex) => (
                     <div
                         key={slideIndex}
                         onClick={() => goToSlide(slideIndex)}
                         className='text-2xl cursor-pointer'
                     >
-                        <div className={`w-[35px] h-[35px] rounded-full my-2   border p-1  ${currentIndex == slideIndex ? 'bg-[black]' : 'bg-[#80808072]'}`}>
+                        <div className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-[#000000c2] ' : 'bg-[#8080809e]'}`}>
                             <LazyLoadImage src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] ' />
                         </div>
                     </div>
