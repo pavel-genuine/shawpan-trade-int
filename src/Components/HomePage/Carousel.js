@@ -180,9 +180,9 @@ export const OpenMap = ({ setOpenMap }) => {
                                 Soi Sukhumvit 63, Ekkamai Road, Bangkok 10110, Thailand
                                 <br />
 
-                                <a className='underline' href="tel:+880 1711813933">   +880xxxxxxx </a>,
+                                <a className='underline' href="tel:+8801819231662">+8801819231662</a>,
                                 <br />
-                                <a className='underline' href="mailto:info@swapantradeint.com"> info@swapantradeint.com </a>
+                                <a className='underline' href="mailto:royalorchid2011@yahoo.com"> royalorchid2011@yahoo.com </a>
 
                             </p>
                         </motion.div>
@@ -216,9 +216,9 @@ export const OpenMap = ({ setOpenMap }) => {
 
                                 <br />
 
-                                <a className='underline' href="tel:+880 1711813933">   +880xxxxxxx </a>,
+                                <a className='underline' href="tel:+8801819231662"> +8801819231662 </a>,
                                 <br />
-                                <a className='underline' href="mailto:info@swapantradeint.com"> info@swapantradeint.com </a>
+                                <a className='underline' href="mailto:royalorchid2011@yahoo.com"> royalorchid2011@yahoo.com </a>
 
                             </p>
                         </motion.div>
