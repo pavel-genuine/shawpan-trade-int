@@ -31,15 +31,14 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
+
 
 export const slides = [
 
 
     {
         description: 'Fresh Ginger From Thailand.',
-        des: 'Fresh Ginger',
+        des: 'Fresh Ginger ',
         url: ginger.src
 
     },
@@ -536,10 +535,10 @@ function Carousel() {
                 </div>
 
 
-                <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
-                <div  className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[33vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <div  className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
 
@@ -555,7 +554,7 @@ function Carousel() {
                             {(currentIndex == slideIndex || mouseHover == slideIndex) ?
                                 <div className=" tooltip absolute left-[-110px] text-sm top-[0px] flex justify-center items-center">
 
-                                    <p className="text-sm w-[100px] text-center bg-accent bg-opacity-70 px-2 py-1 rounded text-[white]">{currentIndex == slideIndex ? slides[currentIndex].des : mouseHover == slideIndex && slides[slideIndex].des}</p>
+                                    <p className="text-sm w-[100px] text-center bg-accent bg-opacity-70 px-2 py-1 rounded text-[white]">{currentIndex == slideIndex ? slides[currentIndex].description : mouseHover == slideIndex && slides[slideIndex].description}</p>
 
                                 </div>
                                 : ''}

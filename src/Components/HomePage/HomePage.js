@@ -134,7 +134,7 @@ const HomePage = () => {
 
 
             <div onClick={() => { setOpenAbout(false); setOpenContact(true); handleClickOpen() }}
-              className=' rounded-t-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg   absolute  text-center  font-bold z-10 bottom-0 md:bottom-0 left-[40%] md:left-[46.5%] '>
+              className=' rounded-t-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg   absolute  text-center  font-bold z-10 bottom-0 md:bottom-0 left-[35%] md:left-[46.5%] '>
 
               <p className='   mb-[-12px] mt-[20px] text-[white]'>
                 Contact Us
@@ -149,7 +149,7 @@ const HomePage = () => {
             </div>
 
             <div style={{ zIndex: 110 }} onClick={() => { setOpenContact(false); setOpenAbout(true); handleClickOpen() }}
-              className='rounded-b-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg  absolute  text-center  font-bold z-10 top-0 md:top-0 left-[40%] md:left-[46.5%] '>
+              className='rounded-b-full cursor-pointer bg-bg bg-opacity-50 px-5 md:h-[90px] h-[70px] text-sm md:text-lg  absolute  text-center  font-bold z-10 top-0 md:top-0 left-[35%] md:left-[46.5%] '>
               <motion.div
                 className='   '
                 initial={{ y: 40, opacity: 0 }}
