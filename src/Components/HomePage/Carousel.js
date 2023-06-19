@@ -346,7 +346,7 @@ function Carousel() {
 
     const [audioStatus, setAudioStatus] = useState(false);
     const [mouseHover, setMouseHover] = useState('not');
-   
+
 
 
     const prevSlide = () => {
@@ -394,49 +394,47 @@ function Carousel() {
     }, [slides.length])
 
     return (
+
         <div>
-          
+            <motion.div
 
-            <div>
-                <motion.div
-                
-                    initial={{ opacity: 1, scale: 1.3 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 4, delay: 0, repeat: Infinity, repeatDelay: 0 }}
+                initial={{ opacity: 1, scale: 1.3 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 4, delay: 0, repeat: Infinity, repeatDelay: 0 }}
 
-                    style={{ backgroundImage: `url(${currentIndex < 10 && slides[currentIndex].url})` }}
-                    className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
-                >
+                style={{ backgroundImage: `url(${currentIndex < 10 && slides[currentIndex].url})` }}
+                className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
+            >
 
 
-                </motion.div>
+            </motion.div>
 
 
 
-                <div  className={`absolute ${currentIndex < 10 ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
-                    {
-                        (currentIndex < 10) ?
-                            <motion.div
-                                initial={{ y: 200, opacity: .5 }}
-                                whileInView={{ y: 0, opacity: 1 }}
-                                transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
-                            >
+            <div style={{ zIndex: 2 }} className={`absolute ${currentIndex < 10 ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
+                {
+                    (currentIndex < 10) ?
+                        <motion.div
+                            initial={{ y: 200, opacity: .5 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                        >
 
-                                <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-[60vw] flex items-center bg-bg bg-opacity-50 z-10'>
+                            <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-[60vw] flex items-center bg-bg bg-opacity-50 z-10'>
 
-                                    <div>
-                                        <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
-                                            <p className="">
-                                                <span className='text-accent'>{'High-quality'} {' '}</span>{slides[currentIndex].description}
-                                            </p>
-                                        </h1>
-                                        <p className='text-[white]  w-[80%] mt-3 text-md lg:text-lg'>
-                                            Elevate your experience  with our high-quality products. Choose from a wide range of premium collection.
+                                <div>
+                                    <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
+                                        <p className="">
+                                            <span className='text-accent'>{'High-quality'} {' '}</span>{slides[currentIndex].description}
                                         </p>
+                                    </h1>
+                                    <p className='text-[white]  w-[80%] mt-3 text-md lg:text-lg'>
+                                        Elevate your experience  with our high-quality products. Choose from a wide range of premium collection.
+                                    </p>
 
-                                        <div className='md:flex lg:mt-8 mt-6 md:space-x-[6px] lg:space-x-5 space-y-5 md:space-y-0'>
+                                    <div className='md:flex lg:mt-8 mt-6 md:space-x-[6px] lg:space-x-5 space-y-5 md:space-y-0'>
 
-                                            {/* <a href="https://api.whatsapp.com/send/?phone=8801711813933&text=" target="_blank" rel="noopener noreferrer">
+                                        {/* <a href="https://api.whatsapp.com/send/?phone=8801711813933&text=" target="_blank" rel="noopener noreferrer">
 
                                     <Button style={{ borderRadius: '68px', backgroundColor: '#1F2937' }} className='bg-bgNav' variant='contained'
 
@@ -446,126 +444,125 @@ function Carousel() {
                                     </Button>
                                 </a> */}
 
-                                            {/* <Link href='/about'> */}
-                                            {/* <Button className="mt-5 md:mt-0" style={{ borderRadius: '68px', borderColor: 'white' }} variant='outlined'
+                                        {/* <Link href='/about'> */}
+                                        {/* <Button className="mt-5 md:mt-0" style={{ borderRadius: '68px', borderColor: 'white' }} variant='outlined'
                                     startIcon={<CrisisAlertIcon style={{ color: '#fff' }} />}
                                 >
                                     <p className='text-[white]'>
                                         Learn More
                                     </p>
                                 </Button> */}
-                                            {/* </Link> */}
+                                        {/* </Link> */}
 
 
-                                        </div>
                                     </div>
-
                                 </div>
-
-
-                            </motion.div>
-                            :
-                            <div className="w-[100vw] ">
-                                {
-                                    currentIndex == 10 ?
-                                        <div className=" flex  relative  ">
-
-                                            <motion.div
-                                                className="w-[50vw] bg-accent h-[100vh]"
-                                                initial={{ x: -200, opacity: .5 }}
-                                                whileInView={{ x: 0, opacity: 1 }}
-                                                transition={{ duration: .5, delay: 0, }}
-                                            >
-
-                                            </motion.div>
-
-                                            <motion.div
-                                                className="w-[50vw] bg-[black] h-[100vh]"
-                                                initial={{ x: 200, opacity: .5 }}
-                                                whileInView={{ x: 0, opacity: 1 }}
-                                                transition={{ duration: .5, delay: 0, }}
-                                            ></motion.div>
-
-                                            <motion.div
-                                                className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
-                                                initial={{ y: - 200, opacity: .5 }}
-                                                whileInView={{ y: 0, opacity: 1 }}
-                                                transition={{ duration: .5, delay: 0 }}
-                                            >
-                                                <AboutUS></AboutUS>
-                                            </motion.div>
-
-
-                                        </div>
-                                        :
-                                        <div className=" flex flex-row-reverse relative  ">
-
-                                            <motion.div
-                                                className="w-[50vw] bg-accent h-[100vh]"
-                                                initial={{ x: -200, opacity: .5 }}
-                                                whileInView={{ x: 0, opacity: 1 }}
-                                                transition={{ duration: .5, delay: .1 }}
-                                            >
-
-                                            </motion.div>
-
-                                            <motion.div
-                                                className="w-[50vw] bg-[black] h-[100vh]"
-                                                initial={{ x: 200, opacity: .5 }}
-                                                whileInView={{ x: 0, opacity: 1 }}
-                                                transition={{ duration: .5, delay: .1 }}
-                                            ></motion.div>
-
-                                            <motion.div
-                                                className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
-                                                initial={{ y: 200, opacity: .5 }}
-                                                whileInView={{ y: 0, opacity: 1 }}
-                                                transition={{ duration: .5, delay: 0, }}
-                                            >
-                                                <ContactUS></ContactUS>
-                                            </motion.div>
-
-
-                                        </div>
-                                }
 
                             </div>
 
-                    }
-                </div>
+
+                        </motion.div>
+                        :
+                        <div className="w-[100vw] ">
+                            {
+                                currentIndex == 10 ?
+                                    <div className=" flex  relative  ">
+
+                                        <motion.div
+                                            className="w-[50vw] bg-accent h-[100vh]"
+                                            initial={{ x: -200, opacity: .5 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0, }}
+                                        >
+
+                                        </motion.div>
+
+                                        <motion.div
+                                            className="w-[50vw] bg-[black] h-[100vh]"
+                                            initial={{ x: 200, opacity: .5 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0, }}
+                                        ></motion.div>
+
+                                        <motion.div
+                                            className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
+                                            initial={{ y: - 200, opacity: .5 }}
+                                            whileInView={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0 }}
+                                        >
+                                            <AboutUS></AboutUS>
+                                        </motion.div>
 
 
-                <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                    <BsChevronCompactLeft onClick={prevSlide} size={30} />
-                </div>
-                <div  className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                    <BsChevronCompactRight onClick={nextSlide} size={30} />
-                </div>
+                                    </div>
+                                    :
+                                    <div className=" flex flex-row-reverse relative  ">
+
+                                        <motion.div
+                                            className="w-[50vw] bg-accent h-[100vh]"
+                                            initial={{ x: -200, opacity: .5 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: .1 }}
+                                        >
+
+                                        </motion.div>
+
+                                        <motion.div
+                                            className="w-[50vw] bg-[black] h-[100vh]"
+                                            initial={{ x: 200, opacity: .5 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: .1 }}
+                                        ></motion.div>
+
+                                        <motion.div
+                                            className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
+                                            initial={{ y: 200, opacity: .5 }}
+                                            whileInView={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: .5, delay: 0, }}
+                                        >
+                                            <ContactUS></ContactUS>
+                                        </motion.div>
 
 
+                                    </div>
+                            }
 
-                <div  className='absolute right-1 md:right-[10vw] top-[15vh] md:top-[23vh] py-2 z-0'>
-                    {slides.map((slide, slideIndex) => (
-                        <div
-                            key={slideIndex}
-                            onClick={() => goToSlide(slideIndex)}
-                            className='text-2xl cursor-pointer relative w-[50px]'
-                        >
-                            {(currentIndex == slideIndex || mouseHover == slideIndex) ?
-                                <div className=" tooltip absolute left-[-110px] text-sm top-[0px] flex justify-center items-center">
-
-                                    <p className="text-sm w-[100px] text-center bg-accent bg-opacity-70 px-2 py-1 rounded text-[white]">{currentIndex == slideIndex ? slides[currentIndex].description : mouseHover == slideIndex && slides[slideIndex].description}</p>
-
-                                </div>
-                                : ''}
-
-
-                            <div onMouseOver={() => setMouseHover(slideIndex)} onMouseLeave={() => setMouseHover('not')} className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-accent bg-opacity-70 ' : 'bg-[#8080809e]'}`}>
-                                <LazyLoadImage src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] ' />
-                            </div>
                         </div>
-                    ))}
-                </div>
+
+                }
+            </div>
+
+
+            <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <BsChevronCompactLeft onClick={prevSlide} size={30} />
+            </div>
+            <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <BsChevronCompactRight onClick={nextSlide} size={30} />
+            </div>
+
+
+
+            <div className='absolute right-1 md:right-[10vw] top-[15vh] md:top-[23vh] py-2 z-0'>
+                {slides.map((slide, slideIndex) => (
+                    <div
+                        key={slideIndex}
+                        onClick={() => goToSlide(slideIndex)}
+                        className='text-2xl cursor-pointer relative w-[50px]'
+                    >
+                        {(currentIndex == slideIndex || mouseHover == slideIndex) ?
+                            <div style={{ zIndex: -1 }} className=" tooltip absolute left-[-110px] text-sm top-[0px] flex justify-center items-center">
+
+                                <p className="text-sm w-[100px] text-center bg-accent bg-opacity-70 px-2 py-1 rounded text-[white]">{currentIndex == slideIndex ? slides[currentIndex].description : mouseHover == slideIndex && slides[slideIndex].description}</p>
+
+                            </div>
+                            : ''}
+
+
+                        <div onMouseOver={() => setMouseHover(slideIndex)} onMouseLeave={() => setMouseHover('not')} className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-accent bg-opacity-70 ' : 'bg-[#8080809e]'}`}>
+                            <LazyLoadImage src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] ' />
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
