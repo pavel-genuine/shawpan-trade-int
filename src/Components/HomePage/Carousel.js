@@ -255,7 +255,7 @@ export const ContactUS = ({ setOpenMap }) => {
                             <Button size="small" style={{ borderRadius: '68px', backgroundColor: 'black', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
                                 startIcon={<EmailIcon></EmailIcon>}
                                 variant="outlined">
-                                <a href="mailto:info@Swapantradeint.com" className='md:text-xl  font-semibold text-[white]' type="submit" >Email Us</a>
+                                <a href="mailto:royalorchid2011@yahoo.com" className='md:text-xl  font-semibold text-[white]' type="submit" >Email Us</a>
                             </Button>
 
                         </div>
@@ -267,7 +267,7 @@ export const ContactUS = ({ setOpenMap }) => {
 
                                 variant="contained">
 
-                                <a href="tel:+880 1711813933" className='md:text-xl  font-semibold text-[white]'>Call Now </a> </Button>
+                                <a href="tel:+8801819231662" className='md:text-xl  font-semibold text-[white]'>Call Now </a> </Button>
 
                         </div>
 
@@ -296,9 +296,9 @@ export const ContactUS = ({ setOpenMap }) => {
                     <br />
                     <br className="hidden md:block" />
 
-                    <a className='underline' href="tel:+880 1711813933">   +880xxxxxxx </a>,
+                    <a className='underline' href="tel:+880 1711813933">+8801819231662</a>,
                     <br />
-                    <a className='underline' href="mailto:info@swapantradeint.com"> info@swapantradeint.com </a>
+                    <a className='underline' href="mailto:info@swapantradeint.com"> royalorchid2011@yahoo.com</a>
 
                 </p>
 
