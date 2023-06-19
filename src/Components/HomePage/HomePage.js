@@ -14,7 +14,8 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -64,6 +65,24 @@ const HomePage = () => {
   const [openContact, setOpenContact] = React.useState(false);
   const [openAbout, setOpenAbout] = React.useState(false);
   const [openMap, setOpenMap] = React.useState(false);
+  const [audioStatus, setAudioStatus] = useState(false);
+  const [mouseHover, setMouseHover] = useState('not');
+  const [audioFirst, setAudioFirst] = useState(1);
+
+  const myRef = useRef();
+
+  const startAudio = () => {
+    myRef.current.play();
+    setAudioStatus(true);
+
+
+  };
+
+  const pauseAudio = () => {
+    myRef.current.pause();
+    setAudioStatus(false);
+  };
+
 
 
   const handleClose = () => {
@@ -80,10 +99,29 @@ const HomePage = () => {
 
 
   return (
-    <div className=' '>
-      <div className='w-[100%] mx-auto h-[100vh] '>
+    <div className='relative '>
 
-        
+      <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-4 md:right-[10vw] top-9 md:top-10  z-10 cursor-pointer">
+
+        <audio
+          ref={myRef}
+          autoPlay
+          src='https://res.cloudinary.com/pavel-genuine/video/upload/v1687098619/y2mate.com_-_Cool_Upbeat_Background_Music_For_Videos_No_Copyright_Music_l4xifv.mp3'
+        />
+
+        <IconButton
+          size={'large'}
+
+          color="default"
+          aria-label="delete"
+        >
+          {audioStatus == true ? <VolumeUpIcon onClick={() => { pauseAudio(); setMouseHover('v') }} color="primary" /> : <VolumeMuteIcon onClick={() => startAudio()} color="primary" />}
+        </IconButton>
+      </div>
+
+      <div onClick={() => { audioFirst == 1 && startAudio(); setAudioFirst('not1') }} className='w-[100%] mx-auto h-[100vh] '>
+
+
 
         {
           <div className='relative'>

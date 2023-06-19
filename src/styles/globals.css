@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 28%;
+  right: 0%;
+  rotate:270deg;
+  margin-right: -13px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #ff5926b6 transparent transparent transparent;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
