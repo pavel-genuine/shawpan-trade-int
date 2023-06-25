@@ -559,7 +559,7 @@ function Carousel() {
 
 
 
-            <div className='absolute right-1 md:right-[10vw] top-[14vh] md:top-[15vh] py-2 z-0'>
+            <div className='absolute right-1 md:right-[10vw] top-[12.5vh] md:top-[15vh] py-2 z-0'>
                 {slides.map((slide, slideIndex) => (
                     <div
                         key={slideIndex}
