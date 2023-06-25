@@ -95,7 +95,7 @@ const Contact = () => {
                 </motion.div>
 
 
-                <div className='w-[100% relative bg-bg h-[60px]'>
+                <div className='w-[100%] relative bg-bg h-[60px]'>
                <div className='w-[200px] absolute right-0 bg-accent'>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>

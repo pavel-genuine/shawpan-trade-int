@@ -7,17 +7,21 @@ import React, { useEffect, useRef, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import marble from '../../assets/imgs/marble.jpg'
+import marblePortugal3 from '../../assets/imgs/marblePortugal3.jpeg'
+import marblePortugal2 from '../../assets/imgs/marblePortugal2.jpeg'
 import marbleIran from '../../assets/imgs/marbleIran.jpg'
+import marbleIran1 from '../../assets/imgs/marbleIran1.jpeg'
+import marbleIran2 from '../../assets/imgs/marbleIran3.jpeg'
 // import marbleItaly from '../../assets/imgs/marbleItaly.jpg'
 import granite from '../../assets/imgs/granite.jpg'
-import graniteIran from '../../assets/imgs/graniteIran.jpg'
-import graniteItaly from '../../assets/imgs/graniteItaly.jpg'
+import marbleItaly from '../../assets/imgs/graniteItaly.jpg'
+import marbleItaly2 from '../../assets/imgs/marbleItaly2.jpeg'
 import nut from '../../assets/Hero/betelnut.jpg'
 import nut2 from '../../assets/imgs/nut.jpeg'
 import ginger from '../../assets/imgs/ginger.jpg'
 
 import mung from '../../assets/Hero/mung.webp'
-import tamarind from '../../assets/imgs/tamarind.jpg'
+import tamarind from '../../assets/imgs/Tamarind-seeds.jpg'
 // import audio from '../../assets/bg.wav'
 import Image from 'next/image'
 // import Sound from 'react-sound';
@@ -64,7 +68,7 @@ export const slides = [
         description: 'Tamarind Seed From Thailand.',
         des: 'Tamarind Seed',
 
-        url: 'https://vaya.in/recipes/wp-content/uploads/2018/11/Tamarind-seeds.jpg'
+        url: tamarind.src
     },
 
     {
@@ -72,6 +76,18 @@ export const slides = [
         des: 'Marble Portugal',
 
         url: marble.src
+    },
+    {
+        description: 'Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: marblePortugal2.src
+    },
+    {
+        description: 'Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: marblePortugal3.src
     },
     {
         description: 'Granite Block From Portugal.',
@@ -85,20 +101,21 @@ export const slides = [
 
         url: marbleIran.src
     },
-    {
-        description: 'Granite Block From Iran.',
-        des: 'Granite Iran',
 
-        url: graniteIran.src
-    },
-    // {
-    //     description: 'Marble Block From Italy.',
-    //     url: marble.src
-    // },
     {
-        description: 'Granite Block From Italy.',
-        des: 'Granite Italy',
-        url: graniteItaly.src
+        description: 'Marble Block From Iran.',
+        des: 'Marble Iran',
+
+        url: marbleIran2.src
+    },
+    {
+        description: 'Marble Block From Italy.',
+        url: marbleItaly2.src
+    },
+    {
+        description: 'Marble Block From Italy.',
+        des: 'Marble Italy',
+        url: marbleItaly.src
     },
 
     {
@@ -402,7 +419,7 @@ function Carousel() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 4, delay: 0, repeat: Infinity, repeatDelay: 0 }}
 
-                style={{ backgroundImage: `url(${currentIndex < 10 && slides[currentIndex].url})` }}
+                style={{ backgroundImage: `url(${currentIndex < 13 && slides[currentIndex].url})` }}
                 className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
             >
 
@@ -411,9 +428,9 @@ function Carousel() {
 
 
 
-            <div style={{ zIndex:currentIndex < 10 ? 2:-2 }} className={`absolute ${currentIndex < 10 ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
+            <div style={{ zIndex:currentIndex < 13 ? 2:-2 }} className={`absolute ${currentIndex < 13 ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
-                    (currentIndex < 10) ?
+                    (currentIndex < 13) ?
                         <motion.div
                             initial={{ y: 200, opacity: .5 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -465,7 +482,7 @@ function Carousel() {
                         :
                         <div className="w-[100vw] ">
                             {
-                                currentIndex == 10 ?
+                                currentIndex == 13 ?
                                     <div className=" flex  relative  ">
 
                                         <motion.div
@@ -542,7 +559,7 @@ function Carousel() {
 
 
 
-            <div className='absolute right-1 md:right-[10vw] top-[15vh] md:top-[23vh] py-2 z-0'>
+            <div className='absolute right-1 md:right-[10vw] top-[14vh] md:top-[15vh] py-2 z-0'>
                 {slides.map((slide, slideIndex) => (
                     <div
                         key={slideIndex}
