@@ -114,8 +114,8 @@ export const slides = [
     },
 
     {
-        description: 'About',
-        des: 'About',
+        description: 'Introduction',
+        des: 'Introduction',
 
         url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
     },
@@ -360,7 +360,7 @@ export const AboutUS = ({ setOpenAbout }) => {
         <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50  ">
             <div className="">
                 <h1 className='text-5xl  text-center mb-6'>
-                    About Us
+                    Introduction
 
                 </h1>
 
