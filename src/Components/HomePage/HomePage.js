@@ -157,7 +157,7 @@ const HomePage = () => {
                 transition={{ duration: .5, delay: 1, }}
               >
                 <p className='   mb-[-12px] mt-[20px] md:mt-[25px] text-[white]'>
-                  About Us
+                Introduction
                 </p>
                 <marquee behavior="scroll" direction='right'>
                   <div className=' bg-[white] h-[2px] w-[60px] lg:w-[75px]'>

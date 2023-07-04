@@ -18,7 +18,7 @@ import marbleItaly from '../../assets/imgs/graniteItaly.jpg'
 import marbleItaly2 from '../../assets/imgs/marbleItaly2.jpeg'
 import nut from '../../assets/Hero/betelnut.jpg'
 import nut2 from '../../assets/imgs/nut.jpeg'
-import ginger from '../../assets/imgs/ginger.jpg'
+import ginger from '../../assets/imgs/ginger2.jpg'
 
 import mung from '../../assets/Hero/mung.webp'
 import tamarind from '../../assets/imgs/Tamarind-seeds.jpg'
@@ -72,48 +72,43 @@ export const slides = [
     },
 
     {
-        description: 'Marble Block From Portugal.',
+        description: 'Best Marble Block From Portugal.',
         des: 'Marble Portugal',
 
         url: marble.src
     },
     {
-        description: 'Marble Block From Portugal.',
+        description: 'Best Marble Block From Portugal.',
         des: 'Marble Portugal',
 
         url: marblePortugal2.src
     },
     {
-        description: 'Marble Block From Portugal.',
+        description: 'Best Marble Block From Portugal.',
         des: 'Marble Portugal',
 
         url: marblePortugal3.src
     },
-    {
-        description: 'Granite Block From Portugal.',
-        des: 'Granite Portugal',
 
-        url: granite.src
-    },
     {
-        description: 'Marble Block From Iran.',
+        description: 'Best Marble Block From Iran.',
         des: 'Marble Iran',
 
         url: marbleIran.src
     },
 
     {
-        description: 'Marble Block From Iran.',
+        description: 'Best Marble Block From Iran.',
         des: 'Marble Iran',
 
         url: marbleIran2.src
     },
     {
-        description: 'Marble Block From Italy.',
+        description: 'Best Marble Block From Italy.',
         url: marbleItaly2.src
     },
     {
-        description: 'Marble Block From Italy.',
+        description: 'Best Marble Block From Italy.',
         des: 'Marble Italy',
         url: marbleItaly.src
     },
@@ -134,7 +129,7 @@ export const slides = [
 
 export const OpenMap = ({ setOpenMap }) => {
 
-    const [address, setAddress] = React.useState('Dhaka');
+    const [address, setAddress] = React.useState('Bangkok');
 
     const handleChange = (event) => {
         setAddress(event.target.value);
@@ -197,7 +192,7 @@ export const OpenMap = ({ setOpenMap }) => {
                                 Soi Sukhumvit 63, Ekkamai Road, Bangkok 10110, Thailand
                                 <br />
 
-                                <a className='underline' href="tel:+8801819231662">+8801819231662</a>,
+                                <a className='underline' href="tel:+8801819231662"> +8801819231662</a>,
                                 <br />
                                 <a className='underline' href="mailto:royalorchid2011@yahoo.com"> royalorchid2011@yahoo.com </a>
 
@@ -293,29 +288,52 @@ export const ContactUS = ({ setOpenMap }) => {
                 </div>
 
                 <p className={`${setOpenMap ? '' : 'px-10'} text-[grey] text-center   my-5 text-md md:text-lg text-[white]`}>
-                    <span className='font-bold md:text-2xl'>
-                        Thai Agri Products Company Ltd.
+                    <span className='font-bold md:text-2xl underline'>
+                        Leading exporters :
+
+
                     </span>
                     <br />
-                    <br className="hidden md:block " />
-                    <span className='font-bold md:text-2xl '>
-                        Swapan Trade International.
+                    <br />
+                    <span className='font-semibold md:text-2xl'>
+
+                        Thai Agri Products company Limited
+
                     </span>
                     <br />
-                    <br className="hidden md:block" />
-                    Dhaka Office: House 114, Road 2, Block A, Niketon, Gulshan-1, Dhaka 1212, Bangladesh
-                    <br />
-                    <br className="hidden md:block" />
+                    <span className=''>
 
-                    Bangkok Office : SSP Tower,
-                    21th foor,
-                    Soi Sukhumvit 63, Ekkamai Road, Bangkok 10110, Thailand
-                    <br />
-                    <br className="hidden md:block" />
+                        No. 555   S S P TOWER 21st floor
+                        soi-63 EkamI  Sukhumvit Road Bangkok 10010 - Thailand🇹🇭
 
-                    <a className='underline' href="tel:+880 1711813933">+8801819231662</a>,
+
+                    </span>
+
                     <br />
-                    <a className='underline' href="mailto:info@swapantradeint.com"> royalorchid2011@yahoo.com</a>
+                    <br />
+                    <span className='font-semibold md:text-2xl '>
+                        Asistance:  Swapan Trade International.
+                    </span>
+                    <br />
+                    <span className=''>
+
+                        Liaison office :
+                        Road - 2
+                        House -114
+                        Block - A
+                        Niketan Gulshan
+                        Dhaka-1212
+                        Bangladesh
+
+
+
+                    </span>
+                    <br />
+
+
+                    <a href="tel:+880 1711813933"><span>Call or WhatsApp :</span> <span className='underline'>+8801819231662</span></a>,
+                    <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='underline'>royalorchid2011@yahoo.com</span></a>,
+           
 
                 </p>
 
@@ -347,8 +365,7 @@ export const AboutUS = ({ setOpenAbout }) => {
                 </h1>
 
                 <p className={`text-xl lg:text-2xl text-center ${setOpenAbout ? '' : 'px-[10vw]'}`}>
-                    Swapan Trade International established in 1996 a rapidly growing conglomerate, engage with export, import & trading business beside comission agent. We are associate partner Thailand based agro products like fresh ginger, betel nut, mung bean, refined sugar and associate partner Portugal, Italy, Iran & Turkey based products of natural marble block and granite block. We never compromise quality , quantity & deadline.
-                </p>
+                    Swapan Trade International (STI) was established in 1996 as a rapidly growing organization, engaging with export, import & trading businesses besides commission agents. We are an associate partner for Thailand-based agro products like fresh ginger, betel nut, and mung bean, and an associate partner for Portugal, Italy  & Iran-based products of the natural marble block. We never compromise quality, quantity & deadline.                </p>
             </div>
         </div>
     )
@@ -364,7 +381,7 @@ function Carousel() {
     const [audioStatus, setAudioStatus] = useState(false);
     const [mouseHover, setMouseHover] = useState('not');
 
-
+    const slideCount = 12;
 
     const prevSlide = () => {
 
@@ -419,7 +436,7 @@ function Carousel() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 4, delay: 0, repeat: Infinity, repeatDelay: 0 }}
 
-                style={{ backgroundImage: `url(${currentIndex < 13 && slides[currentIndex].url})` }}
+                style={{ backgroundImage: `url(${currentIndex < slideCount && slides[currentIndex].url})` }}
                 className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
             >
 
@@ -428,9 +445,9 @@ function Carousel() {
 
 
 
-            <div style={{ zIndex:currentIndex < 13 ? 2:-2 }} className={`absolute ${currentIndex < 13 ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
+            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
-                    (currentIndex < 13) ?
+                    (currentIndex < slideCount) ?
                         <motion.div
                             initial={{ y: 200, opacity: .5 }}
                             whileInView={{ y: 0, opacity: 1 }}
@@ -442,7 +459,7 @@ function Carousel() {
                                 <div>
                                     <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
                                         <p className="">
-                                            <span className='text-accent'>{'High-quality'} {' '}</span>{slides[currentIndex].description}
+                                            <span className='text-accent'></span>{slides[currentIndex].description}
                                         </p>
                                     </h1>
                                     <p className='text-[white]  w-[80%] mt-3 text-md lg:text-lg'>
@@ -482,7 +499,7 @@ function Carousel() {
                         :
                         <div className="w-[100vw] ">
                             {
-                                currentIndex == 13 ?
+                                currentIndex == slideCount ?
                                     <div className=" flex  relative  ">
 
                                         <motion.div
