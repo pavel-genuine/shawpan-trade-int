@@ -42,52 +42,11 @@ const NavbarArch = ({ navbarRef, theme }) => {
               <div className="dropdown-menu">
                 <a
                   className="dropdown-item"
-                  href={`/homepage/home1-dark`}
+                  href={``}
                 >
                   Main Home
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home2-dark`}
-                >
-                  Creative Agency
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home5-dark`}
-                >
-                  Digital Agency
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home4-dark`}
-                >
-                  Business One Page
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home3-dark`}
-                >
-                  Corporate Business
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home6-dark`}
-                >
-                  Modern Agency
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home7-dark`}
-                >
-                  Freelancer
-                </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home8-dark`}
-                >
-                  Architecture
-                </a>
+
               </div>
             </li>
 
