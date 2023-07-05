@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "first": "Fine ",
+      "second": "Raw Materials"
+    },
+    "content": "We developed strong relationships with contractors and specialist companies offering discounted prices.",
+    "image": "https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "title": "Amazing Design",
+    "content": "We developed strong relationships with contractors and specialist companies offering discounted prices.",
+    "image": "https://images.pexels.com/photos/3875430/pexels-photo-3875430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 3,
+    "title": {
+      "first": "Innovative",
+      "second": "Architectures"
+    },
+    "content": "We developed strong relationships with contractors and specialist companies offering discounted prices.",
+    "image": "https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]
