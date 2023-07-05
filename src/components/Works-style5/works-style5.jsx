@@ -29,30 +29,98 @@ const WorksStyle5 = () => {
               <span data-filter="*" className="active">
                 All
               </span>
-              <span data-filter=".brand">Interior</span>
-              <span data-filter=".web">Architecture</span>
-              <span data-filter=".graphic">Residential</span>
+              <span data-filter=".brand">Knit</span>
+              <span data-filter=".web">Accessories</span>
+              <span data-filter=".graphic">Printing</span>
             </div>
           </div>
 
           <div className="gallery full-width">
+
+
+          <div
+              className="col-md-6 items brand wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div className="item-img">
+                <Link href="">
+                  <a className="imago wow">
+                  <img style={{height:'550px'}} src="https://images.pexels.com/photos/7147454/pexels-photo-7147454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+
+                    <div className="item-img-overlay"></div>
+                  </a>
+                </Link>
+              </div>
+              
+              <div className="cont">
+                <h5>KNIT PROJECT 1</h5>
+                <span className=" ">
+                  <Link href="">Project Tag</Link>,
+                  <Link href="">Purbasha</Link>
+                </span>
+              </div>
+            </div>
+
+            <div
+              className="col-md-6 items brand wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div className="item-img">
+                <Link href="">
+                  <a className="imago wow">
+                  <img style={{height:'550px'}} src="https://images.pexels.com/photos/4622215/pexels-photo-4622215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+                    <div className="item-img-overlay"></div>
+                  </a>
+                </Link>
+              </div>
+              <div className="cont">
+                <h5>KNIT PROJECT 2</h5>
+                <span className=" ">
+                  <Link href="">Project Tag</Link>,
+                  <Link href="">Purbasha</Link>
+                </span>
+              </div>
+            </div>
+
+            <div
+              className="col-md-6 items brand wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div className="item-img">
+                <Link href="">
+                  <a className="imago wow">
+                  <img style={{height:'550px'}} src="https://images.pexels.com/photos/4614227/pexels-photo-4614227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image" />
+                    <div className="item-img-overlay"></div>
+                  </a>
+                </Link>
+              </div>
+              <div className="cont">
+              <h5>KNIT PROJECT 3</h5>
+                <span className=" ">
+                  <Link href=" ">Project Tag</Link>,
+                  <Link href=" ">Purbasha</Link>
+                </span>
+              </div>
+            </div>
+
+
             <div
               className="col-md-6 items graphic lg-mr wow fadeInUp"
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href={``}>
                   <a className="imago wow">
-                    <img src="/img/arch/work/1.jpg" alt="image" />
+                    <img style={{height:'550px'}} src="https://i0.wp.com/textiletutorials.com/wp-content/uploads/2018/06/Printing-factory-in-Bangladesh.jpg?resize=650%2C400&ssl=1" alt="image" />
                     <div className="item-img-overlay"></div>
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h5>BUGANVILLA HOUSE</h5>
-                <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
-                  <Link href="/works/works-dark">Interior</Link>
+                <h5> Printing 1</h5>
+                <span className=" ">
+                  <Link href="">Project Tag</Link>,
+                  <Link href="">Purbasha</Link>
                 </span>
               </div>
             </div>
@@ -62,18 +130,18 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="">
                   <a className="imago wow">
-                    <img src="/img/arch/work/2.jpg" alt="image" />
+                    <img style={{height:'550px'}} src="https://bextex.net/themes/bextex/assets/images/garments-accessories.jpg" alt="image" />
                     <div className="item-img-overlay"></div>
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h5>The Concept</h5>
-                <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
-                  <Link href="/works/works-dark">Interior</Link>
+                <h5>ACCESSORIES PROJECT 1</h5>
+                <span className=" ">
+                  <Link href="">Project Tag</Link>,
+                  <Link href="">Purbasha</Link>
                 </span>
               </div>
             </div>
@@ -83,84 +151,24 @@ const WorksStyle5 = () => {
               data-wow-delay=".4s"
             >
               <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
+                <Link href="">
                   <a className="imago wow">
-                    <img src="/img/arch/work/5.jpg" alt="image" />
+                    <img style={{height:'550px'}} src="https://i.ytimg.com/vi/k4lBCRgU6vA/maxresdefault.jpg" alt="image" />
                     <div className="item-img-overlay"></div>
                   </a>
                 </Link>
               </div>
               <div className="cont">
-                <h5>Private House</h5>
-                <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
-                  <Link href="/works/works-dark">Interior</Link>
+                <h5>ACCESSORIES PROJECT 2</h5>
+                <span className=" ">
+                  <Link href="">Project Tag</Link>,
+                  <Link href="">Purbasha</Link>
                 </span>
               </div>
             </div>
 
-            <div
-              className="col-md-6 items web graphic wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
-                  <a className="imago wow">
-                    <img src="/img/arch/work/3.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
-                  </a>
-                </Link>
-              </div>
-              <div className="cont">
-                <h5>Floating House Messinia</h5>
-                <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
-                  <Link href="/works/works-dark">Interior</Link>
-                </span>
-              </div>
-            </div>
+          
 
-            <div
-              className="col-md-6 items brand wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
-                  <a className="imago wow">
-                    <img src="/img/arch/work/4.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
-                  </a>
-                </Link>
-              </div>
-              <div className="cont">
-                <h5>IN THE PINE FOREST</h5>
-                <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
-                  <Link href="/works/works-dark">Interior</Link>
-                </span>
-              </div>
-            </div>
-
-            <div
-              className="col-md-6 items brand wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="item-img">
-                <Link href={`/project-details2/project-details2-dark`}>
-                  <a className="imago wow">
-                    <img src="/img/arch/work/6.jpg" alt="image" />
-                    <div className="item-img-overlay"></div>
-                  </a>
-                </Link>
-              </div>
-              <div className="cont">
-                <h5>VILLAS IN SOCHI</h5>
-                <span className="tags main-color custom-font">
-                  <Link href="/works/works-dark">Arch</Link>,
-                  <Link href="/works/works-dark">Interior</Link>
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

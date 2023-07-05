@@ -4,7 +4,8 @@ import Demos from "./demos/demos";
 const Home = () => {
   return (
     <>
-      <Demos />
+
+GenSoft      {/* <Demos /> */}
     </>
   );
 };

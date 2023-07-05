@@ -155,7 +155,7 @@ const Demos = () => {
               <div className="capt mt-50">
                 <div className="bactxt custom-font valign">
                   <span className="full-width" style={{ color: "transparent" }}>
-                    vie
+                    GenSoft
                   </span>
                 </div>
               </div>
@@ -170,10 +170,10 @@ const Demos = () => {
               <div className="col-lg-8 col-md-10">
                 <div className="sec-head text-center">
                   <h3 className="color-font">
-                    49+ stunning unique ready template
+                    {/* 49+ stunning unique ready template */}
                   </h3>
                   <span className="tbg">
-                    <b>+</b>49
+                    {/* <b>+</b>49 */}
                   </span>
                 </div>
               </div>

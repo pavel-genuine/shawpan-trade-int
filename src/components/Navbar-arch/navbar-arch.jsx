@@ -10,9 +10,9 @@ const NavbarArch = ({ navbarRef, theme }) => {
   return (
     <nav className="navbar navbar-expand-lg" ref={navbarRef}>
       <div className="container">
-        <a className="logo" href="/">
+        <h5 style={{backgroundColor:'green',borderRadius:'10%', color:'white',textAlign:'center',paddingRight:'10px',paddingLeft:'10px'}}  href="/">
          Purbasha
-        </a>
+        </h5>
 
         <button
           className="navbar-toggler"

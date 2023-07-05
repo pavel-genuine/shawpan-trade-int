@@ -39,7 +39,7 @@ p {
 .progress-wrap::after,
 .nav-scroll .navbar-collapse .active,
 .light .navbar-collapse .active {
-  color: green !important;
+  color: #ffffff !important;
 }
 
 .navbar .dropdown-menu .dropdown-item:after,

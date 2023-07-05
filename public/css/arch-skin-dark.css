@@ -36,7 +36,7 @@ p {
 .navbar .navbar-nav .dropdown-item:hover,
 .main-color,
 .progress-wrap::after {
-  color: green !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .navbar .dropdown-menu .dropdown-item:after,

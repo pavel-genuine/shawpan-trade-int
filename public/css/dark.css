@@ -4725,6 +4725,7 @@ span:hover {
   padding: 50px 30px;
   position: relative;
   z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .serv-arch .item:after {
@@ -4734,7 +4735,7 @@ span:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #232323;
+  background: #00800048;
   border: 1px solid rgba(255, 255, 255, 0.04);
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -4748,6 +4749,7 @@ span:hover {
 
 .serv-arch .item:hover:after {
   opacity: 0.75;
+  background: #232323;
 }
 
 .serv-arch .item:hover p {
@@ -4762,7 +4764,7 @@ span:hover {
   font-weight: 700;
   margin-bottom: 10px;
   color: transparent;
-  -webkit-text-stroke: 1px green;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
 .serv-arch .item h5 {
@@ -4771,6 +4773,7 @@ span:hover {
 }
 
 .serv-arch .item p {
+  color: #ffffff;
   margin-top: 60px;
   opacity: 0;
   -webkit-transform: translateY(30px);
