@@ -462,9 +462,7 @@ function Carousel() {
                                             <span className='text-accent'></span>{slides[currentIndex].description}
                                         </p>
                                     </h1>
-                                    <p className='text-[white]  w-[80%] mt-3 text-md lg:text-lg'>
-                                        Elevate your experience  with our high-quality products. Choose from a wide range of premium collection.
-                                    </p>
+                                   
 
                                     <div className='md:flex lg:mt-8 mt-6 md:space-x-[6px] lg:space-x-5 space-y-5 md:space-y-0'>
 
