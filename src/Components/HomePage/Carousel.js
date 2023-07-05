@@ -445,7 +445,7 @@ function Carousel() {
 
 
 
-            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount ? ' md:top-[33vh] top-[30vh] left-[2vw]' : 'top-0 right-0'}`}>
+            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount ? 'top-[40vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
                     (currentIndex < slideCount) ?
                         <motion.div
