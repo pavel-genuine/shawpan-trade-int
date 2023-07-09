@@ -41,7 +41,7 @@ const Team3 = () => {
                     <circle cx="150" cy="100" r="75" fill="none" />
                     <g>
                       <use xlinkHref="#circlePath1" fill="none" />
-                      <text fill="#c5a47e" className="custom-font">
+                      <text fill="green" className="custom-font">
                         <textPath xlinkHref="#circlePath1">
                           CEO Manager - CEO Manager - CEO Manager -
                         </textPath>
@@ -80,9 +80,9 @@ const Team3 = () => {
                     <circle cx="150" cy="100" r="75" fill="none" />
                     <g>
                       <use xlinkHref="#circlePath2" fill="none" />
-                      <text fill="#c5a47e" className="custom-font">
+                      <text fill="green" className="custom-font">
                         <textPath xlinkHref="#circlePath2">
-                          Interior Designer Interior Designer Interior Designer
+                          Purbasha team Designer Purbasha team Designer Purbasha team Designer
                         </textPath>
                       </text>
                     </g>
@@ -119,9 +119,9 @@ const Team3 = () => {
                     <circle cx="150" cy="100" r="75" fill="none" />
                     <g>
                       <use xlinkHref="#circlePath3" fill="none" />
-                      <text fill="#c5a47e" className="custom-font">
+                      <text fill="green" className="custom-font">
                         <textPath xlinkHref="#circlePath3">
-                          Landscape Designer Landscape Designer Landscape
+                          knit Designer knit Designer knit
                           Designer
                         </textPath>
                       </text>

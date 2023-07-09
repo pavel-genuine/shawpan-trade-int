@@ -58,7 +58,7 @@ const Homepage = () => {
         <Team3 />
         <TestimonialsArch />
         <LatestNews />
-        <ContactArch />
+        {/* <ContactArch /> */}
         <FooterArch />
       </LightTheme>
     </>

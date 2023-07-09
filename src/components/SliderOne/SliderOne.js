@@ -11,8 +11,8 @@ const SliderOneData = [
     {
       image:"https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   
-      subTitle: "WELCOME TO MEIPALY AGENCY1",
-      title: "SMART WEB \n DESIGN AGENCY1.",
+      subTitle: "WELCOME TO Purbasha",
+      title: "RMG Leader 1.",
       button: {
         label: "DISCOVER MORE",
         url: "/about"
@@ -21,8 +21,8 @@ const SliderOneData = [
     {
       image:  "https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   ,
-      subTitle: "WELCOME TO MEIPALY AGENCY2",
-      title: "SMART WEB \n DESIGN AGENCY2.",
+      subTitle: "WELCOME TO Purbasha2",
+      title: "RMG Leader 2.",
       button: {
         label: "DISCOVER MORE",
         url: "/about"
@@ -31,8 +31,8 @@ const SliderOneData = [
     {
       image: "https://images.pexels.com/photos/3875430/pexels-photo-3875430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   ,
-      subTitle: "WELCOME TO MEIPALY AGENCY3",
-      title: "SMART WEB \n DESIGN AGENCY3.",
+      subTitle: "WELCOME TO Purbasha3",
+      title: "RMG Leader 3.",
       button: {
         label: "DISCOVER MORE",
         url: "/about"
