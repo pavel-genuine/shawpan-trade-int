@@ -97,9 +97,9 @@ const FooterArch = () => {
               </div>
               <div className="copy-right">
                 <p>
-                  © 2022, Vie Template. Made with passion by
+                  © 2023, Purbasha. Made with passion by
                   <a href="#0" className="main-color">
-                    ThemesCamp
+                  GenSoft
                   </a>
                   .
                 </p>

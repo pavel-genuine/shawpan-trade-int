@@ -715,11 +715,11 @@ const Homepage = () => {
                   className="about-img-three"
                   alt="About Image"
                 />
-                <div className="experience-item">
+                <div  className="experience-item ">
                   <h2 className="number">
-                    <Counter end={25} />+
+                    <Counter end={25} />
                   </h2>
-                  <h4>Years Of Experience</h4>
+                  <h4 >Years Of Experience</h4>
                 </div>
               </div>
             </div>
