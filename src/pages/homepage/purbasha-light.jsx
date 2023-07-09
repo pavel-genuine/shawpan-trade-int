@@ -14,6 +14,8 @@ import WorksStyle5 from "../../components/Works-style5/works-style5";
 import FooterArch from "../../components/Footer-arch/footer-arch.jsx";
 import ContactArch from "../../components/Contact-arch/contact-arch";
 import TestimonialsArch from "../../components/Testimonials-arch/testimonials-arch";
+import SliderOne from "../../components/SliderOne/SliderOne";
+import 'swiper/css'
 
 const Homepage = () => {
   const navbarRef = React.useRef(null);
@@ -47,16 +49,17 @@ const Homepage = () => {
       </Head>
       <LightTheme>
         <NavbarArch navbarRef={navbarRef} theme="themeL" />
-        <Intro5 />
+        {/* <Intro5 /> */}
+        <SliderOne></SliderOne>
         <AboutUs6 />
         <Services6 />
         <WorksStyle5 />
-        {/* <CaseStudy />
+        <CaseStudy />
         <Team3 />
         <TestimonialsArch />
         <LatestNews />
         <ContactArch />
-        <FooterArch /> */}
+        <FooterArch />
       </LightTheme>
     </>
   );

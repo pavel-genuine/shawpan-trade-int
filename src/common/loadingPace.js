@@ -1,10 +1,11 @@
 const loadingPace = () => {
+  
  
-  Pace.on("start", function () {
+  window.document.Pace?.on("start", function () {
     document.querySelector("#preloader").classList.remove("isdone");
     document.querySelector(".loading").classList.remove("isdone");
   });
-  Pace.on("done", function () {
+  window.document.Pace?.on("done", function () {
     document.querySelector("#preloader").classList.add("isdone");
     document.querySelector(".loading").classList.add("isdone");
     
