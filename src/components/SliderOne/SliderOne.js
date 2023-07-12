@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Navigation, EffectFade } from "swiper";
+import SwiperCore, { Autoplay, Navigation, EffectFade ,Pagination} from "swiper";
 import { Col, Container, Row } from "react-bootstrap";
-import "swiper/css";
 
 
   
@@ -54,21 +53,42 @@ const SliderOne = () => {
     },
     autoplay: {
       delay: 5000
-    }
+    },
+    
   };
+
+
   
   return (
     <section className="main-slider">
-      <Swiper {...mainSlideOptions}>
+      <Swiper 
+
+      // direction={'vertical'}
+      spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 8000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        navigation={{
+          nextEl: "#main-slider-next",
+          prevEl: "#main-slider-prev"
+        }}
+        modules={[Autoplay, Navigation,Pagination]}
+        effect={'fade'}
+      
+      
+      >
         {SliderOneData.map(({ image, subTitle, title, button }, index) => (
           <SwiperSlide key={index}>
             <div
               className="image-layer"
               style={{ backgroundImage: `url(${image})` }}
             ></div>
-            <Container>
-              <Row>
-                <Col lg={12} className="text-center">
+            <div>
+              <div>
+                <div  className="text-center">
                   <p className="main-slider__subtext">{subTitle}</p>
                   <h3 className="main-slider__title">{title}</h3>
                   {/* <Link href={button.url}>
@@ -76,9 +96,9 @@ const SliderOne = () => {
                       <span>{button.label}</span>
                     </p>
                   </Link> */}
-                </Col>
-              </Row>
-            </Container>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
         <div className="swiper-button-prev" id="main-slider-prev">
