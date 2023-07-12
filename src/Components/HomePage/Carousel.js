@@ -55,7 +55,7 @@ export const slides = [
         description: 'Introduction',
         des: 'Introduction',
 
-        url:intro?.src
+        url: intro?.src
     },
 
     {
@@ -142,9 +142,9 @@ export const slides = [
 
         url: iran3.src
     },
-   
 
- 
+
+
     {
         description: 'Contact',
         des: 'Contact',
@@ -278,104 +278,117 @@ export const OpenMap = ({ setOpenMap }) => {
 export const ContactUS = ({ setOpenMap }) => {
 
     return (
-        <div className="flex justify-center items-center text-white md:p-[2vw] p-[5vw] h-[100%] w-[100%] relative bg-bg bg-opacity-50 ">
-            <div className="relative">
-                <h1 className='text-2xl font-semibold md:text-4xl text-center mb-3 md:mb-5'>
-                    Contact Us
-                </h1>
+        <div className="overflow-hidden flex justify-center items-center text-white md:p-[2vw] p-[5vw] h-[100%] w-[100%] relative bg-bg bg-opacity-50 ">
 
-                <p className='px-7 text-xl lg:text-2xl text-center'>
-                    We would like to hear from you.
-                </p>
-                <div className='flex justify-center items-center mt-3 md:mt-5'>
-                    <div className='lg:flex space-y-3 lg:space-y-0 lg:space-x-7  '>
-                        <div className=''>
-                            <Button size="small" style={{ borderRadius: '68px', backgroundColor: 'black', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
-                                startIcon={<EmailIcon></EmailIcon>}
-                                variant="outlined">
-                                <a href="mailto:royalorchid2011@yahoo.com" className='md:text-xl  font-semibold text-[white]' type="submit" >Email Us</a>
-                            </Button>
+            <motion.div
+                initial={{ y: 200, opacity: .5 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: .5 }}
 
-                        </div>
-                        <div>
+            >
 
-                            <Button style={{ borderRadius: '68px', backgroundColor: 'black' }} className='lg:w-[200px] w-[150px] h-[40px]  md:h-[50px]'
+                <div className="relative">
+                    <h1 className='text-2xl font-semibold md:text-4xl text-center mb-3 md:mb-5'>
+                        Contact Us
+                    </h1>
 
-                                startIcon={<CallIcon></CallIcon>}
+                    <p className='px-7 text-xl lg:text-2xl text-center'>
+                        We would like to hear from you.
+                    </p>
+                    <div className='flex justify-center items-center mt-3 md:mt-5'>
+                        <div className='lg:flex space-y-3 lg:space-y-0 lg:space-x-7  '>
+                            <div className=''>
+                                <Button size="small" style={{ borderRadius: '68px', backgroundColor: 'black', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
+                                    startIcon={<EmailIcon></EmailIcon>}
+                                    variant="outlined">
+                                    <a href="mailto:royalorchid2011@yahoo.com" className='md:text-xl  font-semibold text-[white]' type="submit" >Email Us</a>
+                                </Button>
 
-                                variant="contained">
+                            </div>
+                            <div>
 
-                                <a href="tel:+8801819231662" className='md:text-xl  font-semibold text-[white]'>Call Now </a> </Button>
+                                <Button style={{ borderRadius: '68px', backgroundColor: 'black' }} className='lg:w-[200px] w-[150px] h-[40px]  md:h-[50px]'
+
+                                    startIcon={<CallIcon></CallIcon>}
+
+                                    variant="contained">
+
+                                    <a href="tel:+8801819231662" className='md:text-xl  font-semibold text-[white]'>Call Now </a> </Button>
+
+                            </div>
 
                         </div>
 
                     </div>
+
+                    <p className={`${setOpenMap ? '' : 'px-10'} text-[grey] text-center   my-5 text-md md:text-lg text-[white]`}>
+                        <span className='font-bold md:text-2xl underline'>
+                            Leading exporters :
+
+
+                        </span>
+                        <br />
+                        <br />
+                        <span className='font-semibold md:text-2xl'>
+
+                            Thai Agri Products company Limited
+
+                        </span>
+                        <br />
+                        <span className=''>
+
+                            No. 555   S S P TOWER 21st floor
+                            soi-63 EkamI  Sukhumvit Road Bangkok 10010 - Thailand🇹🇭
+
+
+                        </span>
+
+                        <br />
+                        <br />
+                        <span className='font-semibold md:text-2xl '>
+                            Asistance:  Swapan Trade International.
+                        </span>
+                        <br />
+                        <span className=''>
+
+                            Liaison office :
+                            Road - 2
+                            House -114
+                            Block - A
+                            Niketan Gulshan
+                            Dhaka-1212
+                            Bangladesh
+
+
+
+                        </span>
+                        <br />
+
+
+                        <a href="tel:+880 1711813933"><span>Call or WhatsApp :</span> <span className='underline'>+8801819231662</span></a>,
+                        <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='underline'>royalorchid2011@yahoo.com</span></a>,
+
+
+                    </p>
+
+                    {
+                        setOpenMap &&
+                        <div className="flex justify-center items-center">
+
+                            <Button onClick={() => setOpenMap(true)} size="small" style={{ borderRadius: '68px', backgroundColor: 'grey', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
+                                startIcon={<LocationOnIcon></LocationOnIcon>}
+                                variant="contained">
+                                View On Map
+                            </Button>
+                        </div>
+                    }
 
                 </div>
 
-                <p className={`${setOpenMap ? '' : 'px-10'} text-[grey] text-center   my-5 text-md md:text-lg text-[white]`}>
-                    <span className='font-bold md:text-2xl underline'>
-                        Leading exporters :
-
-
-                    </span>
-                    <br />
-                    <br />
-                    <span className='font-semibold md:text-2xl'>
-
-                        Thai Agri Products company Limited
-
-                    </span>
-                    <br />
-                    <span className=''>
-
-                        No. 555   S S P TOWER 21st floor
-                        soi-63 EkamI  Sukhumvit Road Bangkok 10010 - Thailand🇹🇭
-
-
-                    </span>
-
-                    <br />
-                    <br />
-                    <span className='font-semibold md:text-2xl '>
-                        Asistance:  Swapan Trade International.
-                    </span>
-                    <br />
-                    <span className=''>
-
-                        Liaison office :
-                        Road - 2
-                        House -114
-                        Block - A
-                        Niketan Gulshan
-                        Dhaka-1212
-                        Bangladesh
+            </motion.div>
 
 
 
-                    </span>
-                    <br />
-
-
-                    <a href="tel:+880 1711813933"><span>Call or WhatsApp :</span> <span className='underline'>+8801819231662</span></a>,
-                    <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='underline'>royalorchid2011@yahoo.com</span></a>,
-           
-
-                </p>
-
-                {
-                    setOpenMap &&
-                    <div className="flex justify-center items-center">
-
-                        <Button onClick={() => setOpenMap(true)} size="small" style={{ borderRadius: '68px', backgroundColor: 'grey', }} className='lg:w-[200px] w-[150px] h-[40px] md:h-[50px] '
-                            startIcon={<LocationOnIcon></LocationOnIcon>}
-                            variant="contained">
-                            View On Map
-                        </Button>
-                    </div>
-                }
-
-            </div>
         </div>
     )
 }
@@ -383,16 +396,26 @@ export const ContactUS = ({ setOpenMap }) => {
 export const AboutUS = ({ setOpenAbout }) => {
 
     return (
-        <div className={`flex justify-center items-center text-white px-[5vw] py-[5vh]  ${setOpenAbout ? 'h-[100%] w-[100%] bg-opacity-50' : 'h-[100vh] w-[100vw] bg-opacity-30 '} bg-bg  `}>
-            <div className="">
-                <h1 className='text-5xl  text-center mb-6'>
-                    Introduction
+        <div className={` overflow-hidden flex justify-center items-center text-white px-[5vw] py-[5vh]  ${setOpenAbout ? 'h-[100%] w-[100%] bg-opacity-50' : 'h-[100vh] w-[100vw] bg-opacity-30 '} bg-bg  `}>
+            <motion.div
+                initial={{ y: 200, opacity: .5 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: .5 }}
 
-                </h1>
+            >
+                <div className="">
+                    <h1 className='text-5xl  text-center mb-6'>
+                        Introduction
 
-                <p className={`text-xl lg:text-2xl text-center ${setOpenAbout ? '' : 'w-[70vw]'}`}>
-                    Swapan Trade International (STI) was established in 1996 as a rapidly growing organization, engaging with export, import & trading businesses besides commission agents. We are an associate partner for Thailand-based agro products like fresh ginger, betel nut, and mung bean, and an associate partner for Portugal, Italy  & Iran-based products of the natural marble block. We never compromise quality, quantity & deadline.                </p>
-            </div>
+                    </h1>
+
+                    <p className={`text-xl lg:text-2xl text-center ${setOpenAbout ? '' : 'w-[70vw]'}`}>
+                        Swapan Trade International (STI) was established in 1996 as a rapidly growing organization, engaging with export, import & trading businesses besides commission agents. We are an associate partner for Thailand-based agro products like fresh ginger, betel nut, and mung bean, and an associate partner for Portugal, Italy  & Iran-based products of the natural marble block. We never compromise quality, quantity & deadline.                </p>
+                </div>
+
+            </motion.div>
+
+
         </div>
     )
 }
@@ -408,7 +431,7 @@ function Carousel() {
     const [mouseHover, setMouseHover] = useState('not');
 
     const slideCount = 15;
-    const duration =8
+    const duration = 8
 
     const prevSlide = () => {
 
@@ -446,7 +469,7 @@ function Carousel() {
 
                 cycle(index);
 
-            }, duration*1000);
+            }, duration * 1000);
         }
 
         cycle(-1);
@@ -455,7 +478,7 @@ function Carousel() {
     }, [slides.length])
 
 
-    console.log(currentIndex,'ci');
+    console.log(currentIndex, 'ci');
 
     return (
 
@@ -475,69 +498,69 @@ function Carousel() {
 
 
 
-            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount && currentIndex!=0   ? 'top-[40vh] left-[2vw]' : 'top-0 right-0'}`}>
+            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount && currentIndex != 0 ? 'top-[40vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
-                    (currentIndex < slideCount && currentIndex!=0   ) ?
+                    (currentIndex < slideCount && currentIndex != 0) ?
                         <div>
-                           
-                       {
-                        currentIndex >5 &&
-                        <motion.div
-                        initial={{ y: 200, opacity: .5 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay:23.5 }}
-                    >
 
-                        <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
+                            {
+                                currentIndex > 5 &&
+                                <motion.div
+                                    initial={{ y: 200, opacity: .5 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 23.5 }}
+                                >
 
-                            <div>
-                                <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
-                                    <p className="">
-                                        <span className='text-accent'></span>{slides[currentIndex].description}
-                                    </p>
-                                </h1>
+                                    <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
 
-                            </div>
+                                        <div>
+                                            <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
+                                                <p className="">
+                                                    <span className='text-accent'></span>{slides[currentIndex].description}
+                                                </p>
+                                            </h1>
 
-                        </div>
+                                        </div>
+
+                                    </div>
 
 
-                    </motion.div>
-             
-                       }
-             { currentIndex <6 &&
-                       <motion.div
-                       initial={{ y: 200, opacity: .5 }}
-                       whileInView={{ y: 0, opacity: 1 }}
-                       transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay:7.5 }}
-                   >
-   
-                       <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
-   
-                           <div>
-                               <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
-                                   <p className="">
-                                       <span className='text-accent'></span>{slides[currentIndex].description}
-                                   </p>
-                               </h1>
-   
-                           </div>
-   
-                       </div>
-   
-   
-                   </motion.div>
-             }      
-                    
+                                </motion.div>
+
+                            }
+                            {currentIndex < 6 &&
+                                <motion.div
+                                    initial={{ y: 200, opacity: .5 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 7.5 }}
+                                >
+
+                                    <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
+
+                                        <div>
+                                            <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
+                                                <p className="">
+                                                    <span className='text-accent'></span>{slides[currentIndex].description}
+                                                </p>
+                                            </h1>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </motion.div>
+                            }
+
                         </div>
                         :
                         <div className="w-[100vw]  ">
                             {
                                 currentIndex == 0 ?
-    
 
-                                            <AboutUS></AboutUS>
-                              
+
+                                    <AboutUS></AboutUS>
+
 
 
                                     :
@@ -606,8 +629,8 @@ function Carousel() {
 
 
                         <div
-                        //  onMouseOver={() => setMouseHover(slideIndex)} onMouseLeave={() => setMouseHover('not')} 
-                         className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-accent bg-opacity-70 ' : 'bg-[#8080809e]'}`}>
+                            //  onMouseOver={() => setMouseHover(slideIndex)} onMouseLeave={() => setMouseHover('not')} 
+                            className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-accent bg-opacity-70 ' : 'bg-[#8080809e]'}`}>
                             <LazyLoadImage src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] ' />
                         </div>
                     </div>
