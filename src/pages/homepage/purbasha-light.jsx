@@ -53,8 +53,8 @@ const Homepage = () => {
         <SliderOne></SliderOne>
         <AboutUs6 />
         <Services6 />
-        {/* <WorksStyle5 />
-        <CaseStudy />
+        <WorksStyle5 />
+        {/* <CaseStudy />
         <Team3 />
         <TestimonialsArch />
         <LatestNews />
