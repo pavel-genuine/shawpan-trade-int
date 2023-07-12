@@ -17,8 +17,8 @@ import portugal2 from '../../assets/imgs/portugal2.jpeg'
 import portugal3 from '../../assets/imgs/portugal3.jpeg'
 
 import iran1 from '../../assets/imgs/iran1.jpeg'
-import iran2 from '../../assets/imgs/iran2.jpeg'
-import iran3 from '../../assets/imgs/iran3.jpeg'
+import iran2 from '../../assets/imgs/iran4.jpeg'
+import iran3 from '../../assets/imgs/iran6.jpeg'
 
 
 import marblePortugal3 from '../../assets/imgs/marblePortugal3.jpeg'
@@ -407,7 +407,8 @@ function Carousel() {
     const [audioStatus, setAudioStatus] = useState(false);
     const [mouseHover, setMouseHover] = useState('not');
 
-    const slideCount = 11;
+    const slideCount = 15;
+    const duration =8
 
     const prevSlide = () => {
 
@@ -445,13 +446,16 @@ function Carousel() {
 
                 cycle(index);
 
-            }, 8000);
+            }, duration*1000);
         }
 
         cycle(-1);
 
 
     }, [slides.length])
+
+
+    console.log(currentIndex,'ci');
 
     return (
 
@@ -460,7 +464,7 @@ function Carousel() {
 
                 initial={{ opacity: 1, scale: 1.3 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 8, delay: 0, repeat: Infinity, repeatDelay: 0 }}
+                transition={{ duration: duration, delay: 0, repeat: Infinity, repeatDelay: 0 }}
 
                 style={{ backgroundImage: `url(${currentIndex < slideCount && slides[currentIndex].url})` }}
                 className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
@@ -474,27 +478,58 @@ function Carousel() {
             <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount && currentIndex!=0   ? 'top-[40vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
                     (currentIndex < slideCount && currentIndex!=0   ) ?
+                        <div>
+                           
+                       {
+                        currentIndex >5 &&
                         <motion.div
-                            initial={{ y: 200, opacity: .5 }}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 7.5 }}
-                        >
+                        initial={{ y: 200, opacity: .5 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay:23.5 }}
+                    >
 
-                            <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
+                        <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
 
-                                <div>
-                                    <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
-                                        <p className="">
-                                            <span className='text-accent'></span>{slides[currentIndex].description}
-                                        </p>
-                                    </h1>
-
-                                </div>
+                            <div>
+                                <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
+                                    <p className="">
+                                        <span className='text-accent'></span>{slides[currentIndex].description}
+                                    </p>
+                                </h1>
 
                             </div>
 
+                        </div>
 
-                        </motion.div>
+
+                    </motion.div>
+             
+                       }
+             { currentIndex <6 &&
+                       <motion.div
+                       initial={{ y: 200, opacity: .5 }}
+                       whileInView={{ y: 0, opacity: 1 }}
+                       transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay:7.5 }}
+                   >
+   
+                       <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
+   
+                           <div>
+                               <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
+                                   <p className="">
+                                       <span className='text-accent'></span>{slides[currentIndex].description}
+                                   </p>
+                               </h1>
+   
+                           </div>
+   
+                       </div>
+   
+   
+                   </motion.div>
+             }      
+                    
+                        </div>
                         :
                         <div className="w-[100vw]  ">
                             {
