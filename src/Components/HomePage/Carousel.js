@@ -188,8 +188,9 @@ export const OpenMap = ({ setOpenMap }) => {
                                 label="Address"
                                 onChange={handleChange}
                             >
-                                <MenuItem value={'Dhaka'}>Dhaka Office</MenuItem>
                                 <MenuItem value={'Bangkok'}>Bangkok Office</MenuItem>
+
+                                <MenuItem value={'Dhaka'}>Dhaka Office</MenuItem>
                             </Select>
                         </FormControl>
                     </Box>
@@ -252,7 +253,7 @@ export const OpenMap = ({ setOpenMap }) => {
                                     Swapan Trade International.
                                 </span>
                                 <br />
-                                House 114, Road 2, Block A, Niketon, Gulshan-1, Dhaka 1212, Bangladesh
+                                House 114, Road 2 Block A, Niketon, Gulshan-1, Dhaka 1212, Bangladesh
 
                                 <br />
 
@@ -339,8 +340,7 @@ export const ContactUS = ({ setOpenMap }) => {
                         <br />
                         <span className=''>
 
-                            No. 555   S S P TOWER 21st floor
-                            soi-63 EkamI  Sukhumvit Road Bangkok 10010 - Thailand🇹🇭
+                            No. 555,   S S P Tower, 21st floor, soi-63 EkamI  Sukhumvit Road, Bangkok-10010 ,Thailand.
 
 
                         </span>
@@ -354,12 +354,12 @@ export const ContactUS = ({ setOpenMap }) => {
                         <span className=''>
 
                             Liaison office :
-                            Road - 2
-                            House -114
-                            Block - A
-                            Niketan Gulshan
-                            Dhaka-1212
-                            Bangladesh
+                            Road - 2,
+                            House -114,
+                            Block - A,
+                            Niketan, Gulshan,
+                            Dhaka-1212,
+                            Bangladesh.
 
 
 
@@ -367,17 +367,17 @@ export const ContactUS = ({ setOpenMap }) => {
                         <br />
 
 
-                       <div className="flex justify-center items-center">
-                       <div className="flex space-x-2 items-center">
-                            <a href="tel:+8801819231662"><span>Call or WhatsApp :</span> <span className='underline ml-2'>+8801819231662</span></a> 
+                        <div className="flex justify-center items-center">
+                            <div className="flex space-x-2 items-center">
+                                <a href="tel:+8801819231662"><span>Call or WhatsApp :</span> <span className='underline ml-2'>+8801819231662</span></a>
 
                                 <IconButton target="_blank" href="https://api.whatsapp.com/send/?phone=8801819231662&text=" >
                                     <WhatsAppIcon color={`success`} />
 
                                 </IconButton>
-                  
+
+                            </div>
                         </div>
-                       </div>
                         <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='ml-1 underline'>royalorchid2011@yahoo.com</span></a>,
 
 
