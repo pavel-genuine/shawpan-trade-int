@@ -13,7 +13,10 @@ import Navbar from '@/Components/Navbar/Navbar';
 import WhatsApp from '@/Components/WhatsApp/WhatsApp';
 import { SunnyMorning } from 'moving-letters'
 import logo from '../assets/logos/logo.jpg'
-
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Footer = dynamic(() => import('@/Components/Footer/Footer'), {
   loading: () => <p>Loading...</p>,
