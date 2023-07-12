@@ -49,6 +49,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+// import IconButton from '@mui/material/IconButton';
 
 export const slides = [
     {
@@ -365,8 +367,18 @@ export const ContactUS = ({ setOpenMap }) => {
                         <br />
 
 
-                        <a href="tel:+880 1711813933"><span>Call or WhatsApp :</span> <span className='underline'>+8801819231662</span></a>,
-                        <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='underline'>royalorchid2011@yahoo.com</span></a>,
+                       <div className="flex justify-center items-center">
+                       <div className="flex space-x-2 items-center">
+                            <a href="tel:+8801819231662"><span>Call or WhatsApp :</span> <span className='underline ml-2'>+8801819231662</span></a> 
+
+                                <IconButton target="_blank" href="https://api.whatsapp.com/send/?phone=8801819231662&text=" >
+                                    <WhatsAppIcon color={`success`} />
+
+                                </IconButton>
+                  
+                        </div>
+                       </div>
+                        <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='ml-1 underline'>royalorchid2011@yahoo.com</span></a>,
 
 
                     </p>

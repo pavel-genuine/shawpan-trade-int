@@ -16,7 +16,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -101,8 +101,10 @@ const HomePage = () => {
   return (
     <div className='relative '>
 
-      {/* <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-4 md:right-[10vw] top-9 md:top-10  z-10 cursor-pointer">
+      
 
+      {/* <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-4 md:right-[10vw] top-9 md:top-10  z-10 cursor-pointer">
+https://api.whatsapp.com/send/?phone=8801713534019&text=
         <audio
           ref={myRef}
           autoPlay
@@ -119,7 +121,7 @@ const HomePage = () => {
         </IconButton>
       </div> */}
 
-      <div  className='w-[100%] mx-auto h-[100vh] '>
+      <div className='w-[100%] mx-auto h-[100vh] '>
 
 
 
@@ -157,7 +159,7 @@ const HomePage = () => {
                 transition={{ duration: .5, delay: 1, }}
               >
                 <p className='   mb-[-12px] mt-[20px] md:mt-[25px] text-[white]'>
-                Introduction
+                  Introduction
                 </p>
                 <marquee behavior="scroll" direction='right'>
                   <div className=' bg-[white] h-[2px] w-[60px] lg:w-[75px]'>

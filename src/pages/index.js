@@ -8,6 +8,7 @@ import VideoPromo from '@/Components/VideoPromo/VideoPromo';
 import StripeSlider from '@/Components/StoneShowCase/StripeSliderGranite';
 import StoneShowCase from '@/Components/StoneShowCase/StoneShowCase';
 import FoodGradeShowCase from '@/Components/FoodGradeShowCase/FoodGradeShowCase';
+import WhatsApp from '@/Components/WhatsApp/WhatsApp';
 
 const Categories = dynamic(() => import('@/Components/Categories/Categories'), {
   loading: () => <p>Loading...</p>,
@@ -74,7 +75,6 @@ const Home = (props) => {
         <Global></Global> */}
 
         {/* <Qualities></Qualities> */}
-
 
       </div>
     </main>
