@@ -378,7 +378,7 @@ export const ContactUS = ({ setOpenMap }) => {
 
                             </div>
                         </div>
-                        <br />  <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='ml-1 underline'>royalorchid2011@yahoo.com</span></a>,
+                   <a href="mailto:info@swapantradeint.com"><span>Mail :</span> <span className='ml-1 underline'>royalorchid2011@yahoo.com</span></a>,
 
 
                     </p>
