@@ -101,7 +101,7 @@ const HomePage = () => {
   return (
     <div className='relative '>
 
-      <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-4 md:right-[10vw] top-9 md:top-10  z-10 cursor-pointer">
+      {/* <div style={{ zIndex: 100 }} className="bg-bg bg-opacity-50 rounded-full absolute right-4 md:right-[10vw] top-9 md:top-10  z-10 cursor-pointer">
 
         <audio
           ref={myRef}
@@ -117,7 +117,7 @@ const HomePage = () => {
         >
           {audioStatus == true ? <VolumeUpIcon onClick={() => { pauseAudio(); setMouseHover('v') }} color="primary" /> : <VolumeMuteIcon onClick={() => startAudio()} color="primary" />}
         </IconButton>
-      </div>
+      </div> */}
 
       <div onClick={() => { audioFirst == 1 && startAudio(); setAudioFirst('not1') }} className='w-[100%] mx-auto h-[100vh] '>
 
