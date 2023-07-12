@@ -53,13 +53,13 @@ const Homepage = () => {
         <SliderOne></SliderOne>
         <AboutUs6 />
         <Services6 />
-        <WorksStyle5 />
+        {/* <WorksStyle5 />
         <CaseStudy />
         <Team3 />
         <TestimonialsArch />
         <LatestNews />
-        {/* <ContactArch /> */}
-        <FooterArch />
+        <ContactArch />
+        <FooterArch /> */}
       </LightTheme>
     </>
   );

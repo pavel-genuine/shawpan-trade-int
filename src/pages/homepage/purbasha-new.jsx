@@ -357,7 +357,7 @@ const Homepage = () => {
                         RMG &amp; More
                       </h1>
                       <div
-                        className="hero-button mb-30"
+                        className=" mb-30"
                         data-animation="fadeInDown"
                         data-delay=".6s"
                       >
@@ -367,7 +367,7 @@ const Homepage = () => {
                           </a>
                         </Link>
                         <Link legacyBehavior href="/">
-                          <a className="main-btn filled-btn filled-white mb-10">
+                          <a className="main-btn filled-btn filled-white mb-10 ml-40">
                             How It Work
                           </a>
                         </Link>
@@ -473,7 +473,7 @@ const Homepage = () => {
                         RMG &amp; More
                       </h1>
                       <div
-                        className="hero-button mb-30"
+                        className=" mb-30"
                         data-animation="fadeInDown"
                         data-delay=".6s"
                       >
@@ -589,7 +589,7 @@ const Homepage = () => {
                         RMG &amp; More
                       </h1>
                       <div
-                        className="hero-button mb-30"
+                        className=" mb-30"
                         data-animation="fadeInDown"
                         data-delay=".6s"
                       >
