@@ -554,8 +554,6 @@ function Carousel() {
                  size={30} />
             </div> */}
 
-
-
             <div className='absolute right-1 md:right-[10vw] top-[10vh] md:top-[12.5vh]  py-2 z-0'>
                 {slides.map((slide, slideIndex) => (
                     <div
@@ -563,13 +561,13 @@ function Carousel() {
                         // onClick={() => goToSlide(slideIndex)}
                         className='text-2xl cursor-pointer relative w-[50px]'
                     >
-                        {(currentIndex == slideIndex || mouseHover == slideIndex) ?
+                        {/* {(currentIndex == slideIndex || mouseHover == slideIndex) ?
                             <div style={{ zIndex: -1 }} className=" tooltip absolute left-[-110px] text-sm top-[0px] flex justify-center items-center">
 
                                 <p className="text-sm w-[100px] text-center bg-accent bg-opacity-70 px-2 py-1 rounded text-[white]">{currentIndex == slideIndex ? slides[currentIndex].description : mouseHover == slideIndex && slides[slideIndex].description}</p>
 
                             </div>
-                            : ''}
+                            : ''} */}
 
 
                         <div
