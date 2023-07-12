@@ -38,14 +38,14 @@ export default function App({ Component, pageProps }) {
     },
     palette: {
       primary: {
-        main: "#ff5926",//lgt2
+        main: "#e5752d",//lgt2
         // main: "#80a10a",//lgt2
         light: "#ff5926",
         dark: "#ff5926",
         mainGradient: "linear-gradient(to right , #480626, #7e2651)",
       },
-      secondary:{
-        main:'#fff'
+      secondary: {
+        main: '#fff'
       }
     },
   });
@@ -54,7 +54,7 @@ export default function App({ Component, pageProps }) {
 
     setTimeout(() => {
       setIsOpen(true)
-    }, 15000)
+    }, 3000)
 
   }, [])
 
@@ -80,19 +80,25 @@ export default function App({ Component, pageProps }) {
 
               >
                 <motion.div
-                  className='absolute top-50 z-10'
+                  className='absolute top-[37vh] z-10'
                   initial={{ opacity: 0, scale: .5 }}
                   whileInView={{ opacity: 1, scale: 2 }}
                   transition={{ duration: 1.5, delay: 0 }}
 
                 >
+                  <div className='flex justify-center items-center'>
                   <img src={logo.src}
-                    className='w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-full   inline lg:block lg:mx-0  bg-[white] inline rounded-full bg-opacity-70'
+                    className='w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-full  inline lg:block  bg-[white] inline rounded-full bg-opacity-70'
                   />
+                  </div>
+                  <h3 className='text-accent mt-[-15px] md:mt-[-25px] text-center  text-[10px] md:text-lg'>
+                    Swapan Trade International
+
+                  </h3>
                 </motion.div>
 
 
-                <motion.div className='bg-[white] h-[50px] w-[50px] rounded-full z-0'
+                <motion.div className='bg-[white] h-[50px] w-[50px] rounded-full z-0 text-sm md:text-lg'
 
                   viewport={{ once: true }}
                   initial={{ opacity: 1, scale: 1 }}

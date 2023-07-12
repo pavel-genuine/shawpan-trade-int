@@ -119,7 +119,7 @@ const HomePage = () => {
         </IconButton>
       </div> */}
 
-      <div onClick={() => { audioFirst == 1 && startAudio(); setAudioFirst('not1') }} className='w-[100%] mx-auto h-[100vh] '>
+      <div  className='w-[100%] mx-auto h-[100vh] '>
 
 
 
@@ -194,7 +194,7 @@ const HomePage = () => {
           }
           {
             openContact ?
-              <div className='bg-accent'>
+              <div className='bg-accent '>
 
                 {
                   openMap ?

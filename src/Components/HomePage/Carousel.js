@@ -7,6 +7,20 @@ import React, { useEffect, useRef, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import marble from '../../assets/imgs/marble.jpg'
+
+import italy1 from '../../assets/imgs/italy1.jpg'
+import italy2 from '../../assets/imgs/italy2.jpg'
+import italy3 from '../../assets/imgs/italy3.jpg'
+
+import portugal1 from '../../assets/imgs/portugal1.jpeg'
+import portugal2 from '../../assets/imgs/portugal2.jpeg'
+import portugal3 from '../../assets/imgs/portugal3.jpeg'
+
+import iran1 from '../../assets/imgs/iran1.jpeg'
+import iran2 from '../../assets/imgs/iran2.jpeg'
+import iran3 from '../../assets/imgs/iran3.jpeg'
+
+
 import marblePortugal3 from '../../assets/imgs/marblePortugal3.jpeg'
 import marblePortugal2 from '../../assets/imgs/marblePortugal2.jpeg'
 import marbleIran from '../../assets/imgs/marbleIran.jpg'
@@ -19,10 +33,10 @@ import marbleItaly2 from '../../assets/imgs/marbleItaly2.jpeg'
 import nut from '../../assets/Hero/betelnut.jpg'
 import nut2 from '../../assets/imgs/nut.jpeg'
 import ginger from '../../assets/imgs/ginger2.jpg'
+import intro from '../../assets/imgs/intro.jpg'
 
 import mung from '../../assets/Hero/mung.webp'
 import tamarind from '../../assets/imgs/Tamarind-seeds.jpg'
-// import audio from '../../assets/bg.wav'
 import Image from 'next/image'
 // import Sound from 'react-sound';
 import CallIcon from '@mui/icons-material/Call';
@@ -36,9 +50,13 @@ import Select from '@mui/material/Select';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-
 export const slides = [
+    {
+        description: 'Introduction',
+        des: 'Introduction',
 
+        url:intro?.src
+    },
 
     {
         description: 'Fresh Ginger From Thailand.',
@@ -72,53 +90,61 @@ export const slides = [
     },
 
     {
-        description: 'Best Marble Block From Portugal.',
-        des: 'Marble Portugal',
-
-        url: marble.src
-    },
-    {
-        description: 'Best Marble Block From Portugal.',
-        des: 'Marble Portugal',
-
-        url: marblePortugal2.src
-    },
-    {
-        description: 'Best Marble Block From Portugal.',
-        des: 'Marble Portugal',
-
-        url: marblePortugal3.src
-    },
-
-    {
-        description: 'Best Marble Block From Iran.',
-        des: 'Marble Iran',
-
-        url: marbleIran.src
-    },
-
-    {
-        description: 'Best Marble Block From Iran.',
-        des: 'Marble Iran',
-
-        url: marbleIran2.src
-    },
-    {
         description: 'Best Marble Block From Italy.',
-        url: marbleItaly2.src
+        url: italy1.src
     },
     {
         description: 'Best Marble Block From Italy.',
         des: 'Marble Italy',
-        url: marbleItaly.src
+        url: italy2.src
+    },
+    {
+        description: 'Best Marble Block From Italy.',
+        des: 'Marble Italy',
+        url: italy3.src
     },
 
     {
-        description: 'Introduction',
-        des: 'Introduction',
+        description: 'Best Marble Block From Portugal.',
+        des: 'Marble Portugal',
 
-        url: 'https://images.unsplash.com/photo-1523215713844-973398580b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+        url: portugal1.src
     },
+    {
+        description: 'Best Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: portugal2.src
+    },
+    {
+        description: 'Best Marble Block From Portugal.',
+        des: 'Marble Portugal',
+
+        url: portugal3.src
+    },
+
+    {
+        description: 'Best Marble Block From Iran.',
+        des: 'Marble Iran',
+
+        url: iran1.src
+    },
+
+    {
+        description: 'Best Marble Block From Iran.',
+        des: 'Marble Iran',
+
+        url: iran2.src
+    },
+    {
+        description: 'Best Marble Block From Iran.',
+        des: 'Marble Iran',
+
+        url: iran3.src
+    },
+   
+
+ 
     {
         description: 'Contact',
         des: 'Contact',
@@ -357,14 +383,14 @@ export const ContactUS = ({ setOpenMap }) => {
 export const AboutUS = ({ setOpenAbout }) => {
 
     return (
-        <div className="flex justify-center items-center text-white px-[5vw] py-[5vh] h-[100%] w-[100%] bg-bg bg-opacity-50  ">
+        <div className={`flex justify-center items-center text-white px-[5vw] py-[5vh]  ${setOpenAbout ? 'h-[100%] w-[100%] bg-opacity-50' : 'h-[100vh] w-[100vw] bg-opacity-30 '} bg-bg  `}>
             <div className="">
                 <h1 className='text-5xl  text-center mb-6'>
                     Introduction
 
                 </h1>
 
-                <p className={`text-xl lg:text-2xl text-center ${setOpenAbout ? '' : 'px-[10vw]'}`}>
+                <p className={`text-xl lg:text-2xl text-center ${setOpenAbout ? '' : 'w-[70vw]'}`}>
                     Swapan Trade International (STI) was established in 1996 as a rapidly growing organization, engaging with export, import & trading businesses besides commission agents. We are an associate partner for Thailand-based agro products like fresh ginger, betel nut, and mung bean, and an associate partner for Portugal, Italy  & Iran-based products of the natural marble block. We never compromise quality, quantity & deadline.                </p>
             </div>
         </div>
@@ -381,7 +407,7 @@ function Carousel() {
     const [audioStatus, setAudioStatus] = useState(false);
     const [mouseHover, setMouseHover] = useState('not');
 
-    const slideCount = 12;
+    const slideCount = 11;
 
     const prevSlide = () => {
 
@@ -419,7 +445,7 @@ function Carousel() {
 
                 cycle(index);
 
-            }, 4000);
+            }, 8000);
         }
 
         cycle(-1);
@@ -434,7 +460,7 @@ function Carousel() {
 
                 initial={{ opacity: 1, scale: 1.3 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 4, delay: 0, repeat: Infinity, repeatDelay: 0 }}
+                transition={{ duration: 8, delay: 0, repeat: Infinity, repeatDelay: 0 }}
 
                 style={{ backgroundImage: `url(${currentIndex < slideCount && slides[currentIndex].url})` }}
                 className=' h-[100vh] w-[100vw] z-1 bg-center bg-cover duration-500 flex   items-center '
@@ -445,16 +471,16 @@ function Carousel() {
 
 
 
-            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount ? 'top-[40vh] left-[2vw]' : 'top-0 right-0'}`}>
+            <div style={{ zIndex: currentIndex < slideCount ? 2 : -2 }} className={`absolute ${currentIndex < slideCount && currentIndex!=0   ? 'top-[40vh] left-[2vw]' : 'top-0 right-0'}`}>
                 {
-                    (currentIndex < slideCount) ?
+                    (currentIndex < slideCount && currentIndex!=0   ) ?
                         <motion.div
                             initial={{ y: 200, opacity: .5 }}
                             whileInView={{ y: 0, opacity: 1 }}
-                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 3.5 }}
+                            transition={{ duration: .5, delay: 0, repeat: Infinity, repeatDelay: 7.5 }}
                         >
 
-                            <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-[60vw] flex items-center bg-bg bg-opacity-50 z-10'>
+                            <div className=' px-[5vw] mx-[5vw]  py-[2vh] w-[75vw] md:w-auto flex items-center bg-bg bg-opacity-50 z-10'>
 
                                 <div>
                                     <h1 className='lg:text-[60px] text-[30px] font-semibold text-[white]'>
@@ -462,32 +488,7 @@ function Carousel() {
                                             <span className='text-accent'></span>{slides[currentIndex].description}
                                         </p>
                                     </h1>
-                                   
 
-                                    <div className='md:flex lg:mt-8 mt-6 md:space-x-[6px] lg:space-x-5 space-y-5 md:space-y-0'>
-
-                                        {/* <a href="https://api.whatsapp.com/send/?phone=8801711813933&text=" target="_blank" rel="noopener noreferrer">
-
-                                    <Button style={{ borderRadius: '68px', backgroundColor: '#1F2937' }} className='bg-bgNav' variant='contained'
-
-                                        startIcon={<WhatsAppIcon style={{ color: '#4ADE80' }} />}
-                                    >
-                                        Get Started
-                                    </Button>
-                                </a> */}
-
-                                        {/* <Link href='/about'> */}
-                                        {/* <Button className="mt-5 md:mt-0" style={{ borderRadius: '68px', borderColor: 'white' }} variant='outlined'
-                                    startIcon={<CrisisAlertIcon style={{ color: '#fff' }} />}
-                                >
-                                    <p className='text-[white]'>
-                                        Learn More
-                                    </p>
-                                </Button> */}
-                                        {/* </Link> */}
-
-
-                                    </div>
                                 </div>
 
                             </div>
@@ -495,38 +496,15 @@ function Carousel() {
 
                         </motion.div>
                         :
-                        <div className="w-[100vw] ">
+                        <div className="w-[100vw]  ">
                             {
-                                currentIndex == slideCount ?
-                                    <div className=" flex  relative  ">
+                                currentIndex == 0 ?
+    
 
-                                        <motion.div
-                                            className="w-[50vw] bg-accent h-[100vh]"
-                                            initial={{ x: -200, opacity: .5 }}
-                                            whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, }}
-                                        >
-
-                                        </motion.div>
-
-                                        <motion.div
-                                            className="w-[50vw] bg-[black] h-[100vh]"
-                                            initial={{ x: 200, opacity: .5 }}
-                                            whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0, }}
-                                        ></motion.div>
-
-                                        <motion.div
-                                            className=' flex  items-center justify-center absolute top-0 left-0 w-[100vw] h-[100vh]'
-                                            initial={{ y: - 200, opacity: .5 }}
-                                            whileInView={{ y: 0, opacity: 1 }}
-                                            transition={{ duration: .5, delay: 0 }}
-                                        >
                                             <AboutUS></AboutUS>
-                                        </motion.div>
+                              
 
 
-                                    </div>
                                     :
                                     <div className=" flex flex-row-reverse relative  ">
 
@@ -565,20 +543,24 @@ function Carousel() {
             </div>
 
 
-            <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                <BsChevronCompactLeft onClick={prevSlide} size={30} />
+            {/* <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  left-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                <BsChevronCompactLeft
+                //  onClick={prevSlide} 
+                 size={30} />
             </div>
             <div className=' group-hover:block absolute bottom-16 md:bottom-28 -translate-x-0 translate-y-[-50%]  right-[30vw] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                <BsChevronCompactRight onClick={nextSlide} size={30} />
-            </div>
+                <BsChevronCompactRight 
+                // onClick={nextSlide}
+                 size={30} />
+            </div> */}
 
 
 
-            <div className='absolute right-1 md:right-[10vw] top-[12.5vh] md:top-[15vh] py-2 z-0'>
+            <div className='absolute right-1 md:right-[10vw] top-[10vh] md:top-[12.5vh]  py-2 z-0'>
                 {slides.map((slide, slideIndex) => (
                     <div
                         key={slideIndex}
-                        onClick={() => goToSlide(slideIndex)}
+                        // onClick={() => goToSlide(slideIndex)}
                         className='text-2xl cursor-pointer relative w-[50px]'
                     >
                         {(currentIndex == slideIndex || mouseHover == slideIndex) ?
@@ -590,7 +572,9 @@ function Carousel() {
                             : ''}
 
 
-                        <div onMouseOver={() => setMouseHover(slideIndex)} onMouseLeave={() => setMouseHover('not')} className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-accent bg-opacity-70 ' : 'bg-[#8080809e]'}`}>
+                        <div
+                        //  onMouseOver={() => setMouseHover(slideIndex)} onMouseLeave={() => setMouseHover('not')} 
+                         className={`w-[35px] h-[35px] rounded-full my-2  p-[5px]  ${currentIndex == slideIndex ? 'bg-accent bg-opacity-70 ' : 'bg-[#8080809e]'}`}>
                             <LazyLoadImage src={slide.url} className='w-[25px] h-[25px] rounded-full border bg-[white] ' />
                         </div>
                     </div>
