@@ -15,7 +15,7 @@ import FooterArch from "../../components/Footer-arch/footer-arch.jsx";
 import ContactArch from "../../components/Contact-arch/contact-arch";
 import TestimonialsArch from "../../components/Testimonials-arch/testimonials-arch";
 import SliderOne from "../../components/SliderOne/SliderOne";
-import 'swiper/css'
+// import 'swiper/css'
 
 const Homepage = () => {
   const navbarRef = React.useRef(null);

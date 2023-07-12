@@ -1,10 +1,12 @@
 import React from 'react'
-import Carousel from '../../components/Carousel/Carousel'
-
+import SliderNew from '../../components/Carousel/Carousel'
+import LightTheme from "../../layouts/Light";
 function New() {
-  return (
-    <div><Carousel></Carousel></div>
-  )
+    return (
+        <LightTheme>
+            <SliderNew></SliderNew>
+        </LightTheme>
+    )
 }
 
 export default New

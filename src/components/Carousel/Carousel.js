@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, EffectFade ,Pagination} from "swiper";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+
 
 
   
@@ -41,7 +41,7 @@ const SliderOneData = [
   
 SwiperCore.use([Autoplay, Navigation, EffectFade]);
 
-const Carousel = () => {
+const SliderNew = () => {
 
   const mainSlideOptions = {
     slidesPerView: 1,
@@ -112,4 +112,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default SliderNew
