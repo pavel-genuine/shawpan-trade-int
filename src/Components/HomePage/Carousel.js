@@ -368,8 +368,8 @@ export const ContactUS = ({ setOpenMap }) => {
 
 
                         <div className="flex justify-center items-center">
-                            <div className="flex space-x-2 items-center">
-                                <a href="tel:+8801819231662"><span>Call or WhatsApp :</span> <span className='underline ml-2'>+8801819231662</span></a>
+                            <div className="">
+                                <a href="tel:+8801819231662"><span>Call:</span> <span className='underline ml-2'>+8801819231662</span></a>
 
                                 <IconButton className="bg-[white]" target="_blank" href="https://api.whatsapp.com/send/?phone=8801819231662&text=" >
                                     <WhatsAppIcon className="bg-[white] rounded-full p-[3px] scale-[1.1] " color={`success`} />
