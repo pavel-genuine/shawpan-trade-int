@@ -629,7 +629,7 @@ function Carousel() {
                     <div
                         key={slideIndex}
                         // onClick={() => goToSlide(slideIndex)}
-                        className='text-2xl cursor-pointer relative w-[50px]'
+                        className='text-2xl  relative w-[50px]'
                     >
                         {/* {(currentIndex == slideIndex || mouseHover == slideIndex) ?
                             <div style={{ zIndex: -1 }} className=" tooltip absolute left-[-110px] text-sm top-[0px] flex justify-center items-center">
